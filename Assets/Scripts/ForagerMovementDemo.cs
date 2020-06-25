@@ -9,7 +9,7 @@ public class ForagerMovementDemo : MonoBehaviour
     public Vector2 playerInput;
     Rigidbody2D rb;
 
-    public float moveSpeed;
+    public float moveSpeed = 10f;
 
     void Start()
     {
