@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Brown_Goat_Idle
+  m_Name: White_Goat_Idle_Right
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 588668137736116602, guid: f1a7ef368f7ba3248999c875cde50c74,
+      value: {fileID: -186970448033014207, guid: fee3e654ef9f5d54d9b7534670125d94,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 588668137736116602, guid: f1a7ef368f7ba3248999c875cde50c74, type: 3}
+    - {fileID: -186970448033014207, guid: fee3e654ef9f5d54d9b7534670125d94, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
