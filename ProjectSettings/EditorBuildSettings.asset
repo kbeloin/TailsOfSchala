@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HomeScene.unity
     guid: 556cc871461c34625be16ca568a205ec
+  - enabled: 1
+    path: Assets/Scenes/FarmOutdoorScene.unity
+    guid: 9f756de59b2958345af1c2f14af5df2c
   m_configObjects: {}
