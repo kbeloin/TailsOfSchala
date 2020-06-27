@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 609ecfe89a3180a4fbbc84de2a4681bf
+guid: 9524083a4aef3f34da443e05293450e6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2808690005197163544
+    second: Blue Curtains_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,17 +43,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 15, y: 0, z: 5, w: 32}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -64,7 +67,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,71 +88,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline:
-    - - {x: -65, y: -20}
-      - {x: -56, y: -14}
-      - {x: -56, y: -34}
-      - {x: -60, y: -36}
-      - {x: -60, y: -50}
-      - {x: -56, y: -50}
-      - {x: -56, y: -64}
-      - {x: -52, y: -69}
-      - {x: -48, y: -69}
-      - {x: -48, y: -76}
-      - {x: -42, y: -76}
-      - {x: -42, y: -70}
-      - {x: -15, y: -70}
-      - {x: 10, y: -70}
-      - {x: 10, y: -76}
-      - {x: 16, y: -76}
-      - {x: 16, y: -70}
-      - {x: 20, y: -70}
-      - {x: 24, y: -66}
-      - {x: 24, y: -54}
-      - {x: 36, y: -56}
-      - {x: 39, y: -53}
-      - {x: 41, y: -43}
-      - {x: 63, y: -43}
-      - {x: 63, y: -78}
-      - {x: 68, y: -78}
-      - {x: 68, y: -42}
-      - {x: 75, y: -46}
-      - {x: 75, y: -13}
-      - {x: -15, y: 49}
-      - {x: -20, y: 46}
-      - {x: -65, y: 15}
-    physicsShape:
-    - - {x: -42, y: -70}
-      - {x: -42, y: -75}
-      - {x: -48, y: -75}
-      - {x: -48, y: -70}
-      - {x: -52, y: -69}
-      - {x: -56, y: -65}
-      - {x: -56, y: -50}
-      - {x: -60, y: -49}
-      - {x: -60, y: -36}
-      - {x: -56, y: -34}
-      - {x: -56, y: -15}
-      - {x: -64, y: -19}
-      - {x: -66, y: 14}
-      - {x: -16, y: 48}
-      - {x: -16, y: 48}
-      - {x: 76, y: -14}
-      - {x: 75, y: -46}
-      - {x: 68, y: -42}
-      - {x: 68, y: -77}
-      - {x: 62, y: -77}
-      - {x: 62, y: -43}
-      - {x: 41, y: -43}
-      - {x: 37, y: -55}
-      - {x: 25, y: -54}
-      - {x: 24, y: -66}
-      - {x: 19, y: -70}
-      - {x: 16, y: -75}
-      - {x: 9, y: -75}
-      - {x: 9, y: -70}
-      - {x: -15, y: -70}
+    sprites:
+    - serializedVersion: 2
+      name: Blue Curtains_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c87fbbda87af620800000000000000
+      internalID: 2808690005197163544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
