@@ -458,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 5988499790979632189, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: speed
-      value: 5.67
+      value: 12.53
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632190, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
@@ -11691,6 +11691,8 @@ GameObject:
   - component: {fileID: 1516289591}
   - component: {fileID: 1516289592}
   - component: {fileID: 1516289593}
+  - component: {fileID: 1516289595}
+  - component: {fileID: 1516289594}
   m_Layer: 0
   m_Name: BarnHouse
   m_TagString: Untagged
@@ -11775,7 +11777,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.49033475, y: -1.1937355}
+  m_Offset: {x: -0.9850962, y: -1.8974023}
   m_SpriteTilingProperty:
     border: {x: 0.9375, y: 0, z: 0.3125, w: 2}
     pivot: {x: 0.5, y: 0.5}
@@ -11786,7 +11788,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.916057, y: 3.2587101}
+  m_Size: {x: 4.965195, y: 4.6660433}
   m_EdgeRadius: 0
 --- !u!61 &1516289592
 BoxCollider2D:
@@ -11801,7 +11803,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9662752, y: -2.3654537}
+  m_Offset: {x: -0.9662752, y: -3.0237226}
   m_SpriteTilingProperty:
     border: {x: 0.9375, y: 0, z: 0.3125, w: 2}
     pivot: {x: 0.5, y: 0.5}
@@ -11812,7 +11814,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1509323, y: 2.8074265}
+  m_Size: {x: 2.1509323, y: 4.1239643}
   m_EdgeRadius: 0
 --- !u!114 &1516289593
 MonoBehaviour:
@@ -11830,6 +11832,58 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogue: This old barn house is subtly weathered, and very welcoming...
   playerInRange: 0
+--- !u!61 &1516289594
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516289588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.7160218, y: -1.6453977}
+  m_SpriteTilingProperty:
+    border: {x: 0.9375, y: 0, z: 0.3125, w: 2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4753394, y: 2.099451}
+  m_EdgeRadius: 0
+--- !u!61 &1516289595
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516289588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.0117617, y: -3.488409}
+  m_SpriteTilingProperty:
+    border: {x: 0.9375, y: 0, z: 0.3125, w: 2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8544407, y: 2.4640026}
+  m_EdgeRadius: 0
 --- !u!1 &1549108437
 GameObject:
   m_ObjectHideFlags: 0
