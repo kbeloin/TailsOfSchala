@@ -37,7 +37,7 @@ public class ItemDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("PlayerAlt"))
+        if(collision.CompareTag("Player"))
         {
             playerInRange = true;
         }
@@ -45,7 +45,7 @@ public class ItemDialogue : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("PlayerAlt"))
+        if(collision.CompareTag("Player"))
         {
             playerInRange = false;
             dialogueBox.SetActive(false);
