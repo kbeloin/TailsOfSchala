@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9482b17ca44b449c3a2cb0d54de80abb
+guid: d5dc2677c35154bbda551a58d8b75fb0
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -90,7 +90,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -102,7 +102,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -114,7 +114,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -126,7 +126,19 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -138,10 +150,10 @@ TextureImporter:
       name: Player-Down-Left_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 32
+        x: 1
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +171,10 @@ TextureImporter:
       name: Player-Down-Left_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
+        x: 17
+        y: 2
+        width: 14
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +192,10 @@ TextureImporter:
       name: Player-Down-Left_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
+        x: 33
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +213,10 @@ TextureImporter:
       name: Player-Down-Left_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 32
+        x: 49
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +234,10 @@ TextureImporter:
       name: Player-Down-Left_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 32
+        x: 65
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +255,10 @@ TextureImporter:
       name: Player-Down-Left_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 32
+        x: 81
+        y: 2
+        width: 14
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +276,10 @@ TextureImporter:
       name: Player-Down-Left_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 32
+        x: 97
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +297,10 @@ TextureImporter:
       name: Player-Down-Left_7
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 32
+        x: 113
+        y: 2
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
