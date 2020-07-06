@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Attack Input
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             attackAnimator.SetFloat("moveX", velocity.x);
             attackAnimator.SetFloat("moveY", velocity.y);
