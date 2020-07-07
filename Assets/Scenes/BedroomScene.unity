@@ -2482,6 +2482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1384412192}
   - component: {fileID: 1384412193}
+  - component: {fileID: 1384412194}
   m_Layer: 0
   m_Name: Sunbeam
   m_TagString: Untagged
@@ -2551,6 +2552,25 @@ MonoBehaviour:
   - {x: -2.5917041, y: 0.36710906, z: 0}
   - {x: -1.242476, y: 0.39676213, z: 0}
   - {x: -1.1683424, y: -1.7827601, z: 0}
+--- !u!95 &1384412194
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384412191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6db101e1a40b704692c206b9335370c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1467493964
 GameObject:
   m_ObjectHideFlags: 0
