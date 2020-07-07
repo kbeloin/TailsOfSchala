@@ -22,6 +22,7 @@ public class CurtainsToggle : MonoBehaviour
     public Sprite sprite2;
 
     private SpriteRenderer spriteRenderer;
+    public Animator animator;
 
     void Start()
     {
@@ -73,11 +74,13 @@ public class CurtainsToggle : MonoBehaviour
         if (spriteRenderer.sprite == sprite1)
         {
             spriteRenderer.sprite = sprite2;
+            //animator.SetBool("windowOpen", true);
             windowOpen = true;
         }
         else
         {
             spriteRenderer.sprite = sprite1;
+            //animator.SetBool("windowOpen", false);
             windowOpen = false;
         }
     }
