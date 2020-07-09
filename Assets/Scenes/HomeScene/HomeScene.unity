@@ -7602,10 +7602,11 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.86
   m_Color: {r: 0.9490196, g: 0.98719543, b: 1, a: 1}
-  m_Intensity: 1.16
+  m_Intensity: 1.53
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: b33dca84
-  m_LightCookieSprite: {fileID: 0}
+  m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+    type: 3}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
@@ -7732,6 +7733,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Candle 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+        type: 3}
+    - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+        type: 3}
     - target: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_LocalPosition.x
