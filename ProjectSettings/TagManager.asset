@@ -54,9 +54,9 @@ TagManager:
   - name: Collision
     uniqueID: 3371386579
     locked: 0
+  - name: Foreground
+    uniqueID: 3095603527
+    locked: 0
   - name: Ground Objects Non Collision
     uniqueID: 1453100591
-    locked: 0
-  - name: Player
-    uniqueID: 3095603527
     locked: 0
