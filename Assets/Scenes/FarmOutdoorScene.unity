@@ -490,7 +490,7 @@ PrefabInstance:
     - target: {fileID: 5988499790979632161, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632161, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
@@ -3543,7 +3543,7 @@ Transform:
   - {fileID: 1884535367}
   - {fileID: 1516587214}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &334083856
 AudioSource:
@@ -4303,7 +4303,7 @@ PrefabInstance:
     - target: {fileID: 2669798724246748127, guid: 68395b210de0f4a44900ddf2be3cfd54,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2669798724246748127, guid: 68395b210de0f4a44900ddf2be3cfd54,
         type: 3}
@@ -7900,7 +7900,6 @@ GameObject:
   - component: {fileID: 770138971}
   - component: {fileID: 770138970}
   - component: {fileID: 770138969}
-  - component: {fileID: 770138972}
   - component: {fileID: 770138973}
   - component: {fileID: 770138974}
   m_Layer: 0
@@ -7969,26 +7968,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770138968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.55, y: -1.22, z: -10}
+  m_LocalPosition: {x: 22.55, y: -1.22, z: -2.2449942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &770138972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770138968}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3566329fe5de4224f81c64aa46ee09cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 823368101}
-  smoothing: 0.3
 --- !u!114 &770138973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8032,7 +8017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortFactor: 1.09
+  viewPortFactor: 0.08
   followDuration: 0.1
   maximumFollowSpeed: 10
   player: {fileID: 823368101}
