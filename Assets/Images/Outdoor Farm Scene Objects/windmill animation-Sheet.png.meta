@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: e426d9fa900bf7b438363d84e3154730
+guid: e325aaace3711fb48865db02c194ca4b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1831362196860236960
-    second: gas lamp animation (2) (1)_0
+      213: 2613294355837987284
+    second: windmill animation-Sheet_0
   - first:
-      213: 1666320074248767193
-    second: gas lamp animation (2) (1)_1
+      213: -3045675005859831327
+    second: windmill animation-Sheet_1
   - first:
-      213: -6810795350131654777
-    second: gas lamp animation (2) (1)_2
+      213: 8560500570723306201
+    second: windmill animation-Sheet_2
   - first:
-      213: 5587889683786570501
-    second: gas lamp animation (2) (1)_3
-  - first:
-      213: -4467588659968736162
-    second: gas lamp animation (2) (1)_4
-  - first:
-      213: 4942667464050405296
-    second: gas lamp animation (2) (1)_5
+      213: 2319934390008831955
+    second: windmill animation-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,118 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gas lamp animation (2) (1)_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 64
-        width: 14
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a4feee073e4a6910800000000000000
-      internalID: 1831362196860236960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gas lamp animation (2) (1)_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 64
-        width: 14
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d643bb6745ff1710800000000000000
-      internalID: 1666320074248767193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gas lamp animation (2) (1)_2
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 64
-        width: 14
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78f3585d6b13b71a0800000000000000
-      internalID: -6810795350131654777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gas lamp animation (2) (1)_3
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 64
-        width: 14
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50b1b2ebf0c2c8d40800000000000000
-      internalID: 5587889683786570501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gas lamp animation (2) (1)_4
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 64
-        width: 14
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e540008b8cfeff1c0800000000000000
-      internalID: -4467588659968736162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gas lamp animation (2) (1)_5
+      name: windmill animation-Sheet_0
       rect:
         serializedVersion: 2
         x: 1
         y: 0
-        width: 14
-        height: 63
+        width: 110
+        height: 207
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +113,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfea950fd1e79440800000000000000
-      internalID: 4942667464050405296
+      spriteID: 4d9a14dee59444420800000000000000
+      internalID: 2613294355837987284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill animation-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 110
+        height: 206
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1607608b69bb5d0800000000000000
+      internalID: -3045675005859831327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill animation-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 112
+        height: 205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dacd71e9e10dc670800000000000000
+      internalID: 8560500570723306201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill animation-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 110
+        height: 206
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df50b24900123020800000000000000
+      internalID: 2319934390008831955
       vertices: []
       indices: 
       edges: []
