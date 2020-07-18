@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraBounding : MonoBehaviour
 {
 
     Vector2 viewPortSize;
@@ -16,11 +16,7 @@ public class CameraController : MonoBehaviour
     public float followDuration;
     public float maximumFollowSpeed;
 
-    public Vector2 maxPosition;
-    public Vector2 minPosition;
-
     public Transform player;
-
 
     Vector2 distance;
 
@@ -29,7 +25,6 @@ public class CameraController : MonoBehaviour
     {
         cam = Camera.main;
         targetPosition = player.position;
-
     }
 
     // Update is called once per frame
@@ -46,23 +41,7 @@ public class CameraController : MonoBehaviour
         {
             targetPosition.y = player.position.y - (viewPortSize.y / 2 * Mathf.Sign(distance.y));
         }
-        if (transform.position != player.position)
-        {
-           
-            targetPosition.x = Mathf.Clamp(targetPosition.x,
-                                            minPosition.x,
-                                            maxPosition.x);
-            targetPosition.y = Mathf.Clamp(targetPosition.y,
-                                            minPosition.y,
-                                            maxPosition.y);
-
-            transform.position = Vector3.Lerp(transform.position, targetPosition, 0);
-
-
-        }
-
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition - new Vector3(0, 0, 1), ref currentVelocity, followDuration, maximumFollowSpeed);
-
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition - new Vector3(0, 0, 10), ref currentVelocity, followDuration, maximumFollowSpeed);
     }
 
     void OnDrawGizmos()
@@ -74,4 +53,3 @@ public class CameraController : MonoBehaviour
         Gizmos.DrawCube(transform.position, viewPortSize);
     }
 }
-
