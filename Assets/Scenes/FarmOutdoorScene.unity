@@ -15084,9 +15084,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewPortSize: {x: 12, y: 4}
   viewPortFactor: 0.5
   followDuration: 0.1
-  maximumFollowSpeed: 10
+  maximumFollowSpeed: 6.5
   maxPosition: {x: 31, y: 31}
   minPosition: {x: -23.5, y: -41}
   player: {fileID: 823368101}
@@ -47342,6 +47343,7 @@ GameObject:
   - component: {fileID: 1591091791}
   - component: {fileID: 1591091792}
   - component: {fileID: 1591091793}
+  - component: {fileID: 1591091794}
   m_Layer: 0
   m_Name: Pine Tree (4)
   m_TagString: Untagged
@@ -47439,6 +47441,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5268579, y: 5.5625}
   m_EdgeRadius: 0
+--- !u!68 &1591091794
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591091790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -13.666723, y: 5.7604313}
+  - {x: -12.21813, y: 4.871847}
+  - {x: -10.4290085, y: 4.9445915}
+  - {x: -10.75849, y: 2.7346668}
+  - {x: -9.258583, y: 2.6644726}
+  - {x: -8.812607, y: 1.6298218}
+  - {x: -6.7704086, y: 1.4156418}
+  - {x: -6.560684, y: 1.9808483}
+  - {x: -6.5674133, y: 3.1091042}
+  - {x: -4.57502, y: 3.2124615}
+  - {x: -4.3478775, y: 4.3868694}
+  - {x: -3.2489777, y: 4.1577168}
+  - {x: -3.0496597, y: 1.7670593}
+  - {x: -1.1062317, y: 1.846159}
+  - {x: -1.3378754, y: -0.020971298}
+  - {x: 1.5110016, y: 0.17619133}
+  - {x: 11.258022, y: 1.7036743}
 --- !u!1 &1605456852
 GameObject:
   m_ObjectHideFlags: 0
