@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 
-    Vector2 viewPortSize;
+    public Vector2 viewPortSize;
     Camera cam;
 
     public float viewPortFactor;
@@ -35,17 +35,20 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        viewPortSize = (cam.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)) - cam.ScreenToWorldPoint(Vector2.zero)) * viewPortFactor;
+        // viewPortSize = (cam.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)) - cam.ScreenToWorldPoint(Vector2.zero)) * viewPortFactor;
+
+
 
         distance = player.position - transform.position;
         if (Mathf.Abs(distance.x) > viewPortSize.x / 2)
         {
-            targetPosition.x = player.position.x - (viewPortSize.x / 2 * Mathf.Sign(distance.x));
+            targetPosition.x = player.position.x; // - (viewPortSize.x / 2 * Mathf.Sign(distance.x));
         }
         if (Mathf.Abs(distance.y) > viewPortSize.y / 2)
         {
-            targetPosition.y = player.position.y - (viewPortSize.y / 2 * Mathf.Sign(distance.y));
+            targetPosition.y = player.position.y; // - (viewPortSize.y / 2 * Mathf.Sign(distance.y));
         }
+        // Camera Bounding
         if (transform.position != player.position)
         {
            
