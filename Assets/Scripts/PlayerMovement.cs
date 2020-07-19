@@ -58,13 +58,39 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("moving", false);
         }
 
+        // Sprint stamina drain
+        if (running == true)
+        {
+            if (stamina >= 2)
+            {
+                stamina -= 10;
+            }
+            else
+            {
+                running = false;
+            }
+        }
+        //Sprint stamina regen
+        else
+        {
+            if (stamina < maxStamina)
+            {
+                stamina += 2;
+            }
+        }
+    }
+
+    void Update()
+    {
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            attackAnimator.SetFloat("moveX", velocity.x);
-            attackAnimator.SetFloat("moveY", velocity.y);
-            attackAnimator.SetTrigger("Attack");
+            StartCoroutine(AttackCo());
+            // attackAnimator.SetFloat("moveX", velocity.x);
+            // attackAnimator.SetFloat("moveY", velocity.y);
+            // attackAnimator.SetTrigger("Attack");
         }
+
         // Sprint Input
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -73,23 +99,18 @@ public class PlayerMovement : MonoBehaviour
                 running = true;
             }
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             running = false;
         }
+    }
 
-        // Sprint stamina drain
-        if (running == true)
-        {
-            if (stamina >= 2)
-                stamina -= 10;
-            else 
-                running = false;
-        }
-        //Sprint stamina regen
-        else
-            if (stamina < maxStamina)
-                stamina += 2;
-
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(0.5f);
     }
 }
