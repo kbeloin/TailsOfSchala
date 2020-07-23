@@ -11452,7 +11452,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026730597, y: 0.384261}
+  m_Offset: {x: 0.09093952, y: 0.5999892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -11463,7 +11463,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0859442, y: 0.768522}
+  m_Size: {x: 1.8035362, y: 0.6979203}
   m_EdgeRadius: 0
 --- !u!1 &676749151
 GameObject:
@@ -13202,7 +13202,7 @@ Transform:
   m_GameObject: {fileID: 770138968}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: -9.03, y: 14.97, z: -40.640865}
+  m_LocalPosition: {x: -9.03, y: 14.97, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13224,8 +13224,8 @@ MonoBehaviour:
   viewPortFactor: 0.5
   followDuration: 0.1
   maximumFollowSpeed: 12
-  maxPosition: {x: 31, y: 31}
-  minPosition: {x: -23.5, y: -41}
+  maxPosition: {x: 30, y: 25}
+  minPosition: {x: -20, y: -35}
   player: {fileID: 823368101}
 --- !u!114 &770138973
 MonoBehaviour:
