@@ -524,7 +524,6 @@ GameObject:
   m_Component:
   - component: {fileID: 146188153}
   - component: {fileID: 146188154}
-  - component: {fileID: 146188155}
   m_Layer: 0
   m_Name: ClosedCurtainsLight
   m_TagString: Untagged
@@ -587,25 +586,6 @@ MonoBehaviour:
   - {x: 0.7292316, y: -0.8315679, z: 0}
   - {x: 0.5826402, y: 0.8955183, z: 0}
   - {x: -0.6638565, y: 0.8916638, z: 0}
---- !u!95 &146188155
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146188152}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 31c04084155eab84bb6f4855b6096841, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &319180145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1367,7 @@ GameObject:
   - component: {fileID: 889554011}
   - component: {fileID: 889554012}
   - component: {fileID: 889554013}
+  - component: {fileID: 889554014}
   m_Layer: 0
   m_Name: Curtains
   m_TagString: Untagged
@@ -1449,8 +1430,7 @@ SpriteRenderer:
   m_SortingLayerID: -923580717
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4100946062097125806, guid: 7cbe4f8353428c64f826cc91e7cbf390,
-    type: 3}
+  m_Sprite: {fileID: 536810343338263067, guid: 7cbe4f8353428c64f826cc91e7cbf390, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1513,14 +1493,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 889554008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf5c751d42916a48b832ebf1643315e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9432028c78ffe904abe8fd7a565a5d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteractable: 0
+  interactionSwitch: 0
   playerInRange: 0
-  windowOpen: 0
-  sprite1: {fileID: 4100946062097125806, guid: 7cbe4f8353428c64f826cc91e7cbf390, type: 3}
-  sprite2: {fileID: 536810343338263067, guid: 7cbe4f8353428c64f826cc91e7cbf390, type: 3}
-  animator: {fileID: 0}
+--- !u!95 &889554014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889554008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ea1d3a2afe9dd343bc3f82d980f4dd8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &919800256
 GameObject:
   m_ObjectHideFlags: 0
