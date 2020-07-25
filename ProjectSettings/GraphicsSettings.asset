@@ -40,7 +40,7 @@ GraphicsSettings:
   m_CustomRenderPipeline: {fileID: 11400000, guid: b1b554abd9d9df345b2fc9037e9f9ed1,
     type: 2}
   m_TransparencySortMode: 3
-  m_TransparencySortAxis: {x: 0, y: 0, z: 1}
+  m_TransparencySortAxis: {x: 0, y: 1, z: 0}
   m_DefaultRenderingPath: 1
   m_DefaultMobileRenderingPath: 1
   m_TierSettings: []
