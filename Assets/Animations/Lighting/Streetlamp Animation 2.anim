@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Street Lamp Animation
+  m_Name: Streetlamp Animation 2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,25 +22,25 @@ AnimationClip:
     - time: 0
       value: {fileID: 8520508564540701568, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 2.8333333
+    - time: 0.38333333
       value: {fileID: -1773294066654514580, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 5.0333333
+    - time: 1.3833333
       value: {fileID: -8996078875834600548, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 8.5
+    - time: 2.0833333
       value: {fileID: -8616630940022712115, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 9.783334
+    - time: 3.3833334
       value: {fileID: 8520508564540701568, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 11.266666
+    - time: 4.883333
       value: {fileID: -1773294066654514580, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 14.633333
+    - time: 6.4666667
       value: {fileID: -8996078875834600548, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
-    - time: 15.816667
+    - time: 7.9666667
       value: {fileID: -8616630940022712115, guid: da215b8b05a578b4697668b7a9a1718a,
         type: 3}
     attribute: m_Sprite
@@ -75,7 +75,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 15.833333
+    m_StopTime: 7.9833336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
