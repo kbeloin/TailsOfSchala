@@ -1,0 +1,2090 @@
+fileFormatVersion: 2
+guid: 2f737e81bb99c4e79852d149296a1362
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5620012798817019977
+    second: Main-House-Tilemap_0
+  - first:
+      213: 3234887051038136236
+    second: Main-House-Tilemap_1
+  - first:
+      213: -4768051254117543397
+    second: Main-House-Tilemap_2
+  - first:
+      213: 5525361209432753773
+    second: Main-House-Tilemap_3
+  - first:
+      213: -5785664090132449824
+    second: Main-House-Tilemap_4
+  - first:
+      213: 3757376182539491655
+    second: Main-House-Tilemap_5
+  - first:
+      213: 725705988300500779
+    second: Main-House-Tilemap_6
+  - first:
+      213: -7145561804258191730
+    second: Main-House-Tilemap_7
+  - first:
+      213: -7856766850614151862
+    second: Main-House-Tilemap_8
+  - first:
+      213: 7193308515176772533
+    second: Main-House-Tilemap_9
+  - first:
+      213: 9115873682614656876
+    second: Main-House-Tilemap_10
+  - first:
+      213: -4092822384370714981
+    second: Main-House-Tilemap_11
+  - first:
+      213: 2874850809505593549
+    second: Main-House-Tilemap_12
+  - first:
+      213: -2840505714963843524
+    second: Main-House-Tilemap_13
+  - first:
+      213: -4732390734087888830
+    second: Main-House-Tilemap_14
+  - first:
+      213: -2801913132521576085
+    second: Main-House-Tilemap_15
+  - first:
+      213: -7749028508274036947
+    second: Main-House-Tilemap_16
+  - first:
+      213: 531910352355082153
+    second: Main-House-Tilemap_17
+  - first:
+      213: 4788291753446954982
+    second: Main-House-Tilemap_18
+  - first:
+      213: 8763290111574471162
+    second: Main-House-Tilemap_19
+  - first:
+      213: 7032878282078190471
+    second: Main-House-Tilemap_20
+  - first:
+      213: -3660106187231247887
+    second: Main-House-Tilemap_21
+  - first:
+      213: 2962206406614209610
+    second: Main-House-Tilemap_22
+  - first:
+      213: -6177520800034409785
+    second: Main-House-Tilemap_23
+  - first:
+      213: -7705322189953431346
+    second: Main-House-Tilemap_24
+  - first:
+      213: 2320637992533051155
+    second: Main-House-Tilemap_25
+  - first:
+      213: 8224207022330098008
+    second: Main-House-Tilemap_26
+  - first:
+      213: 2348567367977220465
+    second: Main-House-Tilemap_27
+  - first:
+      213: 6533704638196654925
+    second: Main-House-Tilemap_28
+  - first:
+      213: 4969585994763945338
+    second: Main-House-Tilemap_29
+  - first:
+      213: -351421730903969395
+    second: Main-House-Tilemap_30
+  - first:
+      213: 1300930997768597814
+    second: Main-House-Tilemap_31
+  - first:
+      213: 615166550684753150
+    second: Main-House-Tilemap_32
+  - first:
+      213: 5100167677582146739
+    second: Main-House-Tilemap_33
+  - first:
+      213: -5443320928552321408
+    second: Main-House-Tilemap_34
+  - first:
+      213: 1063695164504904912
+    second: Main-House-Tilemap_35
+  - first:
+      213: 8451949150392781857
+    second: Main-House-Tilemap_36
+  - first:
+      213: 7157621257236737783
+    second: Main-House-Tilemap_37
+  - first:
+      213: -4588209601729220229
+    second: Main-House-Tilemap_38
+  - first:
+      213: -6774870482906101813
+    second: Main-House-Tilemap_39
+  - first:
+      213: 7011640018144673962
+    second: Main-House-Tilemap_40
+  - first:
+      213: 2550591553756104890
+    second: Main-House-Tilemap_41
+  - first:
+      213: 5667738619597904471
+    second: Main-House-Tilemap_42
+  - first:
+      213: -7035545804488926309
+    second: Main-House-Tilemap_43
+  - first:
+      213: -4712273389904370962
+    second: Main-House-Tilemap_44
+  - first:
+      213: -4385832691634201282
+    second: Main-House-Tilemap_45
+  - first:
+      213: 3745249004820851991
+    second: Main-House-Tilemap_46
+  - first:
+      213: -9030029646651958140
+    second: Main-House-Tilemap_47
+  - first:
+      213: 4334430207798446945
+    second: Main-House-Tilemap_48
+  - first:
+      213: -2948836004321960730
+    second: Main-House-Tilemap_49
+  - first:
+      213: 1831706737032575974
+    second: Main-House-Tilemap_50
+  - first:
+      213: 2481956008058973885
+    second: Main-House-Tilemap_51
+  - first:
+      213: 1684968295548189409
+    second: Main-House-Tilemap_52
+  - first:
+      213: 8858236188360205061
+    second: Main-House-Tilemap_53
+  - first:
+      213: 3826472059154654111
+    second: Main-House-Tilemap_54
+  - first:
+      213: 4290204174103185812
+    second: Main-House-Tilemap_55
+  - first:
+      213: 7198445421413749725
+    second: Main-House-Tilemap_56
+  - first:
+      213: 610898696113172305
+    second: Main-House-Tilemap_57
+  - first:
+      213: -1373682270183457479
+    second: Main-House-Tilemap_58
+  - first:
+      213: -5202333442648940849
+    second: Main-House-Tilemap_59
+  - first:
+      213: -975492921916683597
+    second: Main-House-Tilemap_60
+  - first:
+      213: 650450278669911991
+    second: Main-House-Tilemap_61
+  - first:
+      213: -411241299456063715
+    second: Main-House-Tilemap_62
+  - first:
+      213: -1857453348586578445
+    second: Main-House-Tilemap_63
+  - first:
+      213: -6598494356190497954
+    second: Main-House-Tilemap_64
+  - first:
+      213: 7733764892031709327
+    second: Main-House-Tilemap_65
+  - first:
+      213: -8164627405346195375
+    second: Main-House-Tilemap_66
+  - first:
+      213: -2586609321181721884
+    second: Main-House-Tilemap_67
+  - first:
+      213: -3860912125316327337
+    second: Main-House-Tilemap_68
+  - first:
+      213: 4936184430175970280
+    second: Main-House-Tilemap_69
+  - first:
+      213: -1788736183584601701
+    second: Main-House-Tilemap_70
+  - first:
+      213: 5568446169872573953
+    second: Main-House-Tilemap_71
+  - first:
+      213: 5084865957961442525
+    second: Main-House-Tilemap_72
+  - first:
+      213: -4429957010644836690
+    second: Main-House-Tilemap_73
+  - first:
+      213: 5731350572342170397
+    second: Main-House-Tilemap_74
+  - first:
+      213: -7657358794324414034
+    second: Main-House-Tilemap_75
+  - first:
+      213: 25134342736490367
+    second: Main-House-Tilemap_76
+  - first:
+      213: -5992622824931986355
+    second: Main-House-Tilemap_77
+  - first:
+      213: -411599953769906988
+    second: Main-House-Tilemap_78
+  - first:
+      213: -61443827937470649
+    second: Main-House-Tilemap_79
+  - first:
+      213: -862733817764189646
+    second: Main-House-Tilemap_80
+  - first:
+      213: -1435983762431364718
+    second: Main-House-Tilemap_81
+  - first:
+      213: 2399630178686220832
+    second: Main-House-Tilemap_82
+  - first:
+      213: 2119391787947950385
+    second: Main-House-Tilemap_83
+  - first:
+      213: 7436216823778209777
+    second: Main-House-Tilemap_84
+  - first:
+      213: -945706510129943773
+    second: Main-House-Tilemap_85
+  - first:
+      213: -2084380447104405420
+    second: Main-House-Tilemap_86
+  - first:
+      213: -1577883068244678471
+    second: Main-House-Tilemap_87
+  - first:
+      213: 3155124231276694162
+    second: Main-House-Tilemap_88
+  - first:
+      213: -1723004172239699644
+    second: Main-House-Tilemap_89
+  - first:
+      213: 4481153415381020654
+    second: Main-House-Tilemap_90
+  - first:
+      213: -8282132638031484514
+    second: Main-House-Tilemap_91
+  - first:
+      213: -4462122743362398202
+    second: Main-House-Tilemap_92
+  - first:
+      213: -4392846129211729980
+    second: Main-House-Tilemap_93
+  - first:
+      213: 3487830473995888964
+    second: Main-House-Tilemap_94
+  - first:
+      213: 8402060665404012381
+    second: Main-House-Tilemap_95
+  - first:
+      213: -6892528404191945505
+    second: Main-House-Tilemap_96
+  - first:
+      213: -3019571688623616134
+    second: Main-House-Tilemap_97
+  - first:
+      213: 2792532664138090897
+    second: Main-House-Tilemap_98
+  - first:
+      213: 2489613790030209068
+    second: Main-House-Tilemap_99
+  - first:
+      213: 2241411227735402267
+    second: Main-House-Tilemap_100
+  - first:
+      213: 8912048499751246200
+    second: Main-House-Tilemap_101
+  - first:
+      213: 6814960802541303301
+    second: Main-House-Tilemap_102
+  - first:
+      213: -1032031789202446249
+    second: Main-House-Tilemap_103
+  - first:
+      213: 7627603779787284741
+    second: Main-House-Tilemap_104
+  - first:
+      213: 5795845876708495579
+    second: Main-House-Tilemap_105
+  - first:
+      213: 1944791573050525954
+    second: Main-House-Tilemap_106
+  - first:
+      213: 6891654240276841193
+    second: Main-House-Tilemap_107
+  - first:
+      213: 7080963820336727144
+    second: Main-House-Tilemap_108
+  - first:
+      213: -5958676216456769449
+    second: Main-House-Tilemap_109
+  - first:
+      213: 8890600471349553822
+    second: Main-House-Tilemap_110
+  - first:
+      213: -541651391385511419
+    second: Main-House-Tilemap_111
+  - first:
+      213: 5028127894158757695
+    second: Main-House-Tilemap_112
+  - first:
+      213: -5645137981973011179
+    second: Main-House-Tilemap_113
+  - first:
+      213: 3209640243834477671
+    second: Main-House-Tilemap_114
+  - first:
+      213: 3396180823429613278
+    second: Main-House-Tilemap_115
+  - first:
+      213: 6916673851700515413
+    second: Main-House-Tilemap_116
+  - first:
+      213: -221379093992711780
+    second: Main-House-Tilemap_117
+  - first:
+      213: -8327941431054436169
+    second: Main-House-Tilemap_118
+  - first:
+      213: -2121047733983133511
+    second: Main-House-Tilemap_119
+  - first:
+      213: 3394499870129595297
+    second: Main-House-Tilemap_120
+  - first:
+      213: -3841334898215502812
+    second: Main-House-Tilemap_121
+  - first:
+      213: -7679385097343605681
+    second: Main-House-Tilemap_122
+  - first:
+      213: 8371477975484279995
+    second: Main-House-Tilemap_123
+  - first:
+      213: 7254614817827157258
+    second: Main-House-Tilemap_124
+  - first:
+      213: -1754399189866421662
+    second: Main-House-Tilemap_125
+  - first:
+      213: 6305593262610880245
+    second: Main-House-Tilemap_126
+  - first:
+      213: -3584752564897237856
+    second: Main-House-Tilemap_127
+  - first:
+      213: 5153056401665020841
+    second: Main-House-Tilemap_128
+  - first:
+      213: -6089002278586019444
+    second: Main-House-Tilemap_129
+  - first:
+      213: 177963994830292939
+    second: Main-House-Tilemap_130
+  - first:
+      213: -3347571214702993562
+    second: Main-House-Tilemap_131
+  - first:
+      213: 1469756479643453979
+    second: Main-House-Tilemap_132
+  - first:
+      213: -7548526270459057128
+    second: Main-House-Tilemap_133
+  - first:
+      213: -1433237592602850155
+    second: Main-House-Tilemap_134
+  - first:
+      213: -3207362520160668413
+    second: Main-House-Tilemap_135
+  - first:
+      213: 2670430076471306046
+    second: Main-House-Tilemap_136
+  - first:
+      213: -6545444406153835659
+    second: Main-House-Tilemap_137
+  - first:
+      213: -5147850405631677070
+    second: Main-House-Tilemap_138
+  - first:
+      213: 6449295019413927705
+    second: Main-House-Tilemap_139
+  - first:
+      213: 8709549998823468337
+    second: Main-House-Tilemap_140
+  - first:
+      213: 5326538510088872174
+    second: Main-House-Tilemap_141
+  - first:
+      213: -4124595261555228291
+    second: Main-House-Tilemap_142
+  - first:
+      213: 4910144431932357591
+    second: Main-House-Tilemap_143
+  - first:
+      213: -6044481420875159196
+    second: Main-House-Tilemap_144
+  - first:
+      213: -1159945113997507500
+    second: Main-House-Tilemap_145
+  - first:
+      213: -2161855767908493320
+    second: Main-House-Tilemap_146
+  - first:
+      213: -7637365142822163847
+    second: Main-House-Tilemap_147
+  - first:
+      213: -2444710674237073857
+    second: Main-House-Tilemap_148
+  - first:
+      213: 4139865806303842507
+    second: Main-House-Tilemap_149
+  - first:
+      213: -8034404188825512411
+    second: Main-House-Tilemap_150
+  - first:
+      213: 1604505860678142915
+    second: Main-House-Tilemap_151
+  - first:
+      213: 5037771014840792220
+    second: Main-House-Tilemap_152
+  - first:
+      213: 1975922235994961325
+    second: Main-House-Tilemap_153
+  - first:
+      213: 1726340231065092528
+    second: Main-House-Tilemap_154
+  - first:
+      213: -7870994592358989656
+    second: Main-House-Tilemap_155
+  - first:
+      213: 2336808219819525708
+    second: Main-House-Tilemap_0
+  - first:
+      213: -6058195473990399987
+    second: Main-House-Tilemap_1
+  - first:
+      213: 1973360364959684681
+    second: Main-House-Tilemap_2
+  - first:
+      213: 3287050951326050967
+    second: Main-House-Tilemap_3
+  - first:
+      213: -7160501585546494198
+    second: Main-House-Tilemap_4
+  - first:
+      213: 2058417959061762881
+    second: Main-House-Tilemap_5
+  - first:
+      213: 5412149886725177484
+    second: Main-House-Tilemap_6
+  - first:
+      213: -7663861044159098447
+    second: Main-House-Tilemap_7
+  - first:
+      213: 4084539542573352398
+    second: Main-House-Tilemap_8
+  - first:
+      213: 8570729503712644831
+    second: Main-House-Tilemap_9
+  - first:
+      213: -3497960914823107550
+    second: Main-House-Tilemap_10
+  - first:
+      213: 1550742570331418233
+    second: Main-House-Tilemap_11
+  - first:
+      213: 4139260007932218407
+    second: Main-House-Tilemap_12
+  - first:
+      213: -2023063778877944763
+    second: Main-House-Tilemap_13
+  - first:
+      213: 4353442503352381819
+    second: Main-House-Tilemap_14
+  - first:
+      213: -6818530168166676710
+    second: Main-House-Tilemap_15
+  - first:
+      213: -5316705621797070940
+    second: Main-House-Tilemap_16
+  - first:
+      213: 7589348434088705552
+    second: Main-House-Tilemap_17
+  - first:
+      213: 9084475189237898336
+    second: Main-House-Tilemap_18
+  - first:
+      213: -8748861756007679144
+    second: Main-House-Tilemap_19
+  - first:
+      213: -3475103939850813036
+    second: Main-House-Tilemap_20
+  - first:
+      213: 455978945391266454
+    second: Main-House-Tilemap_21
+  - first:
+      213: 3908366945178963931
+    second: Main-House-Tilemap_22
+  - first:
+      213: 8147332327080503316
+    second: Main-House-Tilemap_23
+  - first:
+      213: 8838544268224611840
+    second: Main-House-Tilemap_24
+  - first:
+      213: 248024754055081802
+    second: Main-House-Tilemap_25
+  - first:
+      213: 2838770541926704398
+    second: Main-House-Tilemap_26
+  - first:
+      213: 6951067864927321587
+    second: Main-House-Tilemap_27
+  - first:
+      213: -3019108166087155785
+    second: Main-House-Tilemap_28
+  - first:
+      213: 7736034682207380013
+    second: Main-House-Tilemap_29
+  - first:
+      213: -2965121575664947934
+    second: Main-House-Tilemap_30
+  - first:
+      213: 4364620029728599390
+    second: Main-House-Tilemap_31
+  - first:
+      213: 6069601438858904358
+    second: Main-House-Tilemap_32
+  - first:
+      213: 7130801872104760220
+    second: Main-House-Tilemap_33
+  - first:
+      213: 579279621455548368
+    second: Main-House-Tilemap_34
+  - first:
+      213: 3007061877191892603
+    second: Main-House-Tilemap_35
+  - first:
+      213: -2996103898394370016
+    second: Main-House-Tilemap_36
+  - first:
+      213: -4909821409781305131
+    second: Main-House-Tilemap_37
+  - first:
+      213: 8875463512115874244
+    second: Main-House-Tilemap_38
+  - first:
+      213: 2552797520210829054
+    second: Main-House-Tilemap_39
+  - first:
+      213: -9068884963386200495
+    second: Main-House-Tilemap_40
+  - first:
+      213: -6038947677537513614
+    second: Main-House-Tilemap_41
+  - first:
+      213: 7228254430071939693
+    second: Main-House-Tilemap_42
+  - first:
+      213: 6478874366461128405
+    second: Main-House-Tilemap_43
+  - first:
+      213: -2528824575227398426
+    second: Main-House-Tilemap_44
+  - first:
+      213: -2202449098144028331
+    second: Main-House-Tilemap_45
+  - first:
+      213: 7267986641429006120
+    second: Main-House-Tilemap_46
+  - first:
+      213: -703621226238163883
+    second: Main-House-Tilemap_47
+  - first:
+      213: 5882066548129250059
+    second: Main-House-Tilemap_48
+  - first:
+      213: 2409809536473744306
+    second: Main-House-Tilemap_49
+  - first:
+      213: 8526206072471694319
+    second: Main-House-Tilemap_50
+  - first:
+      213: 8897714329809466880
+    second: Main-House-Tilemap_51
+  - first:
+      213: -5332724719535101781
+    second: Main-House-Tilemap_52
+  - first:
+      213: -5983715480093548328
+    second: Main-House-Tilemap_53
+  - first:
+      213: 2496990081412149981
+    second: Main-House-Tilemap_54
+  - first:
+      213: 5821576225995798489
+    second: Main-House-Tilemap_55
+  - first:
+      213: -1915096601385551585
+    second: Main-House-Tilemap_56
+  - first:
+      213: -4693616168680610656
+    second: Main-House-Tilemap_57
+  - first:
+      213: -366359901669592744
+    second: Main-House-Tilemap_58
+  - first:
+      213: 5766008110136727024
+    second: Main-House-Tilemap_59
+  - first:
+      213: -1570668331483009492
+    second: Main-House-Tilemap_60
+  - first:
+      213: -800539922698165798
+    second: Main-House-Tilemap_61
+  - first:
+      213: -3246995977982137809
+    second: Main-House-Tilemap_62
+  - first:
+      213: -34431375673563777
+    second: Main-House-Tilemap_63
+  - first:
+      213: -9157917109302528136
+    second: Main-House-Tilemap_64
+  - first:
+      213: -259223403114053937
+    second: Main-House-Tilemap_65
+  - first:
+      213: 5380733729550637171
+    second: Main-House-Tilemap_66
+  - first:
+      213: -5413974262305740188
+    second: Main-House-Tilemap_67
+  - first:
+      213: 9017270107292124222
+    second: Main-House-Tilemap_68
+  - first:
+      213: -4476475815737425476
+    second: Main-House-Tilemap_69
+  - first:
+      213: -3498736863483071272
+    second: Main-House-Tilemap_70
+  - first:
+      213: 5655914318940846237
+    second: Main-House-Tilemap_71
+  - first:
+      213: 2801172051051742215
+    second: Main-House-Tilemap_72
+  - first:
+      213: 4598034797992371869
+    second: Main-House-Tilemap_73
+  - first:
+      213: -428147967959937858
+    second: Main-House-Tilemap_74
+  - first:
+      213: -7150949237354419824
+    second: Main-House-Tilemap_75
+  - first:
+      213: -5614478604458620049
+    second: Main-House-Tilemap_76
+  - first:
+      213: 2022629834527831373
+    second: Main-House-Tilemap_77
+  - first:
+      213: 3306625679206354496
+    second: Main-House-Tilemap_78
+  - first:
+      213: -8504024965666571711
+    second: Main-House-Tilemap_79
+  - first:
+      213: 5057318915348760785
+    second: Main-House-Tilemap_80
+  - first:
+      213: 4310890489763898589
+    second: Main-House-Tilemap_81
+  - first:
+      213: 2637571489944431760
+    second: Main-House-Tilemap_82
+  - first:
+      213: -7570780193193168100
+    second: Main-House-Tilemap_83
+  - first:
+      213: 6723053532319733791
+    second: Main-House-Tilemap_84
+  - first:
+      213: 4749527715649647409
+    second: Main-House-Tilemap_85
+  - first:
+      213: 2489083349858703135
+    second: Main-House-Tilemap_86
+  - first:
+      213: 4559205582461275429
+    second: Main-House-Tilemap_87
+  - first:
+      213: -5588597147011411278
+    second: Main-House-Tilemap_88
+  - first:
+      213: 636458612634520916
+    second: Main-House-Tilemap_89
+  - first:
+      213: -6744358045295134384
+    second: Main-House-Tilemap_90
+  - first:
+      213: -898105503938618559
+    second: Main-House-Tilemap_91
+  - first:
+      213: 8686732150385662516
+    second: Main-House-Tilemap_92
+  - first:
+      213: -1850158802534473016
+    second: Main-House-Tilemap_93
+  - first:
+      213: -1429564366024205119
+    second: Main-House-Tilemap_94
+  - first:
+      213: -6663494593797844907
+    second: Main-House-Tilemap_95
+  - first:
+      213: 7837220794591426226
+    second: Main-House-Tilemap_96
+  - first:
+      213: 5995066702005455194
+    second: Main-House-Tilemap_97
+  - first:
+      213: -5245958454669836902
+    second: Main-House-Tilemap_98
+  - first:
+      213: -8659667069251172027
+    second: Main-House-Tilemap_99
+  - first:
+      213: -2082848626677919872
+    second: Main-House-Tilemap_100
+  - first:
+      213: 2936007720974326299
+    second: Main-House-Tilemap_101
+  - first:
+      213: 119666831890724696
+    second: Main-House-Tilemap_102
+  - first:
+      213: -504375711812136997
+    second: Main-House-Tilemap_103
+  - first:
+      213: 5733286838880565304
+    second: Main-House-Tilemap_104
+  - first:
+      213: -4187359245050421837
+    second: Main-House-Tilemap_105
+  - first:
+      213: -4201844465914814967
+    second: Main-House-Tilemap_106
+  - first:
+      213: 4998123775840464294
+    second: Main-House-Tilemap_107
+  - first:
+      213: -2931977041584504107
+    second: Main-House-Tilemap_108
+  - first:
+      213: -8751189730456540474
+    second: Main-House-Tilemap_109
+  - first:
+      213: 336226510852094128
+    second: Main-House-Tilemap_110
+  - first:
+      213: -365428255741377417
+    second: Main-House-Tilemap_111
+  - first:
+      213: 8715836400855716355
+    second: Main-House-Tilemap_112
+  - first:
+      213: 1837726468351017529
+    second: Main-House-Tilemap_113
+  - first:
+      213: 5744741558196614805
+    second: Main-House-Tilemap_114
+  - first:
+      213: -46069386163622301
+    second: Main-House-Tilemap_115
+  - first:
+      213: -5861852181010833259
+    second: Main-House-Tilemap_116
+  - first:
+      213: 8688140003446236770
+    second: Main-House-Tilemap_117
+  - first:
+      213: 5813731470963262926
+    second: Main-House-Tilemap_118
+  - first:
+      213: 1737185551169176411
+    second: Main-House-Tilemap_119
+  - first:
+      213: -3649437576434346284
+    second: Main-House-Tilemap_120
+  - first:
+      213: 3546838437094610421
+    second: Main-House-Tilemap_121
+  - first:
+      213: -1026840109581210655
+    second: Main-House-Tilemap_122
+  - first:
+      213: 3936540440191163947
+    second: Main-House-Tilemap_123
+  - first:
+      213: 4013386424282398624
+    second: Main-House-Tilemap_124
+  - first:
+      213: 6422719690912150350
+    second: Main-House-Tilemap_125
+  - first:
+      213: 7513316536051706627
+    second: Main-House-Tilemap_126
+  - first:
+      213: -4756272866513135763
+    second: Main-House-Tilemap_127
+  - first:
+      213: -6734219504110724766
+    second: Main-House-Tilemap_128
+  - first:
+      213: 1643252600864991303
+    second: Main-House-Tilemap_129
+  - first:
+      213: -5924526092738776463
+    second: Main-House-Tilemap_130
+  - first:
+      213: -1689818092027365062
+    second: Main-House-Tilemap_131
+  - first:
+      213: 8448318286450599885
+    second: Main-House-Tilemap_132
+  - first:
+      213: 5322164311525136383
+    second: Main-House-Tilemap_133
+  - first:
+      213: 4050394055676272221
+    second: Main-House-Tilemap_134
+  - first:
+      213: 805128564219580715
+    second: Main-House-Tilemap_135
+  - first:
+      213: 2814017764710385488
+    second: Main-House-Tilemap_136
+  - first:
+      213: 6330950015048078305
+    second: Main-House-Tilemap_137
+  - first:
+      213: -2719856718886151309
+    second: Main-House-Tilemap_138
+  - first:
+      213: 3649165932645965019
+    second: Main-House-Tilemap_139
+  - first:
+      213: -6301604190584377249
+    second: Main-House-Tilemap_140
+  - first:
+      213: 3483547349915707847
+    second: Main-House-Tilemap_141
+  - first:
+      213: 6196266536871919463
+    second: Main-House-Tilemap_142
+  - first:
+      213: -8069108717001075353
+    second: Main-House-Tilemap_143
+  - first:
+      213: 8493057602925347834
+    second: Main-House-Tilemap_144
+  - first:
+      213: 5608731203539116169
+    second: Main-House-Tilemap_145
+  - first:
+      213: 1426127228329132318
+    second: Main-House-Tilemap_146
+  - first:
+      213: -2783324141510419493
+    second: Main-House-Tilemap_147
+  - first:
+      213: 5702751230799273084
+    second: Main-House-Tilemap_148
+  - first:
+      213: 3018457602241264474
+    second: Main-House-Tilemap_149
+  - first:
+      213: 1405287621604254319
+    second: Main-House-Tilemap_150
+  - first:
+      213: -2713576501884542523
+    second: Main-House-Tilemap_151
+  - first:
+      213: 6800216214187674744
+    second: Main-House-Tilemap_152
+  - first:
+      213: 1323767321626465688
+    second: Main-House-Tilemap_153
+  - first:
+      213: -4027774319046163556
+    second: Main-House-Tilemap_154
+  - first:
+      213: 6194868918587191327
+    second: Main-House-Tilemap_155
+  - first:
+      213: 8349873392616568974
+    second: Main-House-Tilemap_156
+  - first:
+      213: -5379526825479132067
+    second: Main-House-Tilemap_157
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main-House-Tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c464e8ae1b20e6020800000000000000
+      internalID: 2336808219819525708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d084ce86057fceba0800000000000000
+      internalID: -6058195473990399987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948d14febc8c26b10800000000000000
+      internalID: 1973360364959684681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a2668bc63fd9d20800000000000000
+      internalID: 3287050951326050967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f31e3feb9c0ac90800000000000000
+      internalID: -7160501585546494198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14339215a38f09c10800000000000000
+      internalID: 2058417959061762881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80cc6da5a1db1b40800000000000000
+      internalID: 5412149886725177484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b151f63cfe74a590800000000000000
+      internalID: -7663861044159098447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec50f1ab2133fa830800000000000000
+      internalID: 4084539542573352398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde80cee21951f670800000000000000
+      internalID: 8570729503712644831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ca4c9b41fb47fc0800000000000000
+      internalID: -3497960914823107550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e2eaac628558510800000000000000
+      internalID: 1550742570331418233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cc7c5eb0b917930800000000000000
+      internalID: 4139260007932218407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c45063632ace3e0800000000000000
+      internalID: -2023063778877944763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71f76a24e88a6c30800000000000000
+      internalID: 4353442503352381819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17042c20f6bf51a0800000000000000
+      internalID: -6818530168166676710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a79675f7644736b0800000000000000
+      internalID: -5316705621797070940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e3682d038c25960800000000000000
+      internalID: 7589348434088705552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cdf519d0a821e70800000000000000
+      internalID: 9084475189237898336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b792c169cc59680800000000000000
+      internalID: -8748861756007679144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c1abe063f5cfc0800000000000000
+      internalID: -3475103939850813036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a8a195f66f35600800000000000000
+      internalID: 455978945391266454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf454b770f4d3630800000000000000
+      internalID: 3908366945178963931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418a0b6c593211170800000000000000
+      internalID: 8147332327080503316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006c71fee21d8aa70800000000000000
+      internalID: 8838544268224611840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fe4f02339217300800000000000000
+      internalID: 248024754055081802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05626674c6556720800000000000000
+      internalID: 2838770541926704398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd30a21567277060800000000000000
+      internalID: 6951067864927321587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfd4ed6e19f916d0800000000000000
+      internalID: -3019108166087155785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22a2136e8aeb5b60800000000000000
+      internalID: 7736034682207380013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22de4a603a5c9d6d0800000000000000
+      internalID: -2965121575664947934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d2783dace329c30800000000000000
+      internalID: 4364620029728599390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623826bb95e8b3450800000000000000
+      internalID: 6069601438858904358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93ae76a582b5f260800000000000000
+      internalID: 7130801872104760220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df0b7e1fb30a0800800000000000000
+      internalID: 579279621455548368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e54af58da3bb920800000000000000
+      internalID: 3007061877191892603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0206a02e063bb66d0800000000000000
+      internalID: -2996103898394370016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0b06fe07fccdbb0800000000000000
+      internalID: -4909821409781305131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c98b904a0bfb2b70800000000000000
+      internalID: 8875463512115874244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe1aafb1db5d6320800000000000000
+      internalID: 2552797520210829054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15eeb70cc29d42280800000000000000
+      internalID: -9068884963386200495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc43f3519513ca0800000000000000
+      internalID: -6038947677537513614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62e4927b1bef4460800000000000000
+      internalID: 7228254430071939693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5deac45e8e599e950800000000000000
+      internalID: 6478874366461128405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6fa46727fc7ecd0800000000000000
+      internalID: -2528824575227398426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559ee3dd6345f61e0800000000000000
+      internalID: -2202449098144028331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82709aac7531dd460800000000000000
+      internalID: 7267986641429006120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main-House-Tilemap_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55446a1093c3c36f0800000000000000
+      internalID: -703621226238163883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
