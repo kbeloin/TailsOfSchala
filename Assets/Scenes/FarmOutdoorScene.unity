@@ -2419,7 +2419,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4601841, y: 4.2417984}
+  m_Offset: {x: 2.0728512, y: 4.65625}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2430,7 +2430,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.887722, y: 8.483597}
+  m_Size: {x: 2.1130562, y: 9.3125}
   m_EdgeRadius: 0
 --- !u!61 &110272744
 BoxCollider2D:
@@ -2445,7 +2445,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9070835, y: 2.9495544}
+  m_Offset: {x: 2.9070835, y: 2.9675732}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2456,7 +2456,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.126667, y: 5.899109}
+  m_Size: {x: 13.126667, y: 5.9351463}
   m_EdgeRadius: 0
 --- !u!82 &110272745
 AudioSource:
@@ -4301,7 +4301,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1199363769
   m_SortingLayer: 6
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2613294355837987284, guid: e325aaace3711fb48865db02c194ca4b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4322,7 +4322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194748701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.91, y: 3.48, z: 0}
+  m_LocalPosition: {x: 1.62, y: 5.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474916136}
@@ -12179,6 +12179,7 @@ GameObject:
   - component: {fileID: 569099538}
   - component: {fileID: 569099540}
   - component: {fileID: 569099539}
+  - component: {fileID: 569099541}
   m_Layer: 0
   m_Name: Dark Green Tree
   m_TagString: Plantlife
@@ -12276,6 +12277,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!82 &569099541
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569099537}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a9278d7e5ffce1e43a75b0ebc47f7204, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.18
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 18.35165
+  MaxDistance: 34.938267
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &569426582
 GameObject:
   m_ObjectHideFlags: 0
@@ -13067,7 +13164,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 780cd9894b9241c4c9ed86a5b0b37f65, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.172
+  m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13075,10 +13172,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 197
   DopplerLevel: 1
-  MinDistance: 8.195229
-  MaxDistance: 10
+  MinDistance: 6.4904957
+  MaxDistance: 14.364645
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -13086,23 +13183,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.15684006
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.824279
+      outSlope: -1.824279
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -14946,7 +15043,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 780cd9894b9241c4c9ed86a5b0b37f65, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.172
+  m_Volume: 0.16
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14957,7 +15054,7 @@ AudioSource:
   MinDistance: 10.987503
   MaxDistance: 15.55622
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -14965,23 +15062,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: 0.091303825
+      value: 0.99261856
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -3.404943
+      outSlope: -3.404943
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -31664,7 +31761,7 @@ SpriteRenderer:
   m_SortingLayerID: -1199363769
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2125fd961d2bc8f4980675b125b0a961, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7b2b53740be3a84a85ba7e755fe9a58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -31705,8 +31802,8 @@ BoxCollider2D:
   m_Offset: {x: 5.027252, y: 0.0571748}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31731,8 +31828,8 @@ BoxCollider2D:
   m_Offset: {x: 3.3640242, y: 2.4468822}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31773,8 +31870,8 @@ BoxCollider2D:
   m_Offset: {x: -0.013518333, y: 1.5609217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31799,8 +31896,8 @@ BoxCollider2D:
   m_Offset: {x: -1.8572435, y: 0.44227505}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31825,8 +31922,8 @@ BoxCollider2D:
   m_Offset: {x: 1.7500844, y: 0.28287083}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31848,18 +31945,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9981012, y: 2.3024626}
+  m_Offset: {x: 2.9981012, y: 2.4287348}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.40179414, y: 0.09285486}
-    oldSize: {x: 10, y: 8}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
     newSize: {x: 10, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0701923, y: 3.2882595}
+  m_Size: {x: 1.0701923, y: 3.035715}
   m_EdgeRadius: 0
 --- !u!1 &1516587213
 GameObject:
