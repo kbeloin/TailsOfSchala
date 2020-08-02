@@ -1171,7 +1171,12 @@ PrefabInstance:
     - target: {fileID: 5988499790979632189, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: walkSpeed
-      value: 6.5
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988499790979632189, guid: 9644dee8f51f28f499d656af7d8f6525,
+        type: 3}
+      propertyPath: sprintSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632190, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
@@ -10854,6 +10859,8 @@ GameObject:
   - component: {fileID: 522116917}
   - component: {fileID: 522116916}
   - component: {fileID: 522116915}
+  - component: {fileID: 522116919}
+  - component: {fileID: 522116918}
   m_Layer: 0
   m_Name: Mailbox
   m_TagString: Untagged
@@ -10951,6 +10958,48 @@ Transform:
   m_Father: {fileID: 894458965}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &522116918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522116914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 561562633}
+  dialogueText: {fileID: 1827841092}
+  dialogue: Nothing here. Is it Sunday, or are you just unpopular?
+  playerInRange: 0
+--- !u!61 &522116919
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522116914}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 3}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3}
+  m_EdgeRadius: 0
 --- !u!1 &524097792
 GameObject:
   m_ObjectHideFlags: 0
@@ -16311,7 +16360,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -16336,7 +16385,7 @@ Transform:
   m_GameObject: {fileID: 770138968}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: -8.86, y: 16.274998, z: -2.2449944}
+  m_LocalPosition: {x: -8.860001, y: 16.275, z: -2.2449944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16354,12 +16403,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 12, y: 10}
+  viewPortSize: {x: 1, y: 1}
   viewPortFactor: 0.5
   followDuration: 0.1
   maximumFollowSpeed: 7
-  maxPosition: {x: 25, y: 26.8}
-  minPosition: {x: -15.62, y: -36.8}
+  maxPosition: {x: 34.51, y: 29.35}
+  minPosition: {x: -24.41, y: -41.67}
   player: {fileID: 823368101}
 --- !u!114 &770138973
 MonoBehaviour:
@@ -18770,7 +18819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5702e715e5acb68499537db75b193101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   stoppingDistance: 1.5
 --- !u!212 &905458585
 SpriteRenderer:
@@ -31708,13 +31757,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1516289590}
   - component: {fileID: 1516289589}
-  - component: {fileID: 1516289593}
   - component: {fileID: 1516289594}
   - component: {fileID: 1516289592}
   - component: {fileID: 1516289591}
   - component: {fileID: 1516289596}
   - component: {fileID: 1516289595}
   - component: {fileID: 1516289597}
+  - component: {fileID: 1516289598}
+  - component: {fileID: 1516289593}
   m_Layer: 0
   m_Name: Barn House
   m_TagString: Untagged
@@ -31845,15 +31895,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516289588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 485843319}
-  dialogueText: {fileID: 0}
+  dialogueBox: {fileID: 561562633}
+  dialogueText: {fileID: 1827841092}
   dialogue: This old barn house is subtly weathered, and very welcoming...
-  playerInRange: 1
+  playerInRange: 0
 --- !u!61 &1516289594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31957,6 +32007,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.0701923, y: 3.035715}
+  m_EdgeRadius: 0
+--- !u!61 &1516289598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516289588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.98295355, y: 0.9424799}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.40170464, y: 0.054680627}
+    oldSize: {x: 10, y: 12.3125}
+    newSize: {x: 10, y: 7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3.861639}
   m_EdgeRadius: 0
 --- !u!1 &1516587213
 GameObject:

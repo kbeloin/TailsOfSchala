@@ -3457,8 +3457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  walkSpeed: 6.5
-  sprintSpeed: 20
+  walkSpeed: 4.5
+  sprintSpeed: 15
   maxStamina: 100
   stamina: 100
 --- !u!61 &599009741
@@ -9435,7 +9435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5702e715e5acb68499537db75b193101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   stoppingDistance: 1.5
 --- !u!212 &1940045910
 SpriteRenderer:

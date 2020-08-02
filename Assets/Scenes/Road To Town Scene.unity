@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -415,7 +415,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1199363769
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24fe165e495b5d848baf761f08a95dd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -474,12 +474,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 12, y: 10}
+  viewPortSize: {x: 1, y: 1}
   viewPortFactor: 0.5
   followDuration: 0.1
   maximumFollowSpeed: 12
-  maxPosition: {x: 29.5, y: 5.3}
-  minPosition: {x: 8.5, y: 5.25}
+  maxPosition: {x: 25.23, y: 5.3}
+  minPosition: {x: 12.85, y: 5.25}
   player: {fileID: 1711323782}
 --- !u!114 &348694521
 MonoBehaviour:
@@ -572,7 +572,7 @@ Transform:
   m_GameObject: {fileID: 348694519}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: 8.5, y: 5.25, z: -1}
+  m_LocalPosition: {x: -2.040001, y: -2.0150003, z: -2.2449944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2794,7 +2794,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1199363769
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 7506540673596572066, guid: f815985d466abc045911014c69d3e447,
     type: 3}
@@ -3013,7 +3013,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.368
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3264,7 +3264,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1199363769
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 85ff08b3049c0d749b3e31ea86d2d556, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3717,7 +3717,12 @@ PrefabInstance:
     - target: {fileID: 5988499790979632189, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: walkSpeed
-      value: 6.5
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988499790979632189, guid: 9644dee8f51f28f499d656af7d8f6525,
+        type: 3}
+      propertyPath: sprintSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632190, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
