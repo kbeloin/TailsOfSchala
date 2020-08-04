@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Versioning;
 using UnityEngine;
 
 public class EnvironmentalItem : MonoBehaviour {
@@ -31,6 +32,7 @@ public class EnvironmentalItem : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
+            //spriteRenderer.material = highlightMaterial;
         }
 
     }
@@ -40,6 +42,7 @@ public class EnvironmentalItem : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
+            //spriteRenderer.material = matDefault;
         }
     }
 
