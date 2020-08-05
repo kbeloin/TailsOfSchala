@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 	public float moveSpeed;
     public float walkSpeed = 6.5f;
     public float sprintSpeed = 20f;
+    private SpriteRenderer sr;
     private Rigidbody2D rb;
     private Vector3 velocity;
 
@@ -18,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private Animator attackAnimator;
 
+    // Silhouette Variable
+    private GameObject playerSilhouette;
+    private SpriteRenderer silRenderer;
 
     // Dash Mechanic Variables
     private bool running = false;
@@ -27,16 +31,22 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
         weapon = GameObject.Find("Weapon");
         attackAnimator = weapon.GetComponent<Animator>();
+        playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
+        silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        // Keeps silhouette and sprite on same animation frame.
+        silRenderer.sprite = sr.sprite;
+
         if (running)
             moveSpeed = sprintSpeed;
         else
