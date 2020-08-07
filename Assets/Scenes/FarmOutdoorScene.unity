@@ -16403,11 +16403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1f405d37a974468ee2367b97c956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewPortSize: {x: 1, y: 1}
+  viewPortSize: {x: 3, y: 3}
   viewPortFactor: 0.5
-  followDuration: 0.1
-  maximumFollowSpeed: 7
-  maxPosition: {x: 34.51, y: 29.35}
+  followDuration: 0.5
+  maximumFollowSpeed: 64
+  maxPosition: {x: 34.51, y: 28}
   minPosition: {x: -24.41, y: -41.67}
   player: {fileID: 823368101}
 --- !u!114 &770138973
