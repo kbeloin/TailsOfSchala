@@ -3900,7 +3900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: FarmOutdoorScene
+  toScene: 5 - FarmOutdoorScene
 --- !u!212 &720688639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6781,7 +6781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441547065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.05, y: -8.2, z: 0}
+  m_LocalPosition: {x: -1.88, y: -8.37, z: 0}
   m_LocalScale: {x: 1.48727, y: 0.6875, z: 1}
   m_Children: []
   m_Father: {fileID: 53653335}
@@ -6825,7 +6825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: BedroomScene
+  toScene: 3 - BedroomScene
 --- !u!212 &1441547069
 SpriteRenderer:
   m_ObjectHideFlags: 0

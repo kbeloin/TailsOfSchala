@@ -8,8 +8,8 @@ public class BedroomSceneController : SceneController {
     public override void Start () {
         base.Start();
 
-        if (prevScene == "HomeScene") {
-            player.position = new Vector2(0f, -5f);
+        if (prevScene == "4 - HomeScene") {
+            player.position = new Vector2(-2.5f, -2.5f);
             Camera.main.transform.position = new Vector3(-3f, -3f, -10f);
         }
     }

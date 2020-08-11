@@ -5702,9 +5702,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 838483491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e47d8ef11cf0b044b25907a4d962150, type: 3}
+  m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toScene: 5 - FarmOutdoorScene
 --- !u!61 &838483493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5928,6 +5929,63 @@ Transform:
   m_Father: {fileID: 1720813796}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1107411946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107411948}
+  - component: {fileID: 1107411947}
+  - component: {fileID: 1107411949}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1107411947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107411946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb5d74c6f07a479ba9785caf49ff579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1107411948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107411946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6639113, y: -9.566363, z: -2.5358546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107411949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107411946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800c76d64df96426e9107e871eee37bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1711323782}
 --- !u!1 &1113056045
 GameObject:
   m_ObjectHideFlags: 0
@@ -6056,7 +6114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114372712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 96.2, y: -2.55, z: -41.37825}
+  m_LocalPosition: {x: 91.47, y: -5, z: -41.37825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6071,9 +6129,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1114372712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a40d34b0472f514ab02add37b02000d, type: 3}
+  m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toScene: 7 - Town Scene
 --- !u!61 &1114372715
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,11 +8,9 @@ public class HomeSceneController : SceneController {
     public override void Start () {
         base.Start();
 
-				Debug.Log(prevScene);
-
-        if (prevScene == "FarmOutdoorScene") {
-            player.position = new Vector2(0f, 3f);
-            Camera.main.transform.position = new Vector3(0f, 3f, -10f);
+        if (prevScene == "5 - FarmOutdoorScene") {
+            player.position = new Vector2(-5.3f, -15.7f);
+            Camera.main.transform.position = new Vector3(-4.6f, -11.68f, -10f);
         }
     }
 
