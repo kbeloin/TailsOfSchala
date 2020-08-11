@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -8098056586728768905
     second: green curtains_0
+  - first:
+      213: -1160941461754280599
+    second: green curtains_0
+  - first:
+      213: -8018868150013454805
+    second: green curtains_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,8 +137,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 46
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77af401907ced9f80800000000000000
-      internalID: -8098056586728768905
+      spriteID: 9650d1734e183efe0800000000000000
+      internalID: -1160941461754280599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green curtains_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2611c147e147b090800000000000000
+      internalID: -8018868150013454805
       vertices: []
       indices: 
       edges: []
