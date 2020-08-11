@@ -37,7 +37,7 @@ public class CameraController : MonoBehaviour
     {
         // viewPortSize = (cam.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)) - cam.ScreenToWorldPoint(Vector2.zero)) * viewPortFactor;
 
-
+        targetPosition.z = 0;
 
         distance = player.position - transform.position;
         if (Mathf.Abs(distance.x) > viewPortSize.x / 2)
@@ -58,6 +58,7 @@ public class CameraController : MonoBehaviour
             targetPosition.y = Mathf.Clamp(targetPosition.y,
                                             minPosition.y,
                                             maxPosition.y);
+
 
             transform.position = Vector3.Lerp(transform.position, targetPosition, 0);
 
