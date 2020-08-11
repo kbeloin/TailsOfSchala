@@ -10,7 +10,7 @@ public class RoadToTownSceneController : SceneController {
 
         if (prevScene == "5 - FarmOutdoorScene") {
             player.position = new Vector2(-2f, -2.89f);
-            Camera.main.transform.position = new Vector3(-2f, -2.89f, -10f);
+            //Camera.main.transform.position = new Vector3(-2f, -2.89f, -10f);
         }
 
 				if (prevScene == "7 - Town Scene") {

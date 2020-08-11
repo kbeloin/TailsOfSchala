@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	public float moveSpeed;
+		public float moveSpeed;
     public float walkSpeed = 6.5f;
     public float sprintSpeed = 20f;
     private SpriteRenderer sr;
@@ -109,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
                 running = true;
             }
         }
-        
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             running = false;
