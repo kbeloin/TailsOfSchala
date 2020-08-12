@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp-Editor-firstpass:Ink.UnityIntegration:InkLibrary
   inkLibrary:
   - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 75d8177fe330c494d8ca8f857a14e300, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 73b618bacce583b4999fd9b7b410612c, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 4a30cb40650326249835bb3534a8ac04, type: 3}
