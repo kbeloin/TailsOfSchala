@@ -28,6 +28,7 @@ public class EnvironmentalItem : MonoBehaviour {
 				if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
         {
           Debug.Log("Attacked this thing!");
+					PlayerInteract();
         }
 
     }
