@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Versioning;
 using UnityEngine;
 
 public class EnvironmentalItem : MonoBehaviour {
@@ -24,6 +25,11 @@ public class EnvironmentalItem : MonoBehaviour {
             PlayerInteract(); // Player interacts with item.  Activates animator to change states.
         }
 
+				if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
+        {
+          Debug.Log("Attacked this thing!");
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +37,7 @@ public class EnvironmentalItem : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
+            //spriteRenderer.material = highlightMaterial;
         }
 
     }
@@ -40,6 +47,7 @@ public class EnvironmentalItem : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
+            //spriteRenderer.material = matDefault;
         }
     }
 
