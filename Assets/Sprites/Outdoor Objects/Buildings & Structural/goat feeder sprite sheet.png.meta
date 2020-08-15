@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d69859cc6da18304e8c768542faa421b
+guid: e5e3d22b866825f4c87a297ab5792839
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -98,10 +98,10 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 0
-        width: 52
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 57
+        height: 30
+      alignment: 9
+      pivot: {x: 0.46, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -117,12 +117,12 @@ TextureImporter:
       name: goat feeder sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 94
         y: 0
-        width: 57
+        width: 52
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.46, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
