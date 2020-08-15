@@ -12,10 +12,12 @@ public class WeatherController : MonoBehaviour
     private Animator animator;
     private Light2D globalLight;
     public GameObject rainSystem;
+    public GameObject cloudSystem;
     private bool lightningIsQueued;
 
     public bool queueLightning = false;
     public bool rainStorm = false;
+    public bool clouds = false;
     public bool sunny = true;
 
     // Start is called before the first frame update
@@ -23,15 +25,22 @@ public class WeatherController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
+        if (clouds == true)
+            cloudSystem.SetActive(true);
+        else
+            cloudSystem.SetActive(false);
+
         if (rainStorm == true)
         {
             rainSystem.SetActive(true);
             animator.SetBool("IsRaining", true);
             StartCoroutine(Lightning());
         }
-       else if (sunny == true)
+        else if (sunny == true)
+        {
             rainSystem.SetActive(false);
             animator.SetBool("IsRaining", false);
+        }
     }
 
     // Update is called once per frame
@@ -52,6 +61,11 @@ public class WeatherController : MonoBehaviour
             rainSystem.SetActive(false);
             animator.SetBool("IsRaining", false);
         }
+
+        if (clouds)
+            cloudSystem.SetActive(true);
+        else
+            cloudSystem.SetActive(false);
     }
 
     IEnumerator Lightning()
