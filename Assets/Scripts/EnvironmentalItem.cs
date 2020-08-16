@@ -25,6 +25,11 @@ public class EnvironmentalItem : MonoBehaviour {
             PlayerInteract(); // Player interacts with item.  Activates animator to change states.
         }
 
+				if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
+        {
+          Debug.Log("Attacked this thing!");
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
