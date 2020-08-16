@@ -73,20 +73,18 @@ Assets
 │   ├── Sounds
 ├── Dialogue
 ├── Fonts
-
-Code
-├── Renderer
-├── Scripts
-│   ├── Managers
-│   ├── NPC
-│   ├── Player
-│   ├── Tools
+├── Code
+│   ├── Renderer
+│   ├── Scripts
+│   │   ├── Managers
+│   │   ├── NPC
+│   │   ├── Player
+│   │   ├── Tools
 ├── Shaders
-
-Level
-├── Prefabs
-├── Scenes
-├── UI
+├── Level
+│   ├── Prefabs
+│   ├── Scenes
+│   ├── UI
 ```
 
 <a name="naming"></a>
