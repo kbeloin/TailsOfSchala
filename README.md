@@ -72,6 +72,10 @@ Scripts should follow the "Single Responsibility" principle: each script should 
 
 ### File structure
 
+Stolen from [Sustainable Unity](https://sustainableunity.dev/unity-refactoring-guidelines/).
+
+The basic file structure looks like this, but can vary depending on the class needs. It also has the added benefit of being able to collapse code in most IDEs, like Visual Studio or Rider.
+
 ```
 public class MainMenuScreen : MonoBehaviour
 {
