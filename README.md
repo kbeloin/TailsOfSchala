@@ -1,10 +1,63 @@
 # TailsOfSchala
 
+## Table of Contents
+
+- [Where to save assets](#assets)
+- [Working with Git and Github](#git)
+- [Folder structure](#folders)
+- [Naming conventions](#naming)
+- [Scripts](#scripts)
+
+<a name="assets"></a>
+
+## Where to save assets
+
+If you're working on art, music or Ink stories, and you're not yet ready to integrate them into the game (or are handing off to another member of the team to do it), save your work in the Google Drive (rather than in the Git project).
+
+- [Art Team folder](https://drive.google.com/drive/folders/1WrSu7dqQVnzuz1bZuA1S6PClVRcJRlA2?usp=sharing)
+- [Story Team folder](https://drive.google.com/drive/folders/1FXHv-6-H8Zu6WH-yGceWcy4L7xlpERJv?usp=sharing)
+- [Music Team folder](https://drive.google.com/drive/folders/1eSO9KB3eQ9p0M5ZgCSc6RNR1wXrj7Zct?usp=sharing)
+
+<a name="git"></a>
+
 ## Working with Git & Github
 
 The current stable-ish version of the game is the `master` branch. Don't work on the master branch directly (except in rare cases like conflict fixing and occassional refactors) – instead, make sure your copy of `master` is up to date, and then create your own branch.
 
-When you're ready, commit your work, push it, and then open a Pull Request on Github. If Github says that your branch is "Able to merge", you can go ahead and do it, or ask someone on the engine team to take a look at it for you.
+### Git branch workflow
+
+1. Before you do anything, make sure to pull (or "sync") the `master` branch.
+2. Create your own new branch off master. Give it a name that reflects what it will contain, like `melanie-wheat-sprites`.
+3. When you're done working, add all your updates and commit - be sure to add a descriptive commit message.
+4. Push your branch. This won't add it to `master` yet, but it does create a checkpoint of your work, and will allow other people to pull your branch and see what you've done.
+
+Once you're ready to merge your work into master, there's a few ways to go about it depending on how comfortable you are with resolving conflicts.
+
+- The simplest way is to create a [Pull Request](https://github.com/SolidGoldStudios/TailsOfSchala) and notify a member of the Game Engine team, and one of us will handle the rest.
+- If you create a pull request, and Github tells you that your branch is "able to merge", you can go ahead and complete the merge yourself.
+- If there are conflicts, you or a member of the game team will need to pull the branch, merge master into it locally (`git merge master`), and then resolve the conflicts. Then you'll commit, push the branch back up, and complete the merge. You can also do merge from master _before_ your first push, to be sure that there will be no conflicts.
+
+### Resolving conflicts
+
+When you merge two branches together, Git will notify you that there are conflicts if you worked on the same file that someone else worked on simultaneously.
+
+If the conflict is in a script file, yay! You can look at that file and make an informed decision about which conflicting chunk of code to keep, or even manually re-write that section to include pieces from both versions of the code chunk.
+
+However, most of our conflicts will be on non-human-readable files, like `.unity` or `.meta` files. This isn't something you can look at in code and understand easily, most of the time. Therefore, you'll need to make an executive decision about whose version of the file to keep - yours, if you know that you made an important change to that particular file, or the master version, if you know that someone else just added something that should be kept.
+
+In the command line, you can use the following commands:
+
+- `git checkout --theirs filename` to keep the master version.
+- `git checkout --ours filename` to keep yours.
+
+Unfortunately, this means that occasionally you will lose your work, or someone else's work will be overwritten by yours. There's no good way around this problem, but you can reduce the chance of it occurring by:
+
+- Working only in small bursts
+- Creating new brances often, for specific, limited updates
+- Merging often
+- **Always** updating your version of `master` before you create a new branch
+
+<a name="folders"></a>
 
 ## Folder structure
 
@@ -36,7 +89,9 @@ Level
 ├── UI
 ```
 
-## Naming Conventions
+<a name="naming"></a>
+
+## Naming conventions
 
 We're generally following the [Ramen Unity Style Guide](https://github.com/stillwwater/UnityStyleGuide).
 
@@ -52,7 +107,7 @@ Unity has some special folders, so [check the list](https://docs.unity3d.com/Man
 
 **Prefer a deep folder structure over having long asset names.** Instead of `Plants/tree_autumn_birch_tall.png`, aim for `Plants/Trees/Autumn/birch_tall.png`.
 
-**Try to have only one file type per folder.** Use Textures/Trees, Models/Trees and not Trees/Textures, Trees/Models. That way its easy to set up root directories for the different software involved, for example, Substance Painter would always be set to save to the Textures directory.
+**Try to have only one file type per folder.** Use Sprites/Trees, Animation/Trees and not Trees/Sprites, Trees/Animation. That way it's easy to set up root directories for the different software involved, for example, Aseprite would always be set to save to the Sprites directory.
 
 **Use the asset type for the parent directory:** Trees/Jungle, Trees/City not Jungle/Trees, City/Trees. Since it makes it easier to compare similar assets from different art sets to ensure continuity across art sets.
 
@@ -60,13 +115,11 @@ Unity has some special folders, so [check the list](https://docs.unity3d.com/Man
 
 **Use snake_case for non-code assets like art.** Name files like `tree_small` rather than `small_tree` so that it's easier to group all `tree` objects together.
 
-**Use descriptive suffixes instead of iterative**: vehicle_truck_damaged not vehicle_truck_01.
+**Use descriptive suffixes instead of iterative**: `vehicle_truck_damaged`, not `vehicle_truck_01`.
 
-**Use `camelCase` only where necessary.** Use weapon_miniGun instead of weapon_gun_mini. Avoid this if possible, for example, vehicles_fighterJet should be vehicles_jet_fighter if you plan to have multiple types of jets.
+**Use `camelCase` only where necessary.** Use `weapon_miniGun` instead of `weapon_gun_mini`. Avoid this if possible, for example, `vehicles_fighterJet` should be `vehicles_jet_fighter` if you plan to have multiple types of jets.
 
-## Art & Animations
-
-_Coming soon_
+<a name="scripts"></a>
 
 ## Scripts
 
