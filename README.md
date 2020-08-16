@@ -4,7 +4,7 @@
 
 - [Where to save assets](#assets)
 - [Working with Git and Github](#git)
-- [Folder structure](#folders)
+- [Folder structure](#structure)
 - [Naming conventions](#naming)
 - [Scripts](#scripts)
 
@@ -57,7 +57,7 @@ Unfortunately, this means that occasionally you will lose your work, or someone 
 - Merging often
 - **Always** updating your version of `master` before you create a new branch
 
-<a name="folders"></a>
+<a name="structure"></a>
 
 ## Folder structure
 
