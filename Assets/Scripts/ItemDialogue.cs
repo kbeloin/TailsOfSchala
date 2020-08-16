@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ItemDialogue : MonoBehaviour
 {
     public GameObject dialogueBox;
+    public GameObject portraitObject;
     public Text dialogueText;
     public string dialogue;
     public bool playerInRange;
@@ -13,7 +14,6 @@ public class ItemDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
     // Did you make the Text variable in your script "public" ? 
     // if so you should see an option to drag the text from the hierarchy into the script.
@@ -29,8 +29,10 @@ public class ItemDialogue : MonoBehaviour
             }
             else
             {
-                dialogueBox.SetActive(true);
+                portraitObject.SetActive(false);
+                dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
                 dialogueText.text = dialogue;
+                dialogueBox.SetActive(true);
             }
         }
     }
