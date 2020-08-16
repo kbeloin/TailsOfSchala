@@ -66,6 +66,8 @@ Unity has some special folders, so [check the list](https://docs.unity3d.com/Man
 
 ## Art & Animations
 
+_Coming soon_
+
 ## Scripts
 
 Scripts should follow the "Single Responsibility" principle: each script should generally do one thing.
