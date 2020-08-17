@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: a66daffea22697045be7861f33033a79
+guid: f815985d466abc045911014c69d3e447
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7546506118257109786
-    second: Medium Tree Vines - 4-Sheet_0
+      213: 7506540673596572066
+    second: Medium Fruit Tree-Sheet_0
   - first:
-      213: 4949133231837936044
-    second: Medium Tree Vines - 4-Sheet_1
+      213: 1577908297006205115
+    second: Medium Fruit Tree-Sheet_1
   - first:
-      213: 6248277763796978262
-    second: Medium Tree Vines - 4-Sheet_2
+      213: -2613286843747241911
+    second: Medium Fruit Tree-Sheet_2
   - first:
-      213: 8281193066437526460
-    second: Medium Tree Vines - 4-Sheet_3
+      213: 1933125080886438234
+    second: Medium Fruit Tree-Sheet_3
   - first:
-      213: -4476508269056972891
-    second: Medium Tree Vines - 4-Sheet_4
+      213: -3556940529736391803
+    second: Medium Fruit Tree-Sheet_4
   - first:
-      213: 8439225927840764825
-    second: Medium Tree Vines - 4-Sheet_5
+      213: -4165148765259885476
+    second: Medium Fruit Tree-Sheet_5
   - first:
-      213: 7579895275465385851
-    second: Medium Tree Vines - 4-Sheet_6
+      213: -4924970450672553623
+    second: Medium Fruit Tree-Sheet_6
   - first:
-      213: -5379903462960326811
-    second: Medium Tree Vines - 4-Sheet_7
+      213: -1053564435773614537
+    second: Medium Fruit Tree-Sheet_7
+  - first:
+      213: 7431992117171163182
+    second: tree_medium_fruit_0
+  - first:
+      213: 1544664816572445221
+    second: tree_medium_fruit_1
+  - first:
+      213: -2152019472391428608
+    second: tree_medium_fruit_2
+  - first:
+      213: 5872735963703072671
+    second: tree_medium_fruit_3
+  - first:
+      213: -9128692546924079788
+    second: tree_medium_fruit_4
+  - first:
+      213: -2060048697210758430
+    second: tree_medium_fruit_5
+  - first:
+      213: 9150139540018674815
+    second: tree_medium_fruit_6
+  - first:
+      213: 3174132341851155659
+    second: tree_medium_fruit_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_0
+      name: tree_medium_fruit_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 76
-        height: 132
+        width: 74
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1be60ad4539ab860800000000000000
-      internalID: 7546506118257109786
+      spriteID: e209d75447db32760800000000000000
+      internalID: 7431992117171163182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_1
+      name: tree_medium_fruit_1
       rect:
         serializedVersion: 2
-        x: 82
+        x: 81
         y: 0
-        width: 76
-        height: 133
+        width: 73
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9f7c5e37adea440800000000000000
-      internalID: 4949133231837936044
+      spriteID: 52238d87770cf6510800000000000000
+      internalID: 1544664816572445221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_2
+      name: tree_medium_fruit_2
       rect:
         serializedVersion: 2
-        x: 162
+        x: 161
         y: 0
-        width: 76
-        height: 133
+        width: 73
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65a4719758756b650800000000000000
-      internalID: 6248277763796978262
+      spriteID: 006a26611bd7222e0800000000000000
+      internalID: -2152019472391428608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_3
+      name: tree_medium_fruit_3
       rect:
         serializedVersion: 2
-        x: 242
+        x: 240
         y: 0
-        width: 76
-        height: 132
+        width: 74
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb3cf61e735bce270800000000000000
-      internalID: 8281193066437526460
+      spriteID: f97de207e36208150800000000000000
+      internalID: 5872735963703072671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_4
+      name: tree_medium_fruit_4
       rect:
         serializedVersion: 2
-        x: 322
+        x: 320
         y: 0
-        width: 76
-        height: 132
+        width: 74
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a7a2c4627f30e1c0800000000000000
-      internalID: -4476508269056972891
+      spriteID: 45595d49e7e505180800000000000000
+      internalID: -9128692546924079788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_5
+      name: tree_medium_fruit_5
       rect:
         serializedVersion: 2
-        x: 402
+        x: 400
         y: 0
-        width: 76
-        height: 132
+        width: 74
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9931738b4472e1570800000000000000
-      internalID: 8439225927840764825
+      spriteID: 2ea1fbedf9c3963e0800000000000000
+      internalID: -2060048697210758430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_6
+      name: tree_medium_fruit_6
       rect:
         serializedVersion: 2
-        x: 482
+        x: 480
         y: 0
-        width: 76
-        height: 132
+        width: 74
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77a6c0d792313960800000000000000
-      internalID: 7579895275465385851
+      spriteID: f7cb110ae63dbfe70800000000000000
+      internalID: 9150139540018674815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Tree Vines - 4-Sheet_7
+      name: tree_medium_fruit_7
       rect:
         serializedVersion: 2
-        x: 562
+        x: 560
         y: 0
-        width: 76
-        height: 132
+        width: 75
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5671b5ced4eb655b0800000000000000
-      internalID: -5379903462960326811
+      spriteID: bcced123c88cc0c20800000000000000
+      internalID: 3174132341851155659
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: f815985d466abc045911014c69d3e447
+guid: 75a1da9d7f17a3f44850911e4b08261c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7506540673596572066
-    second: Medium Fruit Tree-Sheet_0
+      213: 7062504047804643805
+    second: Large Aspen Tree-Sheet_0
   - first:
-      213: 1577908297006205115
-    second: Medium Fruit Tree-Sheet_1
+      213: -6961656500393475466
+    second: Large Aspen Tree-Sheet_1
   - first:
-      213: -2613286843747241911
-    second: Medium Fruit Tree-Sheet_2
+      213: -8785824537513066833
+    second: Large Aspen Tree-Sheet_2
   - first:
-      213: 1933125080886438234
-    second: Medium Fruit Tree-Sheet_3
+      213: 5390441769772005592
+    second: Large Aspen Tree-Sheet_3
   - first:
-      213: -3556940529736391803
-    second: Medium Fruit Tree-Sheet_4
+      213: 3807446479455691337
+    second: Large Aspen Tree-Sheet_4
   - first:
-      213: -4165148765259885476
-    second: Medium Fruit Tree-Sheet_5
+      213: -4591182544772839924
+    second: Large Aspen Tree-Sheet_5
   - first:
-      213: -4924970450672553623
-    second: Medium Fruit Tree-Sheet_6
+      213: -2314832789742387211
+    second: Large Aspen Tree-Sheet_6
   - first:
-      213: -1053564435773614537
-    second: Medium Fruit Tree-Sheet_7
+      213: -4866984521174977280
+    second: Large Aspen Tree-Sheet_7
+  - first:
+      213: 3021591888726441260
+    second: tree_large_aspen_0
+  - first:
+      213: 193337108677126362
+    second: tree_large_aspen_1
+  - first:
+      213: -8307668851329170228
+    second: tree_large_aspen_2
+  - first:
+      213: -6640425414253247678
+    second: tree_large_aspen_3
+  - first:
+      213: 8085846606440549696
+    second: tree_large_aspen_4
+  - first:
+      213: 55986019125224760
+    second: tree_large_aspen_5
+  - first:
+      213: 4848698431593172394
+    second: tree_large_aspen_6
+  - first:
+      213: 4324944691600366275
+    second: tree_large_aspen_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_0
+      name: tree_large_aspen_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a1ceb5a8f69c2860800000000000000
-      internalID: 7506540673596572066
+      spriteID: c2dbdbf40d9dee920800000000000000
+      internalID: 3021591888726441260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_1
+      name: tree_large_aspen_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 166
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb8423b6c3bd5e510800000000000000
-      internalID: 1577908297006205115
+      spriteID: ad8e994731fdea200800000000000000
+      internalID: 193337108677126362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_2
+      name: tree_large_aspen_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 326
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9407e3e167dbbbbd0800000000000000
-      internalID: -2613286843747241911
+      spriteID: cc482f4123b35bc80800000000000000
+      internalID: -8307668851329170228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_3
+      name: tree_large_aspen_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 486
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5962a8d407d3da10800000000000000
-      internalID: 1933125080886438234
+      spriteID: 24385f9a44878d3a0800000000000000
+      internalID: -6640425414253247678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_4
+      name: tree_large_aspen_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 646
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5836fd50f6533aec0800000000000000
-      internalID: -3556940529736391803
+      spriteID: 04dcf2dd5a2b63070800000000000000
+      internalID: 8085846606440549696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_5
+      name: tree_large_aspen_5
       rect:
         serializedVersion: 2
-        x: 400
+        x: 806
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c541702144b6236c0800000000000000
-      internalID: -4165148765259885476
+      spriteID: 835e85edcf6e6c000800000000000000
+      internalID: 55986019125224760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_6
+      name: tree_large_aspen_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 966
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 961fd5ef77df6abb0800000000000000
-      internalID: -4924970450672553623
+      spriteID: aadca16b8890a4340800000000000000
+      internalID: 4848698431593172394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium Fruit Tree-Sheet_7
+      name: tree_large_aspen_7
       rect:
         serializedVersion: 2
-        x: 560
+        x: 1126
         y: 0
-        width: 75
-        height: 75
+        width: 148
+        height: 188
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7369ab94abcf061f0800000000000000
-      internalID: -1053564435773614537
+      spriteID: 3ca1d00584a450c30800000000000000
+      internalID: 4324944691600366275
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: 185f013770ea23441858354a566e912e
+guid: eb8c61414a767514e83c3425ca2762bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5435701164684397841
-    second: Dark Green Tree Animation-Sheet_0
+      213: -793868054866121479
+    second: Willow Tree Animation-Sheet_0
   - first:
-      213: 3760263439869137852
-    second: Dark Green Tree Animation-Sheet_1
+      213: -182930903324050474
+    second: Willow Tree Animation-Sheet_1
   - first:
-      213: -5976220857816658395
-    second: Dark Green Tree Animation-Sheet_2
+      213: 2854960248035354839
+    second: Willow Tree Animation-Sheet_2
   - first:
-      213: 6298918941309857785
-    second: Dark Green Tree Animation-Sheet_3
+      213: 4440262244391548845
+    second: Willow Tree Animation-Sheet_3
   - first:
-      213: -3759071652804014503
-    second: Dark Green Tree Animation-Sheet_4
+      213: -4677738869746475268
+    second: Willow Tree Animation-Sheet_4
   - first:
-      213: 1203975300868344083
-    second: Dark Green Tree Animation-Sheet_5
+      213: 6073838736570195152
+    second: Willow Tree Animation-Sheet_5
   - first:
-      213: 620483434315655455
-    second: Dark Green Tree Animation-Sheet_6
+      213: 3872197456379653798
+    second: Willow Tree Animation-Sheet_6
   - first:
-      213: 898412324254892326
-    second: Dark Green Tree Animation-Sheet_7
+      213: 8150362905131543769
+    second: Willow Tree Animation-Sheet_7
+  - first:
+      213: -7325886554663940029
+    second: tree_large_willow_0
+  - first:
+      213: -309036331391858775
+    second: tree_large_willow_1
+  - first:
+      213: 7418338607099275974
+    second: tree_large_willow_2
+  - first:
+      213: 8048353820824251159
+    second: tree_large_willow_3
+  - first:
+      213: -4771281517317253745
+    second: tree_large_willow_4
+  - first:
+      213: 5696587074645433113
+    second: tree_large_willow_5
+  - first:
+      213: -4812843345106498240
+    second: tree_large_willow_6
+  - first:
+      213: 7574827437313591121
+    second: tree_large_willow_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,8 +91,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -111,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_0
+      name: tree_large_willow_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 10
         y: 0
         width: 117
-        height: 147
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,62 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe23fcd17928094b0800000000000000
-      internalID: -5435701164684397841
+      spriteID: 34012742ef8355a90800000000000000
+      internalID: -7325886554663940029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_1
+      name: tree_large_willow_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 118
-        height: 147
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb3d9430da32f2430800000000000000
-      internalID: 3760263439869137852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 0
-        width: 118
-        height: 147
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52ece8e0bc2301da0800000000000000
-      internalID: -5976220857816658395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 391
+        x: 138
         y: 0
         width: 117
-        height: 148
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ffe0cd67614a6750800000000000000
-      internalID: 6298918941309857785
+      spriteID: 9a7c2bc081516bbf0800000000000000
+      internalID: -309036331391858775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_4
+      name: tree_large_willow_2
       rect:
         serializedVersion: 2
-        x: 519
+        x: 266
         y: 0
         width: 117
-        height: 148
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e40698f3815dbc0800000000000000
-      internalID: -3759071652804014503
+      spriteID: 6cae7bbb8ab33f660800000000000000
+      internalID: 7418338607099275974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_5
+      name: tree_large_willow_3
       rect:
         serializedVersion: 2
-        x: 647
+        x: 394
         y: 0
         width: 117
-        height: 147
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3190a9e382165b010800000000000000
-      internalID: 1203975300868344083
+      spriteID: 71b23e4782f71bf60800000000000000
+      internalID: 8048353820824251159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_6
+      name: tree_large_willow_4
       rect:
         serializedVersion: 2
-        x: 775
+        x: 522
         y: 0
         width: 117
-        height: 147
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f19266365666c9800800000000000000
-      internalID: 620483434315655455
+      spriteID: f851be44db009cdb0800000000000000
+      internalID: -4771281517317253745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Green Tree Animation-Sheet_7
+      name: tree_large_willow_5
       rect:
         serializedVersion: 2
-        x: 903
+        x: 650
         y: 0
         width: 117
-        height: 147
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +254,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621cb09bf3dc77c00800000000000000
-      internalID: 898412324254892326
+      spriteID: 91b925833c75e0f40800000000000000
+      internalID: 5696587074645433113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_large_willow_6
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 0
+        width: 117
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d03572a78553db0800000000000000
+      internalID: -4812843345106498240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_large_willow_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 0
+        width: 117
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15785fbcb613f1960800000000000000
+      internalID: 7574827437313591121
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: eb8c61414a767514e83c3425ca2762bb
+guid: 905d2ad6f6a1ce84a964b2b4c26347f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -793868054866121479
-    second: Willow Tree Animation-Sheet_0
+      213: -2373846558701597887
+    second: tree_large_darkGreen_flipped_0
   - first:
-      213: -182930903324050474
-    second: Willow Tree Animation-Sheet_1
+      213: -3308999359957092713
+    second: tree_large_darkGreen_flipped_1
   - first:
-      213: 2854960248035354839
-    second: Willow Tree Animation-Sheet_2
+      213: 1853733523951576625
+    second: tree_large_darkGreen_flipped_2
   - first:
-      213: 4440262244391548845
-    second: Willow Tree Animation-Sheet_3
+      213: -1430327785834437757
+    second: tree_large_darkGreen_flipped_3
   - first:
-      213: -4677738869746475268
-    second: Willow Tree Animation-Sheet_4
+      213: 5223471284808121334
+    second: tree_large_darkGreen_flipped_4
   - first:
-      213: 6073838736570195152
-    second: Willow Tree Animation-Sheet_5
+      213: -4515580179968775238
+    second: tree_large_darkGreen_flipped_5
   - first:
-      213: 3872197456379653798
-    second: Willow Tree Animation-Sheet_6
-  - first:
-      213: 8150362905131543769
-    second: Willow Tree Animation-Sheet_7
+      213: -6920049642166251437
+    second: tree_large_darkGreen_flipped_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_0
+      name: tree_large_darkGreen_flipped_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 4
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fcac2fc53d9bf4f0800000000000000
-      internalID: -793868054866121479
+      spriteID: 14bce4dc1276e0fd0800000000000000
+      internalID: -2373846558701597887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_1
+      name: tree_large_darkGreen_flipped_1
       rect:
         serializedVersion: 2
-        x: 138
+        x: 132
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dbbde80059167df0800000000000000
-      internalID: -182930903324050474
+      spriteID: 79633cb2d921412d0800000000000000
+      internalID: -3308999359957092713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_2
+      name: tree_large_darkGreen_flipped_2
       rect:
         serializedVersion: 2
-        x: 266
+        x: 260
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d82208283bde9720800000000000000
-      internalID: 2854960248035354839
+      spriteID: 136ed5b81d8c9b910800000000000000
+      internalID: 1853733523951576625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_3
+      name: tree_large_darkGreen_flipped_3
       rect:
         serializedVersion: 2
-        x: 394
+        x: 388
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da7798a5cfafe9d30800000000000000
-      internalID: 4440262244391548845
+      spriteID: 383a7fcf474762ce0800000000000000
+      internalID: -1430327785834437757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_4
+      name: tree_large_darkGreen_flipped_4
       rect:
         serializedVersion: 2
-        x: 522
+        x: 516
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfe59bc1845551fb0800000000000000
-      internalID: -4677738869746475268
+      spriteID: 6fbf079557f7d7840800000000000000
+      internalID: 5223471284808121334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_5
+      name: tree_large_darkGreen_flipped_5
       rect:
         serializedVersion: 2
-        x: 650
+        x: 644
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc164c762c9a4450800000000000000
-      internalID: 6073838736570195152
+      spriteID: abbaa2a30cf6551c0800000000000000
+      internalID: -4515580179968775238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_6
+      name: tree_large_darkGreen_flipped_6
       rect:
         serializedVersion: 2
-        x: 778
+        x: 772
         y: 0
         width: 117
-        height: 142
+        height: 147
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,29 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae2eaf121fccb530800000000000000
-      internalID: 3872197456379653798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Willow Tree Animation-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 0
-        width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dce2e631e7eb1170800000000000000
-      internalID: 8150362905131543769
+      spriteID: 3509c92b38b07ff90800000000000000
+      internalID: -6920049642166251437
       vertices: []
       indices: 
       edges: []

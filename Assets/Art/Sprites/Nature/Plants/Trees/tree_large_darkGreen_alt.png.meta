@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 35b660c02dbfabb428cd5141077f27bb
+guid: c48781ddb4a25a64298a8d3c23fef266
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 438634931657486375
-    second: Tree Animation Aspen_0
+      213: 7346519264181934387
+    second: tree_large_darkGreen_alt_0
   - first:
-      213: -8614791652100210993
-    second: Tree Animation Aspen_1
+      213: 472322860223306815
+    second: tree_large_darkGreen_alt_1
   - first:
-      213: -6322954041732043375
-    second: Tree Animation Aspen_2
+      213: 8108906317594732957
+    second: tree_large_darkGreen_alt_2
   - first:
-      213: -5760642556318857832
-    second: Tree Animation Aspen_3
+      213: 5780988940501946328
+    second: tree_large_darkGreen_alt_3
   - first:
-      213: 2124417683973728979
-    second: Tree Animation Aspen_4
+      213: -41126778754169215
+    second: tree_large_darkGreen_alt_4
   - first:
-      213: 3236737854690279988
-    second: Tree Animation Aspen_5
+      213: -6265796443715230188
+    second: tree_large_darkGreen_alt_5
   - first:
-      213: -6897661419844109283
-    second: Tree Animation Aspen_6
+      213: 6833050086890584241
+    second: tree_large_darkGreen_alt_6
   - first:
-      213: -4889288098261181553
-    second: Tree Animation Aspen_7
+      213: -1119238163505125831
+    second: tree_large_darkGreen_alt_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,169 +111,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree Animation Aspen_0
+      name: tree_large_darkGreen_alt_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 422
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 27
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 720b5877528561600800000000000000
-      internalID: 438634931657486375
+      spriteID: 339d025e85414f560800000000000000
+      internalID: 7346519264181934387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_1
+      name: tree_large_darkGreen_alt_1
       rect:
         serializedVersion: 2
-        x: 238
-        y: 422
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 219
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcef092b2ac127880800000000000000
-      internalID: -8614791652100210993
+      spriteID: f3c18ee83270e8600800000000000000
+      internalID: 472322860223306815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_2
+      name: tree_large_darkGreen_alt_2
       rect:
         serializedVersion: 2
-        x: 446
-        y: 422
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 411
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19de07bacca5048a0800000000000000
-      internalID: -6322954041732043375
+      spriteID: d99a721455f988070800000000000000
+      internalID: 8108906317594732957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_3
+      name: tree_large_darkGreen_alt_3
       rect:
         serializedVersion: 2
-        x: 30
-        y: 217
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 603
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 895cd90cd161e00b0800000000000000
-      internalID: -5760642556318857832
+      spriteID: 8df8419ffc23a3050800000000000000
+      internalID: 5780988940501946328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_4
+      name: tree_large_darkGreen_alt_4
       rect:
         serializedVersion: 2
-        x: 238
-        y: 217
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 795
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3daefcfb0a27b7d10800000000000000
-      internalID: 2124417683973728979
+      spriteID: 1860a91a963ed6ff0800000000000000
+      internalID: -41126778754169215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_5
+      name: tree_large_darkGreen_alt_5
       rect:
         serializedVersion: 2
-        x: 446
-        y: 217
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 987
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 432cfdb0ee33bec20800000000000000
-      internalID: 3236737854690279988
+      spriteID: 416a271055b6b09a0800000000000000
+      internalID: -6265796443715230188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_6
+      name: tree_large_darkGreen_alt_6
       rect:
         serializedVersion: 2
-        x: 30
-        y: 12
-        width: 148
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1179
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1c7649eb759640a0800000000000000
-      internalID: -6897661419844109283
+      spriteID: 1b8b099d9ded3de50800000000000000
+      internalID: 6833050086890584241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree Animation Aspen_7
+      name: tree_large_darkGreen_alt_7
       rect:
         serializedVersion: 2
-        x: 238
-        y: 12
-        width: 148
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1371
+        y: 16
+        width: 146
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8bd8921162c52cb0800000000000000
-      internalID: -4889288098261181553
+      spriteID: 936673df1daa770f0800000000000000
+      internalID: -1119238163505125831
       vertices: []
       indices: 
       edges: []
