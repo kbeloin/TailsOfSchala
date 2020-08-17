@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeLoading: 77
-  sceneNameToLoad: Scenes/3 - BedroomScene
+  sceneNameToLoad: Level/Scenes/Farm/Home/Bedroom
 --- !u!65 &142165030
 BoxCollider:
   m_ObjectHideFlags: 0

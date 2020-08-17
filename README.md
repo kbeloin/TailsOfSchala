@@ -74,10 +74,6 @@ Assets
 │   ├── Music
 │   ├── Sounds
 │
-├── Dialogue
-│
-├── Fonts
-│
 ├── Code
 │   ├── Renderer
 │   ├── Scripts
@@ -87,10 +83,16 @@ Assets
 │   │   ├── Tools
 │   ├── Shaders
 │
+├── Dialogue
+│
+├── Fonts
+│
 ├── Level
 │   ├── Prefabs
 │   ├── Scenes
 │   ├── UI
+│
+├── Plugins
 │
 ├── Video
 ```

@@ -6,36 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1 - Title Screen.unity
+    path: Assets/Level/Scenes/Cutscenes/Title.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/2 - Opening Cut Scene.unity
+    path: Assets/Level/Scenes/Cutscenes/Intro.unity
     guid: ae87180d35a4ea3449da06849e268ac8
   - enabled: 1
-    path: Assets/Scenes/3 - BedroomScene.unity
+    path: Assets/Level/Scenes/Farm/Home/Bedroom.unity
     guid: 042bdb3956d7c40c48ea1a9a65d6d80c
   - enabled: 1
-    path: Assets/Scenes/4 - HomeScene.unity
+    path: Assets/Level/Scenes/Farm/Home/LivingRoom.unity
     guid: 556cc871461c34625be16ca568a205ec
   - enabled: 1
-    path: Assets/Scenes/5 - FarmOutdoorScene.unity
+    path: Assets/Level/Scenes/Farm/Outdoor/Present/FarmMorning.unity
     guid: aefe587112b0646da860c9aad0f18a82
   - enabled: 1
-    path: Assets/Scenes/6 - Road to Town.unity
+    path: Assets/Level/Scenes/RoadToTown/Present/RoadMorning.unity
     guid: 7d085e89de2c41043a7bf7ff74d3986c
   - enabled: 1
-    path: Assets/Scenes/7 - Town Scene.unity
+    path: Assets/Level/Scenes/Town/Outdoor/Present/TownAfternoon.unity
     guid: c8f260b448c374d47889d2b0dfc98320
   - enabled: 1
-    path: Assets/Scenes/7a - ApothecaryIndoor.unity
+    path: Assets/Level/Scenes/Town/Indoor/Present/Apothecary.unity
     guid: dc9ffa3d7af54834eaaa6ec458221f2e
   - enabled: 1
-    path: Assets/Scenes/7b - BlacksmithIndoor.unity
+    path: Assets/Level/Scenes/Town/Indoor/Present/Blacksmith.unity
     guid: 04a0c0fb417fe1547812659a6c5886af
   - enabled: 1
-    path: Assets/Scenes/8 - Road From Town.unity
+    path: Assets/Level/Scenes/RoadToTown/Present/RoadEvening.unity
     guid: cdc1e849f3f42eb4caa9818abb6a9d3e
   - enabled: 1
-    path: Assets/Scenes/9 - The Great Goat Escape.unity
+    path: Assets/Level/Scenes/Farm/Outdoor/Present/FarmEvening.unity
     guid: 6ab331a45fc48cf479c4421627262912
   m_configObjects: {}
