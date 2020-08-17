@@ -64,15 +64,20 @@ Unfortunately, this means that occasionally you will lose your work, or someone 
 ```
 Assets
 ├── Animation
+│
 ├── Art
 │   ├── Materials
 │   ├── Palettes
 │   ├── Sprites
+│
 ├── Audio
 │   ├── Music
 │   ├── Sounds
+│
 ├── Dialogue
+│
 ├── Fonts
+│
 ├── Code
 │   ├── Renderer
 │   ├── Scripts
@@ -80,11 +85,14 @@ Assets
 │   │   ├── NPC
 │   │   ├── Player
 │   │   ├── Tools
-├── Shaders
+│   ├── Shaders
+│
 ├── Level
 │   ├── Prefabs
 │   ├── Scenes
 │   ├── UI
+│
+├── Video
 ```
 
 <a name="naming"></a>
