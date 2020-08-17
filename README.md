@@ -7,7 +7,7 @@
 - [Folder structure](#structure)
 - [Naming conventions](#naming)
 - [Scripts](#scripts)
-- [Adding Objects to a Scene](#addingtoscene)
+- [Adding Assets to the Project](#addingtoscene)
 
 <a name="assets"></a>
 
@@ -163,10 +163,12 @@ public class MainMenuScreen : MonoBehaviour
 
 <a name="addingtoscene"></a>
 
-###### Hierarchy
+### Adding Assets to the Project
+
+##### Hierarchy
 - If a `Game Object` is being used solely as a container to group objects together that `Game Object` should not have any additional components (e.g. a spriteRenderer) added to it. This helps to keep the hierarchy in the inspector clean.
 
-###### Sprites
+##### Sprites
 - Don't import "flipped" versions of sprites. Sprites can be flipped on both their `x` and `y` axis directly in the inspector.
 - If importing an animated version of a previously static sprite, delete the static sprite from the project and replace any references to it with the first frame of the animated spritesheet.
 - All non-character sprites should have the `Sprite-Lit-Default` material applied when they are brought into a scene, otherwise they will not interact correctly with the lighting engine. _There are some exceptions to this_
