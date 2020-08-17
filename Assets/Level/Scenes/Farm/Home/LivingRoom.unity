@@ -4105,7 +4105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 5 - FarmOutdoorScene
+  toScene: Level/Scenes/Farm/Outdoor/Present/FarmMorning
 --- !u!212 &720688639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7161,7 +7161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 3 - BedroomScene
+  toScene: Level/Scenes/Farm/Home/Bedroom
 --- !u!212 &1441547069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7583,7 +7583,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 4684465f691a44143b59c6a2f7976bbb, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &1567813650
 Transform:
   m_ObjectHideFlags: 0
