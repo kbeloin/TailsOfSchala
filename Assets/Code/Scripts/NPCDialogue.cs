@@ -6,28 +6,67 @@ using Ink.Runtime;
 public class NPCDialogue : MonoBehaviour
 {
     public GameObject dialogueBox;
-    public GameObject portraitObject;
     public Sprite initialPortrait;
-    public Text dialogueText;
     public bool playerInRange;
     public TextAsset inkAsset;
-    Story inkStory;
+    public TextAsset oneLiner;
 
-    void Awake()
-    {
-        inkStory = new Story(inkAsset.text);
-    }
+    GameObject portraitObject;
+    Text dialogueText;
+    GameObject choiceOne;
+    GameObject choiceTwo;
+    GameObject choiceThree;
+    Story inkStory;
 
     void Start()
     {
+        inkStory = new Story(inkAsset.text);
+
+        Debug.Log(dialogueBox);
+
+        portraitObject = dialogueBox.transform.Find("Portrait").gameObject;
+        dialogueText = dialogueBox.transform.Find("Text").gameObject.GetComponent<Text>();
+
+        choiceOne = dialogueBox.transform.Find("DialogueChoice1").gameObject;
+        choiceTwo = dialogueBox.transform.Find("DialogueChoice2").gameObject;
+        choiceThree = dialogueBox.transform.Find("DialogueChoice3").gameObject;
+
+        Debug.Log(portraitObject);
+        Debug.Log(dialogueText);
+        Debug.Log(choiceOne);
+        Debug.Log(choiceTwo);
+        Debug.Log(choiceThree);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
-            if (dialogueBox.activeInHierarchy)
+            if (!dialogueBox.activeInHierarchy)
             {
+                // Set up dialogue
+
+                if (initialPortrait)
+                {
+                    portraitObject.SetActive(true);
+                    dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+                    portraitObject.GetComponent<Image>().sprite = initialPortrait;
+                }
+                else
+                {
+                    portraitObject.SetActive(false);
+                    dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+                }
+
+                inkStory.ResetState();
+                dialogueText.text = inkStory.Continue();
+
+                dialogueBox.SetActive(true);
+            }
+            else
+            {
+                // Story active, continue
+
                 if (inkStory.currentChoices.Count > 0)
                 {
                     dialogueText.text = "";
@@ -45,25 +84,6 @@ public class NPCDialogue : MonoBehaviour
                 {
                     dialogueBox.SetActive(false);
                 }
-            }
-            else
-            {
-                if (initialPortrait)
-                {
-                    portraitObject.SetActive(true);
-                    dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
-                    portraitObject.GetComponent<Image>().sprite = initialPortrait;
-                }
-                else
-                {
-                    portraitObject.SetActive(false);
-                    dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
-                }
-
-                inkStory.ResetState();
-                dialogueText.text = inkStory.Continue();
-
-                dialogueBox.SetActive(true);
             }
         }
     }
