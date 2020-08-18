@@ -1,5 +1,7 @@
 # TailsOfSchala
 
+In this document, we'll try to collect the best-practices we've picked up to make it easier and more fun to work on this game. Nothing here should be treated as a religion; if following the "rules" gets in your way or cramps your style, don't bother with it!
+
 ## Table of Contents
 
 - [Working with Git and Github](#git)
