@@ -12,13 +12,13 @@ public class EnvironmentManager : MonoBehaviour
 
     private Animator animator;
     private Light2D globalLight;
-    public GameObject rainSystem;
-    public GameObject cloudSystem;
+    //public GameObject rainSystem;
+    //public GameObject cloudSystem;
     private bool lightningIsQueued;
 
     public bool queueLightning = false;
     public bool rainStorm = false;
-    public bool clouds = false;
+    public bool cloudy = false;
     public bool sunny = true;
 
     static EnvironmentManager instance;
@@ -33,7 +33,7 @@ public class EnvironmentManager : MonoBehaviour
     {
 
         //Singleton Logic
-        if (instance != null)
+        if (instance)
         {
             Destroy(this.gameObject);
             return;
@@ -42,51 +42,27 @@ public class EnvironmentManager : MonoBehaviour
         instance = this;
         GameObject.DontDestroyOnLoad(this.gameObject);
 
-        // Initialise weather status
         animator = GetComponent<Animator>();
 
-        if (clouds == true)
-            cloudSystem.SetActive(true);
-        else
-            cloudSystem.SetActive(false);
-
-        if (rainStorm == true)
-        {
-            rainSystem.SetActive(true);
-            animator.SetBool("IsRaining", true);
-            StartCoroutine(Lightning());
-        }
-        else if (sunny == true)
-        {
-            rainSystem.SetActive(false);
-            animator.SetBool("IsRaining", false);
-        }
+        // Global light has to start as disabled and be enabled after singleton or there will be a 
+        // "multiple global lights" crash on scene change.
+        globalLight = GetComponent<Light2D>();
+        globalLight.enabled = true;
     }
 
     void Update()
     {
-
         //Check for changes in weather status.  Should be refactored into a switch.
         if (rainStorm == true && sunny == false)
         {
-            rainSystem.SetActive(true);
             animator.SetBool("IsRaining", true);
 
             if (!lightningIsQueued)
-            {
                 StartCoroutine(Lightning());
-            }
-        }
-        else if (sunny == true && rainStorm == false)
-        {
-            rainSystem.SetActive(false);
-            animator.SetBool("IsRaining", false);
         }
 
-        if (clouds)
-            cloudSystem.SetActive(true);
-        else
-            cloudSystem.SetActive(false);
+        else if (sunny == true && rainStorm == false)
+            animator.SetBool("IsRaining", false);
     }
 
     IEnumerator Lightning()
