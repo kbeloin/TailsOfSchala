@@ -16,6 +16,12 @@ public class NPCDialogue : MonoBehaviour
     GameObject choiceOne;
     GameObject choiceTwo;
     GameObject choiceThree;
+    Text choiceOneText;
+    Text choiceTwoText;
+    Text choiceThreeText;
+    Image choiceOneImage;
+    Image choiceTwoImage;
+    Image choiceThreeImage;
     Story inkStory;
 
     void Start()
@@ -31,6 +37,14 @@ public class NPCDialogue : MonoBehaviour
         choiceTwo = dialogueBox.transform.Find("DialogueChoice2").gameObject;
         choiceThree = dialogueBox.transform.Find("DialogueChoice3").gameObject;
 
+        choiceOneText = choiceOne.transform.Find("Text").gameObject.GetComponent<Text>();
+        choiceTwoText = choiceTwo.transform.Find("Text").gameObject.GetComponent<Text>();
+        choiceThreeText = choiceThree.transform.Find("Text").gameObject.GetComponent<Text>();
+
+        choiceOneImage = choiceOne.transform.Find("Image").gameObject.GetComponent<Image>();
+        choiceTwoImage = choiceTwo.transform.Find("Image").gameObject.GetComponent<Image>();
+        choiceThreeImage = choiceThree.transform.Find("Image").gameObject.GetComponent<Image>();
+
         Debug.Log(portraitObject);
         Debug.Log(dialogueText);
         Debug.Log(choiceOne);
@@ -45,6 +59,9 @@ public class NPCDialogue : MonoBehaviour
             if (!dialogueBox.activeInHierarchy)
             {
                 // Set up dialogue
+                choiceOne.SetActive(false);
+                choiceTwo.SetActive(false);
+                choiceThree.SetActive(false);
 
                 if (initialPortrait)
                 {
@@ -73,7 +90,30 @@ public class NPCDialogue : MonoBehaviour
                     for (int i = 0; i < inkStory.currentChoices.Count; i++)
                     {
                         Choice choice = inkStory.currentChoices[i];
-                        dialogueText.text += "" + (i + 1) + ") " + choice.text + "\n";
+                        //dialogueText.text += "" + (i + 1) + ") " + choice.text + "\n";
+                        switch (i)
+                        {
+                            case 0:
+                                choiceOne.SetActive(true);
+                                //choiceOne.GetComponent<Text>().text = choice.text;
+                                choiceOneText.text = choice.text;
+                                break;
+                            case 1:
+                                choiceTwo.SetActive(true);
+                                //choiceTwo.GetComponent<Text>().text = choice.text;
+                                choiceTwoText.text = choice.text;
+                                break;
+                            case 2:
+                                choiceThree.SetActive(true);
+                                //choiceThree.GetComponent<Text>().text = choice.text;
+                                choiceThreeText.text = choice.text;
+                                break;
+                        }
+
+                        //choiceOne.GetComponent<Image>().gameObject.SetActive(true);
+                        choiceOneImage.gameObject.SetActive(true);
+                        choiceTwoImage.gameObject.SetActive(false);
+                        choiceThreeImage.gameObject.SetActive(false);
                     }
                 }
                 else if (inkStory.canContinue)
