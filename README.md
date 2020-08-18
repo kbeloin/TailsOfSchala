@@ -2,22 +2,12 @@
 
 ## Table of Contents
 
-- [Where to save assets](#assets)
 - [Working with Git and Github](#git)
 - [Folder structure](#structure)
 - [Naming conventions](#naming)
+- [Adding assets to the project](#assets)
+- [Building scenes](#scripts)
 - [Scripts](#scripts)
-- [Adding Assets to the Project](#addingtoscene)
-
-<a name="assets"></a>
-
-## Where to save assets
-
-If you're working on art, music or Ink stories, and you're not yet ready to integrate them into the game (or are handing off to another member of the team to do it), save your work in the Google Drive (rather than in the Git project).
-
-- [Art Team folder](https://drive.google.com/drive/folders/1WrSu7dqQVnzuz1bZuA1S6PClVRcJRlA2?usp=sharing)
-- [Story Team folder](https://drive.google.com/drive/folders/1FXHv-6-H8Zu6WH-yGceWcy4L7xlpERJv?usp=sharing)
-- [Music Team folder](https://drive.google.com/drive/folders/1eSO9KB3eQ9p0M5ZgCSc6RNR1wXrj7Zct?usp=sharing)
 
 <a name="git"></a>
 
@@ -128,6 +118,32 @@ Unity has some special folders, so [check the list](https://docs.unity3d.com/Man
 
 **Use `camelCase` only where necessary.** Use `weapon_miniGun` instead of `weapon_gun_mini`. Avoid this if possible, for example, `vehicles_fighterJet` should be `vehicles_jet_fighter` if you plan to have multiple types of jets.
 
+<a name="assets"></a>
+
+## Adding assets to the project
+
+#### Sprites
+
+- Don't import "flipped" versions of sprites. Sprites can be flipped on both their `x` and `y` axis directly in the inspector.
+- If importing an animated version of a previously static sprite, delete the static sprite from the project and replace any references to it with the first frame of the animated spritesheet.
+- All non-character sprites should have the `Sprite-Lit-Default` material applied when they are brought into a scene, otherwise they will not interact correctly with the lighting engine. _There are some exceptions to this_
+- All character sprites should have `Sprite-Unlit-Default` applied to help them standout from the scene.
+  _Note: You may need to click the eye icon to make the `Sprite-Lit-Default` and `Sprite-Unlit-Default` material visible in the material selector panel._
+
+<a name="scenes"></a>
+
+## Building scenes
+
+### Hierarchy
+
+Scenes have a hierarchy, too! It doesn't really matter how you sort items in the scene list, but following a general layout makes it easier to tell at a glance what's included in (or missing from) a scene.
+
+Whe haven't figured out a scene hierchy yet! _Coming soon!_
+
+### Scene-building tips
+
+- If a `Game Object` is being used solely as a container to group objects together that `Game Object` should not have any additional components (e.g. a spriteRenderer) added to it. This helps to keep the hierarchy in the inspector clean.
+
 <a name="scripts"></a>
 
 ## Scripts
@@ -160,17 +176,3 @@ public class MainMenuScreen : MonoBehaviour
 		#endregion
 }
 ```
-
-<a name="addingtoscene"></a>
-
-### Adding Assets to the Project
-
-##### Hierarchy
-- If a `Game Object` is being used solely as a container to group objects together that `Game Object` should not have any additional components (e.g. a spriteRenderer) added to it. This helps to keep the hierarchy in the inspector clean.
-
-##### Sprites
-- Don't import "flipped" versions of sprites. Sprites can be flipped on both their `x` and `y` axis directly in the inspector.
-- If importing an animated version of a previously static sprite, delete the static sprite from the project and replace any references to it with the first frame of the animated spritesheet.
-- All non-character sprites should have the `Sprite-Lit-Default` material applied when they are brought into a scene, otherwise they will not interact correctly with the lighting engine. _There are some exceptions to this_
-- All character sprites should have `Sprite-Unlit-Default` applied to help them standout from the scene.  
-_Note: You may need to click the eye icon to make the `Sprite-Lit-Default` and `Sprite-Unlit-Default` material visible in the material selector panel._
