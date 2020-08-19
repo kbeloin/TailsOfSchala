@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
 
         weapon = GameObject.Find("Weapon");
-        attackAnimator = weapon.GetComponent<Animator>();
+        //attackAnimator = weapon.GetComponent<Animator>();
         playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
         silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
     }
