@@ -79,6 +79,11 @@ public class NPCDialogue : MonoBehaviour
                 else if (inkStory.canContinue)
                 {
                     dialogueText.text = inkStory.Continue();
+                    if (inkStory.currentTags.Count > 0)
+                    {
+                        Debug.Log(inkStory.currentTags[0].ToLower() + "_neutral.png");
+                        portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>(inkStory.currentTags[0].ToLower() + "_neutral");
+                    }
                 }
                 else
                 {
