@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 435899184}
   - component: {fileID: 435899183}
   m_Layer: 5
-  m_Name: DialogueChoice2
+  m_Name: ChoiceTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4154,6 +4154,7 @@ MonoBehaviour:
   sprintSpeed: 15
   maxStamina: 100
   stamina: 100
+  inDialogue: 0
 --- !u!61 &599009741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4423,11 +4424,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c474a8d70d91e4bddb5ba9c82f133257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1745254813}
   initialPortrait: {fileID: 21300000, guid: 9201447ddd9dfbe4d99021346acac8ef, type: 3}
   playerInRange: 0
   inkAsset: {fileID: 4900000, guid: 5dcce5d3cd583423e91891dbaf68f19b, type: 3}
   oneLiner: {fileID: 0}
+  dialogBox: {fileID: 1745254813}
 --- !u!1 &630595479
 GameObject:
   m_ObjectHideFlags: 0
@@ -7865,7 +7866,7 @@ GameObject:
   - component: {fileID: 1372703238}
   - component: {fileID: 1372703237}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8153,7 +8154,7 @@ GameObject:
   - component: {fileID: 1427833221}
   - component: {fileID: 1427833220}
   m_Layer: 5
-  m_Name: DialogueChoice3
+  m_Name: ChoiceThree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10869,7 +10870,7 @@ GameObject:
   - component: {fileID: 1643853203}
   - component: {fileID: 1643853202}
   m_Layer: 5
-  m_Name: DialogueChoice1
+  m_Name: ChoiceOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11042,7 +11043,7 @@ GameObject:
   - component: {fileID: 1745254816}
   - component: {fileID: 1745254815}
   m_Layer: 5
-  m_Name: Dialogue Box
+  m_Name: DialogBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11800,7 +11801,7 @@ GameObject:
   - component: {fileID: 2030283040}
   - component: {fileID: 2030283039}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
