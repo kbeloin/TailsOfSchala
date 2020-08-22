@@ -7,13 +7,14 @@ public class FruitTree : EnvironmentalItem
 {
 
     private GameObject fruit;
+    private Transform singleFruit;
     private GameObject ground;
 
     void Start()
     {
         base.Start();
-        fruit = transform.Find("Fruit");
-        ground = transform.Find("Ground");
+        fruit = GameObject.Find("Fruit");
+        ground = GameObject.Find("Ground");
 
     }
 
@@ -21,10 +22,10 @@ public class FruitTree : EnvironmentalItem
     {
         UnityEngine.Debug.Log("Drop some fruit.");
 
-        for (int i = 0; i < fruit.transform.GetChildCount(); i++)
+        for (int i = 0; i < fruit.transform.childCount; i++)
         {
-            GameObject singleFruit = fruit.transform.GetChild(i);
-            singleFruit.transform.y = ground.transform.y;
+            singleFruit = fruit.transform.GetChild(i); 
+            singleFruit.transform.position = new Vector3(singleFruit.transform.position.x, ground.transform.position.y, singleFruit.transform.position.z);
         }
     }
 }
