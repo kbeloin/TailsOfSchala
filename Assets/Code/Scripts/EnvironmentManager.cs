@@ -21,7 +21,7 @@ public class EnvironmentManager : MonoBehaviour
     public bool cloudy = false;
     public bool sunny = true;
 
-    static EnvironmentManager instance;
+    public static EnvironmentManager instance;
 
     public static EnvironmentManager GetInstance()
     {
