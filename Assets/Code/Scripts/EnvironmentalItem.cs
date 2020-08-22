@@ -25,7 +25,7 @@ public class EnvironmentalItem : MonoBehaviour {
             PlayerInteract(); // Player interacts with item.  Activates animator to change states.
         }
 
-				if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
+		if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
         {
           Debug.Log("Attacked this thing!");
 					PlayerInteract();
@@ -52,7 +52,7 @@ public class EnvironmentalItem : MonoBehaviour {
         }
     }
 
-    void PlayerInteract()
+    public virtual void PlayerInteract()
     {
         interactionSwitch = !interactionSwitch;
         animator.SetBool("interactionSwitch", interactionSwitch);
