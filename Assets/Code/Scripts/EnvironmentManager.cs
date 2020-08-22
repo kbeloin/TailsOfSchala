@@ -34,7 +34,6 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
         globalLight.enabled = true;
 
         globalLight.lightType = Light2D.LightType.Global;
-        //globalLight.
 
         FieldInfo fieldInfo = globalLight.GetType().GetField("m_ApplyToSortingLayers", BindingFlags.NonPublic | BindingFlags.Instance);
         fieldInfo.SetValue(globalLight, new int[] {
@@ -47,7 +46,6 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
             SortingLayer.NameToID("Foreground")
         });
 
-        //animator.runtimeAnimatorController = GameObject.Find("_SceneBase").GetComponent<Animator>().runtimeAnimatorController;
         animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Global Light 2D");
     }
 
