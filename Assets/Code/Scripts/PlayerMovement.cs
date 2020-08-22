@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public int maxStamina = 100;
     public int stamina = 100;
 
+    public bool inDialogue = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (inDialogue)
+        {
+            running = false;
+            return;
+        }
+
         // Keeps silhouette and sprite on same animation frame.
         silRenderer.sprite = sr.sprite;
 
@@ -92,6 +100,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (inDialogue)
+        {
+            running = false;
+            return;
+        }
+
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
