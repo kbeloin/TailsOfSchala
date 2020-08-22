@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
@@ -25,12 +26,29 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = gameObject.AddComponent<Animator>();
 
         // Global light has to start as disabled and be enabled after singleton or there will be a 
         // "multiple global lights" crash on scene change.
-        globalLight = GetComponent<Light2D>();
+        globalLight = gameObject.AddComponent<Light2D>();
         globalLight.enabled = true;
+
+        globalLight.lightType = Light2D.LightType.Global;
+        //globalLight.
+
+        FieldInfo fieldInfo = globalLight.GetType().GetField("m_ApplyToSortingLayers", BindingFlags.NonPublic | BindingFlags.Instance);
+        fieldInfo.SetValue(globalLight, new int[] {
+            SortingLayer.NameToID("Default"),
+            SortingLayer.NameToID("Ground"),
+            SortingLayer.NameToID("Ground Objects Non Collision"),
+            SortingLayer.NameToID("Walls"),
+            SortingLayer.NameToID("Furniture"),
+            SortingLayer.NameToID("Collision"),
+            SortingLayer.NameToID("Foreground")
+        });
+
+        //animator.runtimeAnimatorController = GameObject.Find("_SceneBase").GetComponent<Animator>().runtimeAnimatorController;
+        animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Global Light 2D");
     }
 
     void Update()
