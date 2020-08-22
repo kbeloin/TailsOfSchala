@@ -12,9 +12,9 @@ public class CloudListener : MonoBehaviour {
 
         cloudParticles = GetComponent<ParticleSystem>();
 
-        if (EnvironmentManager.GetInstance() != null)
+        if (EnvironmentManager.Instance != null)
         {
-            if (EnvironmentManager.GetInstance().cloudy)
+            if (EnvironmentManager.Instance.cloudy)
             {
                 cloudParticles.Play();
             }
@@ -30,7 +30,7 @@ public class CloudListener : MonoBehaviour {
     void Update()
     {
 
-        if (EnvironmentManager.GetInstance().cloudy)
+        if (EnvironmentManager.Instance.cloudy)
         {
             cloudParticles.Play();
         }

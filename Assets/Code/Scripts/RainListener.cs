@@ -13,9 +13,9 @@ public class RainListener : MonoBehaviour
 
         rainParticles = GetComponent<ParticleSystem>();
 
-        if (EnvironmentManager.GetInstance() != null)
+        if (EnvironmentManager.Instance != null)
         {
-            if (EnvironmentManager.GetInstance().rainStorm)
+            if (EnvironmentManager.Instance.rainStorm)
             {
                 rainParticles.Play();
             }
@@ -30,7 +30,7 @@ public class RainListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(EnvironmentManager.GetInstance().rainStorm)
+        if(EnvironmentManager.Instance.rainStorm)
         {
             rainParticles.Play();
         }
