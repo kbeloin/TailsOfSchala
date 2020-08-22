@@ -7,7 +7,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class EnvironmentManager : MonoBehaviour
+public class EnvironmentManager : Singleton<EnvironmentManager>
 {
 
     private Animator animator;
@@ -21,27 +21,10 @@ public class EnvironmentManager : MonoBehaviour
     public bool cloudy = false;
     public bool sunny = true;
 
-    static EnvironmentManager instance;
-
-    public static EnvironmentManager GetInstance()
-    {
-        return instance;
-    }
-
+    protected EnvironmentManager() { }
 
     void Start()
     {
-
-        //Singleton Logic
-        if (instance)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-
-        instance = this;
-        GameObject.DontDestroyOnLoad(this.gameObject);
-
         animator = GetComponent<Animator>();
 
         // Global light has to start as disabled and be enabled after singleton or there will be a 
