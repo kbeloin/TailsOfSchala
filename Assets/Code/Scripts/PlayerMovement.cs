@@ -58,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
         if (running)
             moveSpeed = sprintSpeed;
         else
-            moveSpeed = walkSpeed;
+            //moveSpeed = walkSpeed;
+						moveSpeed = 10;
 
         velocity = Vector3.zero;
 
