@@ -56,8 +56,6 @@ Unfortunately, this means that occasionally you will lose your work, or someone 
 
 ```
 Assets
-├── [SaNDbOx]
-│
 ├── Animation
 │
 ├── Art
@@ -142,7 +140,7 @@ Unity has some special folders, so [check the list](https://docs.unity3d.com/Man
 
 Scenes have a hierarchy, too! It doesn't really matter how you sort items in the scene list, but following a general layout makes it easier to tell at a glance what's included in (or missing from) a scene.
 
-We haven't figured out a scene hierarchy yet! _Coming soon!_
+Whe haven't figured out a scene hierchy yet! _Coming soon!_
 
 ### Scene-building tips
 
