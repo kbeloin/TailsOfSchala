@@ -5,14 +5,15 @@ using Ink.Runtime;
 
 public class NPCDialogue : MonoBehaviour
 {
-    public Sprite initialPortrait;
-    public bool playerInRange;
-    public TextAsset inkAsset;
-    public TextAsset oneLiner;
     public GameObject dialogBox;
+    public Sprite initialPortrait;
+    public TextAsset inkAsset;
+    public bool playerInRange;
 
     PlayerMovement playerMovement;
     GameObject portraitObject;
+    GameObject nameplate;
+    Text nameplateText;
     Text dialogueText;
     GameObject choiceOne;
     GameObject choiceTwo;
@@ -33,9 +34,13 @@ public class NPCDialogue : MonoBehaviour
 
         inkStory = new Story(inkAsset.text);
 
-        Debug.Log(dialogBox);
+        HideDialog();
 
         portraitObject = dialogBox.transform.Find("Portrait").gameObject;
+
+        nameplate = dialogBox.transform.Find("Nameplate").gameObject;
+        nameplateText = nameplate.transform.Find("NameLabel").gameObject.GetComponent<Text>();
+
         dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
 
         choiceOne = dialogBox.transform.Find("ChoiceOne").gameObject;
