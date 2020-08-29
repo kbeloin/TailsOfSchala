@@ -6,7 +6,6 @@ using Ink.Runtime;
 public class NPCDialogue : MonoBehaviour
 {
     public GameObject dialogBox;
-    public Sprite initialPortrait;
     public TextAsset inkAsset;
     public bool playerInRange;
 
@@ -74,7 +73,7 @@ public class NPCDialogue : MonoBehaviour
 
                     if (inkStory.canContinue)
                     {
-                        dialogueText.text = inkStory.Continue();
+                        StoryContinue();
                     }
                 }
                 else if (inkStory.currentChoices.Count > 0)
@@ -83,12 +82,7 @@ public class NPCDialogue : MonoBehaviour
                 }
                 else if (inkStory.canContinue)
                 {
-                    dialogueText.text = inkStory.Continue();
-                    if (inkStory.currentTags.Count > 0)
-                    {
-                        Debug.Log(inkStory.currentTags[0].ToLower() + "_neutral.png");
-                        portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>(inkStory.currentTags[0].ToLower() + "_neutral");
-                    }
+                    StoryContinue();
                 }
                 else
                 {
@@ -121,22 +115,36 @@ public class NPCDialogue : MonoBehaviour
 
         HideChoices();
 
-        if (initialPortrait)
+        inkStory.ResetState();
+
+        dialogBox.SetActive(true);
+
+        StoryContinue();
+    }
+
+    private void StoryContinue()
+    {
+        dialogueText.text = inkStory.Continue();
+
+        if (inkStory.currentTags.Count > 0)
         {
+            Debug.Log(inkStory.currentTags[0].ToLower() + "_neutral.png");
+
             portraitObject.SetActive(true);
             dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
-            portraitObject.GetComponent<Image>().sprite = initialPortrait;
+
+            portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>(inkStory.currentTags[0].ToLower() + "_neutral");
+
+            nameplate.SetActive(true);
+            nameplateText.text = inkStory.currentTags[0];
         }
         else
         {
             portraitObject.SetActive(false);
             dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+
+            nameplate.SetActive(false);
         }
-
-        inkStory.ResetState();
-        dialogueText.text = inkStory.Continue();
-
-        dialogBox.SetActive(true);
     }
 
     private void HideDialog()
@@ -199,8 +207,7 @@ public class NPCDialogue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            dialogBox.SetActive(false);
-
+            HideDialog();
         }
     }
 }

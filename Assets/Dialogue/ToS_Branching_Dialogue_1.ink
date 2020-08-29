@@ -15,7 +15,7 @@ THOMAS: Awww. #Thomas
 FATHER: ! #Father
 [Father goes to the door, exits. Returns with a letter] 
 FATHER: Here's a letter for you, Kay. #Father
-LETTER: "Your electric lamp is ready to be picked up." #Letter
+LETTER: "Your electric lamp is ready to be picked up."
 KAY: My lamp is ready! #Kay
 MOTHER: Great! You'd better be off, then. Two important things to do, and the storm is on its way. #Mother
 ++KAY: No. You're getting tubby. #Kay
@@ -52,38 +52,39 @@ KAY: The scythe? #Kay
 FATHER: Take it with you. If there is a lightning storm, maybe it will deflect and absorb some of the electricity. #Father
 KAY: I'm not entirely sure that's how electricity works... #Kay
 MOTHER: Nevertheless, bring it with you. The roads are not as safe as they used to be. #Mother
-THOMAS: Bring me back some sweets.
-+++KAY: I don't know, Thomas. I'd recommend laying off the sweets for a bit.
-THOMAS: Awww.
+THOMAS: Bring me back some sweets. #Thomas
++++KAY: I don't know, Thomas. I'd recommend laying off the sweets for a bit. #Kay
+THOMAS: Awww. #Thomas
 [Knock knock!]
-FATHER: !
+FATHER: ! #Father
 [Father goes to the door, exits. Returns with a letter] 
-FATHER: Here's a letter for you, Kay.
+FATHER: Here's a letter for you, Kay. #Father
 LETTER: "Your electric lamp is ready to be picked up."
-KAY: My lamp is ready!
-MOTHER: Great! You'd better be off, then. Two important things to do, and the storm is on its way.
-FATHER: Be safe! ->END
-+++KAY: No. You're getting tubby. 
-THOMAS: Geez, everyone is being mean to me.
+KAY: My lamp is ready! #Kay
+MOTHER: Great! You'd better be off, then. Two important things to do, and the storm is on its way. #Mother
+FATHER: Be safe! #Father
+->END
++++KAY: No. You're getting tubby. #Kay
+THOMAS: Geez, everyone is being mean to me. #Thomas
 [Knock knock!]
-FATHER: !
+FATHER: ! #Father
 [Father goes to the door, exits. Returns with a letter] 
-FATHER: Here's a letter for you, Kay.
+FATHER: Here's a letter for you, Kay. #Father
 [Thomas snatches letter]
-THOMAS: Ha-ha!
-KAY: Hey, give that back!
-THOMAS: Fat chance!
-KAY: Mom!
-MOTHER: Thomas, give your sister her letter.
-THOMAS: No!
+THOMAS: Ha-ha! #Thomas
+KAY: Hey, give that back! #Kay
+THOMAS: Fat chance! #Thomas
+KAY: Mom! #Kay
+MOTHER: Thomas, give your sister her letter. #Mother
+THOMAS: No! #Thomas
 [Thomas tears letter into small bits]
-FATHER: Why you little...!
+FATHER: Why you little...! #Father
 [Exit THOMAS]
-KAY: It's torn into a million shreds! I can't read it.
-FATHER: The return address was the trinket's shop.
-KAY: It must have had something to do with my lamp.
-MOTHER: You'd better be off, Kay. It might rain soon.
-KAY: That boy... if I find him I'm going to -
-FATHER: I think we're being too hard on him. Bye, Kay!
+KAY: It's torn into a million shreds! I can't read it. #Kay
+FATHER: The return address was the trinket's shop. #Father
+KAY: It must have had something to do with my lamp. #Kay
+MOTHER: You'd better be off, Kay. It might rain soon. #Mother
+KAY: That boy... if I find him I'm going to - #Kay
+FATHER: I think we're being too hard on him. Bye, Kay! #Father
 ->END
 
