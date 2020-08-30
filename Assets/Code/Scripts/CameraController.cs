@@ -28,13 +28,14 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        targetPosition = player.position;
-
+        if (player) targetPosition = player.position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!player) return;
+
         // viewPortSize = (cam.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)) - cam.ScreenToWorldPoint(Vector2.zero)) * viewPortFactor;
 
         targetPosition.z = 0;

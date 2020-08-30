@@ -1,32 +1,39 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-  public string prevScene = "";
-  public string currentScene = "";
-  // public int health = 10;
-  // public int wheat = 0;
+    // public int health = 10;
+    // public int wheat = 0;
 
-  static GameManager instance;
+    Vector2 nextPosition;
+    Vector3 nextCameraPosition;
+    Vector2 nextDirection;
 
-  public virtual void Start() {
-      // Don't destroy the original GameManager
-      if (instance != null) {
-        Destroy(this.gameObject);
-      }
-      instance = this;
-      GameObject.DontDestroyOnLoad(this.gameObject);
-  }
+    protected GameManager() { }
 
-  void Update() {
-    // Save the current scene name
-    // A per-scene SceneManager script will use this for player positioning
-    currentScene = SceneManager.GetActiveScene().name;
-  }
+    void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-  // public void LoadScene(string sceneName) {
-  //     prevScene = currentScene;
-  //     SceneManager.LoadScene(sceneName);
-  // }
+    public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
+    {
+        nextPosition = toPosition;
+        nextCameraPosition = toCameraPosition;
+        nextDirection = toDirection;
+
+        SceneManager.LoadScene(scene);
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameObject player = GameObject.Find("Player").gameObject;
+        player.transform.position = nextPosition;
+        Animator animator = player.transform.GetComponent<Animator>();
+        animator.SetFloat("moveX", nextDirection.x);
+        animator.SetFloat("moveY", nextDirection.y);
+
+        Camera.main.transform.position = nextCameraPosition;
+    }
 }

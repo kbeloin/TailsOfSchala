@@ -1,15 +1,17 @@
 using UnityEngine;
-public class ChangeScene : MonoBehaviour {
 
-		[SerializeField] private string toScene;
-    private SceneController sceneController;
+public class ChangeScene : MonoBehaviour
+{
+    public string toScene;
+    public Vector2 toPosition;
+    public Vector3 toCameraPosition;
+    public Vector2 toDirection;
 
-    void Start() {
-        sceneController = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
-    }
-    private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("Player")) {
-            sceneController.LoadScene(toScene);
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            GameManager.Instance.LoadScene(toScene, toPosition, toCameraPosition, toDirection);
         }
     }
 }

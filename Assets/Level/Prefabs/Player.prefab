@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 8705268416411252317}
   - component: {fileID: 8705268416411252316}
   - component: {fileID: 8705268416411252315}
-  - component: {fileID: 3158218869567847541}
+  - component: {fileID: 4883675272232504980}
   m_Layer: 8
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8705268416411252314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -232,6 +232,7 @@ MonoBehaviour:
   sprintSpeed: 15
   maxStamina: 100
   stamina: 100
+  inDialogue: 0
 --- !u!95 &8705268416411252315
 Animator:
   serializedVersion: 3
@@ -251,7 +252,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!81 &3158218869567847541
+--- !u!81 &4883675272232504980
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
