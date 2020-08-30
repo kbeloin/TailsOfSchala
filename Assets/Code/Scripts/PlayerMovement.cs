@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-		public float moveSpeed;
+    public float moveSpeed;
     public float walkSpeed = 6.5f;
     public float sprintSpeed = 20f;
     private SpriteRenderer sr;
@@ -65,14 +65,17 @@ public class PlayerMovement : MonoBehaviour
         velocity.x = Input.GetAxisRaw("Horizontal");
         velocity.y = Input.GetAxisRaw("Vertical");
 
-        if (velocity != Vector3.zero) {
+        if (velocity != Vector3.zero)
+        {
             rb.MovePosition(transform.position + velocity.normalized * moveSpeed * Time.fixedDeltaTime);
 
             animator.SetFloat("moveX", velocity.x);
             animator.SetFloat("moveY", velocity.y);
             animator.SetBool("moving", true);
 
-        } else {
+        }
+        else
+        {
             animator.SetBool("moving", false);
         }
 
