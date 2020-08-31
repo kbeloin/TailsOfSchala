@@ -5756,7 +5756,7 @@ GameObject:
   - component: {fileID: 838483493}
   - component: {fileID: 838483492}
   m_Layer: 0
-  m_Name: ToPreviousScene
+  m_Name: ToFarmMorning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5774,10 +5774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e95bfc340146849600fbbda875c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 5 - FarmOutdoorScene
-  toPosition: {x: 0, y: 0}
-  toCameraPosition: {x: 0, y: 0, z: 0}
-  toDirection: {x: 0, y: 0}
+  toScene: Level/Scenes/Farm/Outdoor/Present/FarmMorning
+  toPosition: {x: 39.69, y: -45}
+  toCameraPosition: {x: 34.51, y: -41.66, z: -10}
+  toDirection: {x: -1, y: 1}
 --- !u!61 &838483493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6172,7 +6172,7 @@ GameObject:
   - component: {fileID: 1114372715}
   - component: {fileID: 1114372714}
   m_Layer: 0
-  m_Name: ToNextScene
+  m_Name: ToTownAfternoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6205,9 +6205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: Level/Scenes/Town/Outdoor/Present/TownAfternoon
-  toPosition: {x: 0, y: 0}
-  toCameraPosition: {x: 0, y: 0, z: 0}
-  toDirection: {x: 0, y: 0}
+  toPosition: {x: -3.8, y: -62.6}
+  toCameraPosition: {x: -3.8, y: -59.8, z: -10}
+  toDirection: {x: 0, y: 1}
 --- !u!61 &1114372715
 BoxCollider2D:
   m_ObjectHideFlags: 0
