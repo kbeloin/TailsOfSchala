@@ -21,7 +21,7 @@ public class CloudListener : MonoBehaviour {
             else
             {
                 cloudParticles.Clear();
-                cloudParticles.Pause();
+                cloudParticles.Stop();
             }
         }
     }
@@ -37,7 +37,7 @@ public class CloudListener : MonoBehaviour {
         else
         {
             cloudParticles.Clear();
-            cloudParticles.Pause();
+            cloudParticles.Stop();
         }
     }
 }

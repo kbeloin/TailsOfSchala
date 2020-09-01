@@ -20,7 +20,9 @@ public class EnvironmentManager : Singleton<EnvironmentManager>
     public bool queueLightning = false;
     public bool rainStorm = false;
     public bool cloudy = false;
+    public bool foggy = false;
     public bool sunny = true;
+
 
     protected EnvironmentManager() { }
 
