@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -437,9 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 476287651}
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialogBox: {fileID: 0}
+  initialPortrait: {fileID: 0}
   dialogue: This old barn house is subtly weathered, and very welcoming...
   playerInRange: 0
 --- !u!61 &12365809
@@ -12505,12 +12504,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!1 &476287651 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5412581989748041873, guid: eef18f48d71d05b4b95280059835fcda,
-    type: 3}
-  m_PrefabInstance: {fileID: 2029144958}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480625585
 GameObject:
   m_ObjectHideFlags: 0
@@ -28917,9 +28910,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1879444484}
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 103842057}
+  dialogBox: {fileID: 0}
+  initialPortrait: {fileID: 0}
   dialogue: This old barn house is subtly weathered, and very welcoming...
   playerInRange: 0
 --- !u!61 &1354001482
@@ -98408,9 +98400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 476287651}
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialogBox: {fileID: 0}
+  initialPortrait: {fileID: 0}
   dialogue: This old barn house is subtly weathered, and very welcoming...
   playerInRange: 1
 --- !u!61 &1638122436
@@ -101047,6 +101038,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloom Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 5207088051810352159, guid: 2cd6ec8990d1d72439e80a7dde3dc98b,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ca98eb481e854c40bdd71d73d7c3e2c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd6ec8990d1d72439e80a7dde3dc98b, type: 3}
 --- !u!1 &1726332845
@@ -101449,9 +101446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1879444484}
-  portraitObject: {fileID: 0}
-  dialogueText: {fileID: 103842057}
+  dialogBox: {fileID: 0}
+  initialPortrait: {fileID: 0}
   dialogue: Nothing here. Wait, isn't it storming outside? Shouldn't you be getting
     home? And why is the mailbox talking to you?
   playerInRange: 0
