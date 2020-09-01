@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5207088051810352156}
   - component: {fileID: 5207088051810352159}
   m_Layer: 0
-  m_Name: Global Volume
+  m_Name: Bloom Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGlobal: 1
-  priority: 0
+  priority: 1
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 4684465f691a44143b59c6a2f7976bbb, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 6ca98eb481e854c40bdd71d73d7c3e2c, type: 2}
