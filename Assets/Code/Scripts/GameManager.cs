@@ -9,12 +9,15 @@ public class GameManager : Singleton<GameManager>
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
+    public bool wearingNightgown = true;
+    private Animator playerAnimator;
 
     protected GameManager() { }
 
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        playerAnimator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
     }
 
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
