@@ -35524,7 +35524,7 @@ MonoBehaviour:
   dialogBox: {fileID: 766348935}
   initialPortrait: {fileID: 0}
   dialogue: This old barn house is subtly weathered, and very welcoming...
-  playerInRange: 1
+  playerInRange: 0
 --- !u!61 &1177321454
 BoxCollider2D:
   m_ObjectHideFlags: 0
