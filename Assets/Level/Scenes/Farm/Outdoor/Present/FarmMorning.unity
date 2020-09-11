@@ -9565,6 +9565,79 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1001 &226748831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1802794989}
+    m_Modifications:
+    - target: {fileID: 668307153, guid: ad9bb2b238f6a38449cb65c717e2cdf5, type: 3}
+      propertyPath: m_Volume
+      value: 0.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3399992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7899971
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259770, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520831598108259771, guid: ad9bb2b238f6a38449cb65c717e2cdf5,
+        type: 3}
+      propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad9bb2b238f6a38449cb65c717e2cdf5, type: 3}
 --- !u!4 &232335737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416493500573693778, guid: 1aca4b1035d5d45f393f8476323377e5,
@@ -13551,7 +13624,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 774cceacad7b42e4da26065c055679d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.649
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24532,6 +24605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799837964}
   - component: {fileID: 799837965}
+  - component: {fileID: 799837966}
   m_Layer: 0
   m_Name: Goat Food Bin
   m_TagString: Untagged
@@ -24604,6 +24678,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!61 &799837966
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799837963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13000011, y: 0.752741}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.46, y: 0.1}
+    oldSize: {x: 3.25, y: 1.75}
+    newSize: {x: 5, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.25, y: 1.6445181}
+  m_EdgeRadius: 0
 --- !u!1 &800073014
 GameObject:
   m_ObjectHideFlags: 0
@@ -27257,7 +27357,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 44a39cfcbf8605d4c8a96e76e008d19f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.44
+  m_Volume: 0.334
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -35523,7 +35623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 766348935}
   initialPortrait: {fileID: 0}
-  dialogue: This old barn house is subtly weathered, and very welcoming...
+  dialogue: Restroom temporarily closed for cleaning.
   playerInRange: 0
 --- !u!61 &1177321454
 BoxCollider2D:
@@ -39907,6 +40007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1474265311}
   - component: {fileID: 1474265312}
+  - component: {fileID: 1474265313}
   m_Layer: 0
   m_Name: Goat Water Bin
   m_TagString: Untagged
@@ -39978,6 +40079,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!61 &1474265313
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474265310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.020572662, y: 0.82049847}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.49708217, y: 0.16007234}
+    oldSize: {x: 5, y: 2}
+    newSize: {x: 5, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0309982, y: 1.7187138}
+  m_EdgeRadius: 0
 --- !u!1 &1478481836
 GameObject:
   m_ObjectHideFlags: 0
@@ -135183,6 +135310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Goat 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018888418721026068, guid: 00fd92c321262e347b29fa4eaff2cf1b,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.462
       objectReference: {fileID: 0}
     - target: {fileID: 2018888418721026069, guid: 00fd92c321262e347b29fa4eaff2cf1b,
         type: 3}
