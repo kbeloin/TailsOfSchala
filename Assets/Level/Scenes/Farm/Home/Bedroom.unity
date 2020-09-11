@@ -1376,6 +1376,8 @@ GameObject:
   - component: {fileID: 621346243}
   - component: {fileID: 621346245}
   - component: {fileID: 621346244}
+  - component: {fileID: 621346247}
+  - component: {fileID: 621346246}
   m_Layer: 0
   m_Name: tubes (3)
   m_TagString: Untagged
@@ -1474,6 +1476,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &621346246
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621346242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.20035315, y: -0.23120642}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.5625, y: 1.125}
+    newSize: {x: 0.32, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9632063, y: 2.7124128}
+  m_EdgeRadius: 0
+--- !u!114 &621346247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621346242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 322951456}
+  initialPortrait: {fileID: 0}
+  dialogue: A glass tube. Inside is a vacuum that facilitates electric flow.
+  playerInRange: 0
 --- !u!4 &660221042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
@@ -1528,9 +1572,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
   initialPortrait: {fileID: 0}
-  dialogue: "\u201CA cold-blast kerosene lamp. It burns paraffin oil and uses cold
-    air to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
-    you think?\u201D"
+  dialogue: "A cold-blast kerosene lamp. It burns paraffin oil and uses cold air
+    to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
+    you think?"
   playerInRange: 0
 --- !u!61 &743660512
 BoxCollider2D:
@@ -1684,7 +1728,7 @@ PrefabInstance:
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 4.3190417
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -1745,7 +1789,7 @@ PrefabInstance:
     - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 4.3453712
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -1756,6 +1800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LightType
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577774440161, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -2100,6 +2149,8 @@ GameObject:
   - component: {fileID: 934035457}
   - component: {fileID: 934035458}
   - component: {fileID: 934035459}
+  - component: {fileID: 934035461}
+  - component: {fileID: 934035460}
   m_Layer: 0
   m_Name: Spark Gap
   m_TagString: Untagged
@@ -2197,6 +2248,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.498714, y: 0.9940282}
   m_EdgeRadius: 0
+--- !u!61 &934035460
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934035456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.028225183, y: 0.5333104}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5493983, y: 0.28893265}
+    oldSize: {x: 3.3125, y: 2.625}
+    newSize: {x: 0.32, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9287858, y: 1.608676}
+  m_EdgeRadius: 0
+--- !u!114 &934035461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934035456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 322951456}
+  initialPortrait: {fileID: 0}
+  dialogue: A device that can detect and decode certain wavelengths of light... if
+    only there were a way to transmit information using something like this!
+  playerInRange: 0
 --- !u!1 &944860976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,10 +2655,10 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.8490566, g: 0.82102174, b: 0.82102174, a: 1}
-  m_Intensity: 0.2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.15
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000b33dca844f41c656b72b8b72d346f3c8472983b8
+  m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -4121,6 +4215,8 @@ GameObject:
   - component: {fileID: 1570789543}
   - component: {fileID: 1570789545}
   - component: {fileID: 1570789544}
+  - component: {fileID: 1570789547}
+  - component: {fileID: 1570789546}
   m_Layer: 0
   m_Name: Coherer receiver
   m_TagString: Untagged
@@ -4218,6 +4314,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1570789546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570789542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c579480bf22cde4a806e35dc6f22087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 322951456}
+  initialPortrait: {fileID: 0}
+  dialogue: '"Something you rigged up between farm chores. A spark jumps the gap
+    between two electrodes."'
+  playerInRange: 0
+--- !u!61 &1570789547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570789542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.2661835, y: 0.15306187}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.47156608, y: 0.30621177}
+    oldSize: {x: 3.125, y: 3.125}
+    newSize: {x: 0.32, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.414921, y: 2.2199473}
+  m_EdgeRadius: 0
 --- !u!1 &1612009776
 GameObject:
   m_ObjectHideFlags: 0
@@ -5272,9 +5411,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
   initialPortrait: {fileID: 0}
-  dialogue: "\u201CA cold-blast kerosene lamp. It burns paraffin oil and uses cold
-    air to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
-    you think?\u201D"
+  dialogue: "A cold-blast kerosene lamp. It burns paraffin oil and uses cold air
+    to keep the flame bright and intense. A beautiful cobalt color, too, don\u2019t
+    you think?"
   playerInRange: 0
 --- !u!61 &1808730996
 BoxCollider2D:
@@ -5524,7 +5663,7 @@ PrefabInstance:
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -5539,7 +5678,7 @@ PrefabInstance:
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 4.3190417
+      value: 1.42
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -5550,6 +5689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointLightOuterAngle
       value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859671577428739532, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577428739533, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -5600,7 +5744,7 @@ PrefabInstance:
     - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 4.3453712
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
@@ -5611,6 +5755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LightType
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859671577774440160, guid: 3a0a586322f682f419ef051127efbf39,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4859671577774440161, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
