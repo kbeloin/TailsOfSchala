@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
 
 
-    //Combat Variables
+    // Combat Variables
     private GameObject weapon;
     private Animator animator;
     private Animator attackAnimator;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public int maxStamina = 100;
     public int stamina = 100;
 
+    // Dialog variables
     public bool inDialogue = false;
 
     // Start is called before the first frame update
@@ -41,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
         //attackAnimator = weapon.GetComponent<Animator>();
         playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
         silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
+
+        Debug.Log("Awake:" + SceneManager.GetActiveScene().name);
     }
 
     // Update is called once per frame
