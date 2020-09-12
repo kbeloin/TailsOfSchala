@@ -128,12 +128,10 @@ public class NPCDialogue : MonoBehaviour
 
         if (inkStory.currentTags.Count > 0)
         {
-            Debug.Log(inkStory.currentTags[0].ToLower() + "_neutral.png");
-
             portraitObject.SetActive(true);
             dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
 
-            portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>(inkStory.currentTags[0].ToLower() + "_neutral");
+            portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[1]);
 
             nameplate.SetActive(true);
             nameplateText.text = inkStory.currentTags[0];

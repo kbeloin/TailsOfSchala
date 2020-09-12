@@ -12,6 +12,7 @@ public class ItemDialogue : MonoBehaviour
 
     GameObject portraitObject;
     Text dialogueText;
+    GameObject nameplate;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class ItemDialogue : MonoBehaviour
 
         portraitObject = dialogBox.transform.Find("Portrait").gameObject;
         dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
+        nameplate = dialogBox.transform.Find("Nameplate").gameObject;
     }
 
     void Update()
@@ -52,6 +54,7 @@ public class ItemDialogue : MonoBehaviour
 
         dialogueText.text = dialogue;
 
+        nameplate.SetActive(false);
         dialogBox.SetActive(true);
     }
 
