@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -574,9 +574,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   initialPortrait: {fileID: 0}
-  dialogue: "\u201CAn absolutely ancient clavichord from France. It\u2019s well-tuned,
-    looks charming enough, and you have a certain affinity for it, but why father
-    doesn\u2019t invest in a fortepiano is a mystery.\u201D"
+  dialogue: "An absolutely ancient clavichord. It\u2019s well-tuned, looks charming
+    enough, and you have a certain affinity for it, but why father doesn\u2019t invest
+    in a fortepiano is a mystery."
   playerInRange: 0
 --- !u!61 &184888818
 BoxCollider2D:
@@ -1146,10 +1146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   initialPortrait: {fileID: 0}
-  dialogue: "\u201CA charming clock. Father could prattle on about the specs: a grid
-    pendulum designed by John Harrison keeps it precise during the coldest months,
-    cylindrical pendulums rise up and down, et cetera. It has a beautiful, resonant
-    tone.\u201D"
+  dialogue: 'A charming clock. Father could prattle on about the specs: a grid pendulum
+    keeps it precise during the coldest months, cylindrical pendulums rise up and
+    down, et cetera. It has a beautiful, resonant tone.'
   playerInRange: 0
 --- !u!61 &449214381
 BoxCollider2D:
@@ -3730,9 +3729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
   initialPortrait: {fileID: 0}
-  dialogue: "\u201CThe Tempest, Robinson Crusoe, Critique of Pure Reason, Northanger
-    Abbey, A Vindication of the Rights of Woman. A bit of a motley collection, but
-    who\u2019s here to judge you?\u201D"
+  dialogue: "The pride of the household: close to two hundred beautifully bound volumes.
+    And it\u2019s no set piece: mother and father prizes reading above all."
   playerInRange: 0
 --- !u!61 &705617774
 BoxCollider2D:
@@ -8618,7 +8616,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dafd787b3622748418667f3729593666, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 665abc5908fd8954b85151e43c6f0ce2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
