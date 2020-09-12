@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
 
 
-    //Combat Variables
+    // Combat Variables
     private GameObject weapon;
     private Animator animator;
     private Animator attackAnimator;
@@ -28,7 +29,11 @@ public class PlayerMovement : MonoBehaviour
     public int maxStamina = 100;
     public int stamina = 100;
 
+    // Dialog variables
     public bool inDialogue = false;
+
+    // Scene variables
+    private string sceneName;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +41,14 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sceneName = SceneManager.GetActiveScene().name;
 
         weapon = GameObject.Find("Weapon");
         //attackAnimator = weapon.GetComponent<Animator>();
         playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
         silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
+
+
     }
 
     // Update is called once per frame
@@ -112,7 +120,11 @@ public class PlayerMovement : MonoBehaviour
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(AttackCo());
+            // Check to make sure we're not inside the house or bedroom
+            // TODO: Check against an array of indoor scene names?
+            if (sceneName != "Bedroom" && sceneName != "LivingRoom") {
+              StartCoroutine(AttackCo());
+            }
             // attackAnimator.SetFloat("moveX", velocity.x);
             // attackAnimator.SetFloat("moveY", velocity.y);
             // attackAnimator.SetTrigger("Attack");
