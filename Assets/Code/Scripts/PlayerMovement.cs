@@ -32,19 +32,23 @@ public class PlayerMovement : MonoBehaviour
     // Dialog variables
     public bool inDialogue = false;
 
+    // Scene variables
+    private string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sceneName = SceneManager.GetActiveScene().name;
 
         weapon = GameObject.Find("Weapon");
         //attackAnimator = weapon.GetComponent<Animator>();
         playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
         silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
 
-        Debug.Log("Awake:" + SceneManager.GetActiveScene().name);
+
     }
 
     // Update is called once per frame
@@ -116,7 +120,11 @@ public class PlayerMovement : MonoBehaviour
         // Attack Input
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(AttackCo());
+            // Check to make sure we're not inside the house or bedroom
+            // TODO: Check against an array of indoor scene names?
+            if (sceneName != "Bedroom" && sceneName != "LivingRoom") {
+              StartCoroutine(AttackCo());
+            }
             // attackAnimator.SetFloat("moveX", velocity.x);
             // attackAnimator.SetFloat("moveY", velocity.y);
             // attackAnimator.SetTrigger("Attack");
