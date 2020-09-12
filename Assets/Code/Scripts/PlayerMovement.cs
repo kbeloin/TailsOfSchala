@@ -48,7 +48,11 @@ public class PlayerMovement : MonoBehaviour
         playerSilhouette = GameObject.Find("PlayerSprite_Silhouette");
         silRenderer = playerSilhouette.GetComponent<SpriteRenderer>();
 
-
+        if (GameManager.Instance.wearingNightgown)
+        {
+            animator.SetBool("wearingNightgown", true);
+            animator.Play("Base Layer.Idle Nightgown");
+        }
     }
 
     // Update is called once per frame

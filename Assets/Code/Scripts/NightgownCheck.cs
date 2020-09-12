@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NightgownCheck : MonoBehaviour
 {
     public GameObject dialogBox;
+    public GameObject nightgownBarrier;
     Text dialogueText;
 
     // Start is called before the first frame update
@@ -28,6 +29,10 @@ public class NightgownCheck : MonoBehaviour
             {
                 dialogueText.text = "Wouldn't want to leave without getting dressed first!";
                 dialogBox.SetActive(true);
+            }
+            else
+            {
+                nightgownBarrier.SetActive(false);
             }
         }
     }
