@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 85988827}
   - component: {fileID: 85988826}
   - component: {fileID: 85988828}
+  - component: {fileID: 85988829}
   m_Layer: 0
   m_Name: Coherer
   m_TagString: Untagged
@@ -389,6 +390,20 @@ MonoBehaviour:
   dialogBox: {fileID: 322951456}
   initialPortrait: {fileID: 0}
   dialogue: '"A... device."'
+  playerInRange: 0
+--- !u!114 &85988829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85988824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
   playerInRange: 0
 --- !u!1 &96276852
 GameObject:
@@ -1058,6 +1073,12 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67f5587a56c39c4c9ea8d059677ae36, type: 3}
+--- !u!224 &486609056 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048496466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &513161830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1226,7 @@ GameObject:
   - component: {fileID: 608962025}
   - component: {fileID: 608962027}
   - component: {fileID: 608962021}
+  - component: {fileID: 608962028}
   m_Layer: 0
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -1399,6 +1421,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0817828, y: 2.6828485}
   m_EdgeRadius: 0
+--- !u!114 &608962028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608962019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!1 &621346242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1448,7 @@ GameObject:
   - component: {fileID: 621346244}
   - component: {fileID: 621346247}
   - component: {fileID: 621346246}
+  - component: {fileID: 621346248}
   m_Layer: 0
   m_Name: tubes (3)
   m_TagString: Untagged
@@ -1552,6 +1589,20 @@ MonoBehaviour:
   initialPortrait: {fileID: 0}
   dialogue: A glass tube. Inside is a vacuum that facilitates electric flow.
   playerInRange: 0
+--- !u!114 &621346248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621346242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!4 &660221042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
@@ -1570,6 +1621,7 @@ GameObject:
   - component: {fileID: 743660513}
   - component: {fileID: 743660512}
   - component: {fileID: 743660511}
+  - component: {fileID: 743660514}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -1686,6 +1738,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &743660514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743660509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!1001 &786708133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1917,6 +1983,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0a586322f682f419ef051127efbf39, type: 3}
+--- !u!1 &789343138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789343139}
+  - component: {fileID: 789343141}
+  - component: {fileID: 789343140}
+  m_Layer: 5
+  m_Name: Tooltip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &789343139
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789343138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1177524140}
+  m_Father: {fileID: 486609056}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -75, y: -25}
+  m_SizeDelta: {x: 130, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &789343140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789343138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9a65be97cb4d04f5cb0e908ecb20fbf2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &789343141
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789343138}
+  m_CullTransparentMesh: 0
 --- !u!1 &826960600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,6 +2180,7 @@ GameObject:
   - component: {fileID: 889554012}
   - component: {fileID: 889554013}
   - component: {fileID: 889554014}
+  - component: {fileID: 889554011}
   m_Layer: 0
   m_Name: Curtains
   m_TagString: Untagged
@@ -2112,6 +2254,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &889554011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889554008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!61 &889554012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2185,6 +2341,7 @@ GameObject:
   - component: {fileID: 934035459}
   - component: {fileID: 934035461}
   - component: {fileID: 934035460}
+  - component: {fileID: 934035462}
   m_Layer: 0
   m_Name: Spark Gap
   m_TagString: Untagged
@@ -2324,6 +2481,20 @@ MonoBehaviour:
   initialPortrait: {fileID: 0}
   dialogue: A device that can detect and decode certain wavelengths of light... if
     only there were a way to transmit information using something like this!
+  playerInRange: 0
+--- !u!114 &934035462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934035456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
   playerInRange: 0
 --- !u!1 &944860976
 GameObject:
@@ -2491,6 +2662,7 @@ GameObject:
   - component: {fileID: 1046307609}
   - component: {fileID: 1046307608}
   - component: {fileID: 1046307610}
+  - component: {fileID: 1046307611}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -2602,9 +2774,101 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
   initialPortrait: {fileID: 0}
-  dialogue: A handsome desk, cluttered with your papers, writing implements, and
-    various electrical components.
+  dialogue: A handsome desk. It's cluttered with your papers, writing implements,
+    and various electrical components.
   playerInRange: 0
+--- !u!114 &1046307611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046307606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
+--- !u!1 &1177524139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177524140}
+  - component: {fileID: 1177524142}
+  - component: {fileID: 1177524141}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1177524140
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177524139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 789343139}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1177524141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177524139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08235294, g: 0.05882353, b: 0.039215688, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 20c4fc10876a94399966de039782dc24, type: 3}
+    m_FontSize: 8
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 16
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press E to interact with items
+--- !u!222 &1177524142
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177524139}
+  m_CullTransparentMesh: 0
 --- !u!1 &1192054328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4806,7 @@ GameObject:
   - component: {fileID: 1570789544}
   - component: {fileID: 1611613872}
   - component: {fileID: 1570789546}
+  - component: {fileID: 1570789548}
   m_Layer: 0
   m_Name: Coherer receiver
   m_TagString: Untagged
@@ -4691,6 +4956,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9361441, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1570789548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570789542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!1 &1611613871
 GameObject:
   m_ObjectHideFlags: 0
@@ -5771,6 +6050,7 @@ GameObject:
   - component: {fileID: 1808730997}
   - component: {fileID: 1808730996}
   - component: {fileID: 1808730995}
+  - component: {fileID: 1808730998}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -5887,6 +6167,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1808730998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808730993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c435ce9d93c40f9bc784cf5b18bd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 789343138}
+  playerInRange: 0
 --- !u!1 &1911070694
 GameObject:
   m_ObjectHideFlags: 0
