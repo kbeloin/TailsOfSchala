@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4519,6 +4519,7 @@ GameObject:
   - component: {fileID: 221049907}
   - component: {fileID: 221049905}
   - component: {fileID: 221049904}
+  - component: {fileID: 221049906}
   m_Layer: 0
   m_Name: ToLivingRoom
   m_TagString: Untagged
@@ -4568,6 +4569,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0763705, y: 1.4262686}
   m_EdgeRadius: 0
+--- !u!114 &221049906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221049903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9029bab2eb9242f28904a5575092cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toSunny: 1
+  toCloudy: 0
+  toRainStorm: 0
 --- !u!4 &221049907
 Transform:
   m_ObjectHideFlags: 0
@@ -59381,6 +59397,7 @@ GameObject:
   - component: {fileID: 1847101492}
   - component: {fileID: 1847101491}
   - component: {fileID: 1847101490}
+  - component: {fileID: 1847101493}
   m_Layer: 0
   m_Name: ToRoadToTown
   m_TagString: Untagged
@@ -59444,6 +59461,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847101493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847101489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9029bab2eb9242f28904a5575092cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toSunny: 1
+  toCloudy: 0
+  toRainStorm: 0
 --- !u!1 &1852423383
 GameObject:
   m_ObjectHideFlags: 0
