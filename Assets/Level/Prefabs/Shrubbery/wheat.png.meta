@@ -1,16 +1,34 @@
 fileFormatVersion: 2
-guid: 413b36952c3fa40a8ac7fd4a2392eac0
+guid: 0fc4c74793296744a932f4a9ebfb4cd1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6592725754679766250
-    second: wheat-sprite_0
+      213: -4644883548884191802
+    second: wheat 1_0
   - first:
-      213: 7444154535073717663
-    second: wheat-sprite_1
+      213: 3570959474985722040
+    second: wheat 1_1
   - first:
-      213: -6540934058435192993
-    second: wheat-sprite_2
+      213: -5334441344604351503
+    second: wheat 1_2
+  - first:
+      213: -5168905925434599096
+    second: wheat 1_3
+  - first:
+      213: -122827318288668922
+    second: wheat 1_4
+  - first:
+      213: 153418203403230631
+    second: wheat 1_5
+  - first:
+      213: -3471149831088047328
+    second: wheat 1_0
+  - first:
+      213: 1292253062367454293
+    second: wheat 1_1
+  - first:
+      213: 7827068679599508939
+    second: wheat 1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,47 +110,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheat-sprite_0
+      name: wheat 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -146,14 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeca145e4211e7b50800000000000000
-      internalID: 6592725754679766250
+      spriteID: 02bf6db9e9ff3dfc0800000000000000
+      internalID: -3471149831088047328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheat-sprite_1
+      name: wheat 1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -167,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9d9e2cdb13fe4760800000000000000
-      internalID: 7444154535073717663
+      spriteID: 554a25640510fe110800000000000000
+      internalID: 1292253062367454293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheat-sprite_2
+      name: wheat 1_2
       rect:
         serializedVersion: 2
         x: 64
@@ -188,8 +170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5757b3112fe935a0800000000000000
-      internalID: -6540934058435192993
+      spriteID: bcd4d189e755f9c60800000000000000
+      internalID: 7827068679599508939
       vertices: []
       indices: 
       edges: []
