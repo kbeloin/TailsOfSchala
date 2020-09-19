@@ -29,6 +29,7 @@ public class NPCDialogue : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("BLAH");
         playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
 
         inkStory = new Story(inkAsset.text);
@@ -93,6 +94,9 @@ public class NPCDialogue : MonoBehaviour
 
         if (showingChoices)
         {
+            portraitObject.SetActive(false);
+            nameplate.SetActive(false);
+
             if (Input.GetKeyDown(KeyCode.S) && playerInRange)
             {
                 if (currentChoice < inkStory.currentChoices.Count - 1) currentChoice++;
@@ -131,7 +135,15 @@ public class NPCDialogue : MonoBehaviour
             portraitObject.SetActive(true);
             dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
 
-            portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[1]);
+            if (inkStory.currentTags.Count > 1) {
+              Debug.Log("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[1]);
+              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[1]);
+            }
+            else
+            {
+              Debug.Log("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[0] + "_neutral");
+              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[0] + "_neutral");
+            }
 
             nameplate.SetActive(true);
             nameplateText.text = inkStory.currentTags[0];
@@ -153,6 +165,10 @@ public class NPCDialogue : MonoBehaviour
 
     private void ShowChoices()
     {
+        // Update portrait
+        portraitObject.SetActive(true);
+
+        // Display the choices
         showingChoices = true;
         currentChoice = 0;
 

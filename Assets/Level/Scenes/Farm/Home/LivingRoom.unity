@@ -3603,7 +3603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  inkAsset: {fileID: 4900000, guid: 5dcce5d3cd583423e91891dbaf68f19b, type: 3}
+  inkAsset: {fileID: 4900000, guid: 690ab5c69a14642b1b5dfbd759656afd, type: 3}
   playerInRange: 0
 --- !u!1 &705617769
 GameObject:
@@ -9324,6 +9324,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
