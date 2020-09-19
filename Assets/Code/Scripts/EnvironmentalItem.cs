@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Runtime.Versioning;
 using UnityEngine;
 
-public class EnvironmentalItem : MonoBehaviour {
+public class EnvironmentalItem : MonoBehaviour
+{
     public bool isInteractable;
     public bool interactionSwitch;
 
@@ -22,13 +23,13 @@ public class EnvironmentalItem : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
-            PlayerInteract(); // Player interacts with item.  Activates animator to change states.
+//            PlayerInteract(); // Player interacts with item.  Activates animator to change states.
         }
 
-				if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
         {
-          Debug.Log("Attacked this thing!");
-					PlayerInteract();
+            Debug.Log("Attacked this thing!");
+            PlayerInteract();
         }
 
     }
