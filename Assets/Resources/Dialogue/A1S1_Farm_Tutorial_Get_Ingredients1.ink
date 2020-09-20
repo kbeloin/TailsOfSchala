@@ -1,17 +1,22 @@
-VAR first_engagement = true
+VAR first_engagement = 1
 
-{ first_engagement == false:
-    Did you get the ingredients? # Mother
-    *[Not yet.] #Kay # Kay_sad
-    Well, back outside with you! # Mother # Mother_sad
-    ->DONE
-    - else:
-    ->task
+->start
 
+==start==
+{ first_engagement == 0:
+    -> reminder
+- else:
+    -> task
 }
 
+==reminder==
+Did you get the ingredients? # Mother
++Not yet. #Kay # Kay_sad
+Well, back outside with you! # Mother # Mother_sad
+->END
+
 ==task==
-~ first_engagement = false
+~ first_engagement = 0
 Good morning sleepyhead. #Father #Father_happy
 *[Good morning!]
 Good morning everyone! #Kay #Kay_happy
