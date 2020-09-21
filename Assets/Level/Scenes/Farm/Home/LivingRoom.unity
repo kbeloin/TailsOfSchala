@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -231,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1584834990}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &48972963
 BoxCollider2D:
@@ -277,7 +277,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1344,7 +1344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  inkAsset: {fileID: 4900000, guid: 5dcce5d3cd583423e91891dbaf68f19b, type: 3}
   playerInRange: 0
 --- !u!61 &452259450
 BoxCollider2D:
@@ -3558,7 +3557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628461825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.32, y: -14.04, z: 0}
+  m_LocalPosition: {x: -8.12, y: -12.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3603,7 +3602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  inkAsset: {fileID: 4900000, guid: 690ab5c69a14642b1b5dfbd759656afd, type: 3}
   playerInRange: 0
 --- !u!1 &705617769
 GameObject:
@@ -4187,7 +4185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  inkAsset: {fileID: 4900000, guid: 5dcce5d3cd583423e91891dbaf68f19b, type: 3}
   playerInRange: 0
 --- !u!61 &862051891
 BoxCollider2D:
@@ -7041,8 +7038,8 @@ Transform:
   m_Children:
   - {fileID: 1036522873}
   - {fileID: 337696964}
-  - {fileID: 305421532}
   - {fileID: 48972962}
+  - {fileID: 305421532}
   m_Father: {fileID: 1621330894}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9533,7 +9530,7 @@ PrefabInstance:
     - target: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4859671578100128299, guid: 3a0a586322f682f419ef051127efbf39,
         type: 3}
