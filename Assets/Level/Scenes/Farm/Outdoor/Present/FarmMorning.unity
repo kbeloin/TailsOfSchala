@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4527,6 +4527,8 @@ GameObject:
   - component: {fileID: 238848579}
   - component: {fileID: 238848578}
   - component: {fileID: 238848577}
+  - component: {fileID: 238848584}
+  - component: {fileID: 238848583}
   m_Layer: 0
   m_Name: Goat 4
   m_TagString: Untagged
@@ -4644,9 +4646,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 774cceacad7b42e4da26065c055679d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a673ae5f1e1a9a4fadc962d80ae2011, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4781,6 +4783,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &238848583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238848575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInRange: 0
+--- !u!61 &238848584
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238848575}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0318861, y: 0.53348446}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.9375, y: 1.625}
+    newSize: {x: 1.25, y: 1.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9897823, y: 2.183031}
+  m_EdgeRadius: 0
 --- !u!1 &243479939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,6 +7986,8 @@ GameObject:
   - component: {fileID: 433294909}
   - component: {fileID: 433294908}
   - component: {fileID: 433294907}
+  - component: {fileID: 433294914}
+  - component: {fileID: 433294913}
   m_Layer: 0
   m_Name: Goat 3
   m_TagString: Untagged
@@ -7979,7 +8022,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.051893234, y: 0.098701745}
+  m_Offset: {x: 0.051893234, y: 0.16586405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -7990,7 +8033,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7702522, y: 0.1975035}
+  m_Size: {x: 1.7702522, y: 0.33192813}
   m_EdgeRadius: 0
 --- !u!50 &433294908
 Rigidbody2D:
@@ -8064,7 +8107,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 774cceacad7b42e4da26065c055679d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.649
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8199,6 +8242,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &433294913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433294905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInRange: 0
+--- !u!61 &433294914
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433294905}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.14277077, y: 0.7453127}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.9375, y: 1.625}
+    newSize: {x: 1.25, y: 1.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0293007, y: 2.2296848}
+  m_EdgeRadius: 0
 --- !u!1 &437765364
 GameObject:
   m_ObjectHideFlags: 0
@@ -15671,6 +15753,51 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 4.6907234, y: 5.5625}
+  m_EdgeRadius: 0
+--- !u!1 &604191912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6072232107371631705, guid: 1f7a638eff8c590418581f080cd27f8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6072232106309344114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &604191913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604191912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInRange: 0
+--- !u!61 &604191914
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604191912}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.3348012}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.9375, y: 1.625}
+    newSize: {x: 1.25, y: 1.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9375, y: 2.5803976}
   m_EdgeRadius: 0
 --- !u!1 &604661080
 GameObject:
@@ -36434,6 +36561,51 @@ Transform:
   m_Father: {fileID: 1738853191}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513555203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2018888418721026066, guid: 00fd92c321262e347b29fa4eaff2cf1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2018888418432864451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513555204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513555203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInRange: 0
+--- !u!61 &1513555205
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513555203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09566021, y: 0.61320305}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.9375, y: 1.625}
+    newSize: {x: 1.25, y: 1.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.862234, y: 2.3424683}
+  m_EdgeRadius: 0
 --- !u!1 &1515142660
 GameObject:
   m_ObjectHideFlags: 0
@@ -58913,12 +59085,12 @@ PrefabInstance:
     - target: {fileID: 8705268416411252288, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.99
+      value: 18.85
       objectReference: {fileID: 0}
     - target: {fileID: 8705268416411252288, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.83
+      value: 13.4
       objectReference: {fileID: 0}
     - target: {fileID: 8705268416411252288, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
@@ -132023,8 +132195,13 @@ PrefabInstance:
     - target: {fileID: 2018888418721026068, guid: 00fd92c321262e347b29fa4eaff2cf1b,
         type: 3}
       propertyPath: m_Volume
-      value: 0.462
+      value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 2018888418721026068, guid: 00fd92c321262e347b29fa4eaff2cf1b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d323e89864ee54e44b8e18ff31fb7dac, type: 3}
     - target: {fileID: 2018888418721026069, guid: 00fd92c321262e347b29fa4eaff2cf1b,
         type: 3}
       propertyPath: moveSpot
@@ -132703,6 +132880,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2042446224}
     m_Modifications:
+    - target: {fileID: 6072232107371631682, guid: 1f7a638eff8c590418581f080cd27f8b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d323e89864ee54e44b8e18ff31fb7dac, type: 3}
+    - target: {fileID: 6072232107371631682, guid: 1f7a638eff8c590418581f080cd27f8b,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6072232107371631683, guid: 1f7a638eff8c590418581f080cd27f8b,
         type: 3}
       propertyPath: moveSpot
