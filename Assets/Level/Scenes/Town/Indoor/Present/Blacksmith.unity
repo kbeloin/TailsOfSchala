@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 155315919}
   - component: {fileID: 155315918}
   - component: {fileID: 155315917}
+  - component: {fileID: 155315920}
   m_Layer: 0
   m_Name: Whitney
   m_TagString: Untagged
@@ -261,7 +262,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0019004345, y: 0.12686539}
@@ -269,7 +270,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5319881, y: 0.03302703}
     oldSize: {x: 1, y: 2.25}
-    newSize: {x: 1, y: 2.25}
+    newSize: {x: 0.9375, y: 2.125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -321,7 +322,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2.25}
+  m_Size: {x: 0.9375, y: 2.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -354,18 +355,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.043334484, y: 0.87493587}
+  m_Offset: {x: 0.03109765, y: 0.87493587}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5319881, y: 0.03302703}
     oldSize: {x: 1, y: 2.25}
-    newSize: {x: 1, y: 2.25}
+    newSize: {x: 0.9375, y: 2.125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.406023, y: 2.6015067}
+  m_Size: {x: 2.3815494, y: 2.6015067}
   m_EdgeRadius: 0
 --- !u!82 &155315918
 AudioSource:
@@ -379,7 +380,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bab50e55290d69446a6aaa965d8c365c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.68
+  m_Volume: 0.645
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -476,6 +477,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInRange: 0
+--- !u!95 &155315920
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155315913}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d9cad85af0c8c74880100b99d82fdb7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &167050916
 GameObject:
   m_ObjectHideFlags: 0
