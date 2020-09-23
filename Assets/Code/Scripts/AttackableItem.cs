@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Versioning;
 using UnityEngine;
 
-public class EnvironmentalItem : MonoBehaviour
+public class AttackableItem : MonoBehaviour
 {
     public bool isInteractable;
     public bool interactionSwitch;
@@ -21,17 +21,11 @@ public class EnvironmentalItem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
         {
-            PlayerInteract(); // Player interacts with item.  Activates animator to change states.
+            Debug.Log("Attacked this thing!");
+            PlayerAttack();
         }
-
-        //if (Input.GetKeyDown(KeyCode.Q) && playerInRange)
-        //{
-        //    Debug.Log("Attacked this thing!");
-        //    PlayerInteract();
-        //}
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -53,7 +47,7 @@ public class EnvironmentalItem : MonoBehaviour
         }
     }
 
-    void PlayerInteract()
+    void PlayerAttack()
     {
         interactionSwitch = !interactionSwitch;
         animator.SetBool("interactionSwitch", interactionSwitch);
