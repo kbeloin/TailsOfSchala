@@ -1,23 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Ink.Runtime;
 
 public class GameManager : Singleton<GameManager>
 {
+    public bool wearingNightgown = true;
     // public int health = 10;
     // public int wheat = 0;
+    public TextAsset inkAsset;
+    public Story inkStory;
+
+    InventoryItem[] inventory = new InventoryItem[0];
 
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
-    public bool wearingNightgown = true;
-    private Animator playerAnimator;
 
     protected GameManager() { }
 
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        playerAnimator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
+        inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
+        inkStory = new Story(inkAsset.text);
     }
 
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
@@ -27,6 +32,14 @@ public class GameManager : Singleton<GameManager>
         nextDirection = toDirection;
 
         SceneManager.LoadScene(scene);
+    }
+
+    public void DebugInventory()
+    {
+        foreach (InventoryItem i in inventory)
+        {
+            Debug.Log(i.name);
+        }
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

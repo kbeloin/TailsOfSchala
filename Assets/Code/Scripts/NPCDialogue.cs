@@ -6,7 +6,6 @@ using Ink.Runtime;
 public class NPCDialogue : MonoBehaviour
 {
     public GameObject dialogBox;
-    public TextAsset inkAsset;
     public bool playerInRange;
 
     PlayerMovement playerMovement;
@@ -23,16 +22,12 @@ public class NPCDialogue : MonoBehaviour
     Image choiceOneImage;
     Image choiceTwoImage;
     Image choiceThreeImage;
-    Story inkStory;
     bool showingChoices;
     int currentChoice;
 
     void Start()
     {
-        Debug.Log("BLAH");
         playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-
-        inkStory = new Story(inkAsset.text);
 
         HideDialog();
 
@@ -60,6 +55,7 @@ public class NPCDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
+            Debug.Log(GameManager.Instance.inkStory.variablesState["first_engagement"]);
             if (!dialogBox.activeInHierarchy)
             {
                 ShowDialog();
@@ -68,20 +64,20 @@ public class NPCDialogue : MonoBehaviour
             {
                 if (showingChoices)
                 {
-                    inkStory.ChooseChoiceIndex(currentChoice);
+                    GameManager.Instance.inkStory.ChooseChoiceIndex(currentChoice);
 
                     HideChoices();
 
-                    if (inkStory.canContinue)
+                    if (GameManager.Instance.inkStory.canContinue)
                     {
                         StoryContinue();
                     }
                 }
-                else if (inkStory.currentChoices.Count > 0)
+                else if (GameManager.Instance.inkStory.currentChoices.Count > 0)
                 {
                     ShowChoices();
                 }
-                else if (inkStory.canContinue)
+                else if (GameManager.Instance.inkStory.canContinue)
                 {
                     StoryContinue();
                 }
@@ -99,17 +95,21 @@ public class NPCDialogue : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S) && playerInRange)
             {
-                if (currentChoice < inkStory.currentChoices.Count - 1) currentChoice++;
+                if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
+
+                choiceOneImage.gameObject.SetActive(currentChoice == 0);
+                choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+                choiceThreeImage.gameObject.SetActive(currentChoice == 2);
             }
 
             if (Input.GetKeyDown(KeyCode.W) && playerInRange)
             {
                 if (currentChoice > 0) currentChoice--;
-            }
 
-            choiceOneImage.gameObject.SetActive(currentChoice == 0);
-            choiceTwoImage.gameObject.SetActive(currentChoice == 1);
-            choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+                choiceOneImage.gameObject.SetActive(currentChoice == 0);
+                choiceTwoImage.gameObject.SetActive(currentChoice == 1);
+                choiceThreeImage.gameObject.SetActive(currentChoice == 2);
+            }
         }
     }
 
@@ -119,7 +119,8 @@ public class NPCDialogue : MonoBehaviour
 
         HideChoices();
 
-        inkStory.ResetState();
+        //GameManager.Instance.inkStory.ResetState();
+        GameManager.Instance.inkStory.ChoosePathString("start");
 
         dialogBox.SetActive(true);
 
@@ -128,25 +129,25 @@ public class NPCDialogue : MonoBehaviour
 
     private void StoryContinue()
     {
-        dialogueText.text = inkStory.Continue();
+        dialogueText.text = GameManager.Instance.inkStory.Continue();
 
-        if (inkStory.currentTags.Count > 0)
+        if (GameManager.Instance.inkStory.currentTags.Count > 0)
         {
             portraitObject.SetActive(true);
             dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
 
-            if (inkStory.currentTags.Count > 1) {
-              Debug.Log("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[1]);
-              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[1]);
+            if (GameManager.Instance.inkStory.currentTags.Count > 1) {
+              Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
+              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
             }
             else
             {
-              Debug.Log("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[0] + "_neutral");
-              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + inkStory.currentTags[0] + "/" + inkStory.currentTags[0] + "_neutral");
+              Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
+              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
             }
 
             nameplate.SetActive(true);
-            nameplateText.text = inkStory.currentTags[0];
+            nameplateText.text = GameManager.Instance.inkStory.currentTags[0];
         }
         else
         {
@@ -174,9 +175,9 @@ public class NPCDialogue : MonoBehaviour
 
         dialogueText.text = "";
 
-        for (int i = 0; i < inkStory.currentChoices.Count; i++)
+        for (int i = 0; i < GameManager.Instance.inkStory.currentChoices.Count; i++)
         {
-            Choice choice = inkStory.currentChoices[i];
+            Choice choice = GameManager.Instance.inkStory.currentChoices[i];
             switch (i)
             {
                 case 0:
