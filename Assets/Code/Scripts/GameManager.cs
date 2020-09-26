@@ -5,8 +5,6 @@ using Ink.Runtime;
 public class GameManager : Singleton<GameManager>
 {
     public bool wearingNightgown = true;
-    // public int health = 10;
-    // public int wheat = 0;
     public TextAsset inkAsset;
     public Story inkStory;
 
