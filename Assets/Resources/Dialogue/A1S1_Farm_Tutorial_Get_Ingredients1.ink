@@ -1,3 +1,4 @@
+EXTERNAL multiply(x,y)
 VAR first_engagement = 1
 
 ->start
@@ -17,7 +18,7 @@ Well, back outside with you! # Mother # Mother_sad
 
 ==task==
 ~ first_engagement = 0
-Good morning sleepyhead. #Father #Father_happy
+Good morning sleepyhead.  3 times 4 is {multiply(3, 4)}. #Father #Father_happy
 *[Good morning!]
 Good morning everyone! #Kay #Kay_happy
 Annnnddd...? # Thomas # Thomas_mad
