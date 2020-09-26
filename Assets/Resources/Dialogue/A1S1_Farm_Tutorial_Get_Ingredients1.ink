@@ -1,4 +1,4 @@
-EXTERNAL multiply(x,y)
+VAR tooltip = ""
 VAR first_engagement = 1
 
 ->start
@@ -18,7 +18,7 @@ Well, back outside with you! # Mother # Mother_sad
 
 ==task==
 ~ first_engagement = 0
-Good morning sleepyhead.  3 times 4 is {multiply(3, 4)}. #Father #Father_happy
+Good morning sleepyhead. #Father #Father_happy
 *[Good morning!]
 Good morning everyone! #Kay #Kay_happy
 Annnnddd...? # Thomas # Thomas_mad
@@ -94,10 +94,12 @@ Did you not sleep well last night, Kay? # Mother #Mother_sad
     
 ==finish==
 Could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
+~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
 ->END
 
 ==finish_with_name==
 Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
+~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
 ->END

@@ -2,12 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
+using System.Collections;
 
 public class GameManager : Singleton<GameManager>
 {
     public bool wearingNightgown = true;
-    // public int health = 10;
-    // public int wheat = 0;
     public TextAsset inkAsset;
     public Story inkStory;
 
@@ -25,9 +24,8 @@ public class GameManager : Singleton<GameManager>
         inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
         inkStory = new Story(inkAsset.text);
 
-        inkStory.BindExternalFunction ("multiply", (int arg1, float arg2) => {
-            Debug.Log("Called the external function 'multiply'");
-            return arg1 * arg2;
+        inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
+            ShowTooltip(newValue.ToString());
         });
 
     }
@@ -50,27 +48,28 @@ public class GameManager : Singleton<GameManager>
     }
 
 
-    public void ShowTooltip()
+    void ShowTooltip(string newText)
     {
-        // TODO:
-        // We shouldn't be relying on Ink to directly manipulate the game.
-        // Instead, this should be converted to a variable observer:
-        // https://github.com/inkle/ink/blob/master/Documentation/RunningYourInk.md#important-notes-on-the-usage-of-external-functions
-
         // Find the Tooltip object in the scene
-        GameObject tooltip = GameObject.Find("Tooltip").gameObject;
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject tooltip = uiCanvas.transform.Find("Tooltip").gameObject;
 
         // In that Tooltip object, find the Text object
         Text tooltipText = tooltip.transform.Find("TooltipText").gameObject.GetComponent<Text>();
 
+        // Update the tooltip text
+        tooltipText.text = newText;
+
         // Show the tooltip!
         tooltip.SetActive(true);
 
-        // Update the tooltip text
-        tooltipText.text = "I'm a tooltip!";
+        StartCoroutine(TimeoutTooltip(tooltip));
+    }
 
-        //yield return new WaitForSeconds(5);
-        //tooltip.SetActive(false);
+    IEnumerator TimeoutTooltip(GameObject tooltip)
+    {
+        yield return new WaitForSeconds(5);
+        tooltip.SetActive(false);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
