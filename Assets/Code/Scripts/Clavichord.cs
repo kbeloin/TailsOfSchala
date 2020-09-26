@@ -72,7 +72,7 @@ public class Clavichord : MonoBehaviour
             source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Bb3"));
         }
 
-        if (Input.GetKeyDown(KeyCode.Plus))
+        if (Input.GetKeyDown(KeyCode.Equals))
         {
             source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/B4"));
         }
