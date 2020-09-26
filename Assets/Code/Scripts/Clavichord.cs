@@ -4,78 +4,77 @@ using UnityEngine;
 
 public class Clavichord : MonoBehaviour
 {    
-    private AudioSource audio;
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        AudioSource audio = gameObject.AddComponent<AudioSource>();
-        
+ 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/C3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/C3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Dd3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Dd3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/D3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/D3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Eb3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Eb3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/E3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/E3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/F3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/F3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Gb3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Gb3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/G3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/G3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Ab3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Ab3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/A3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/A3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Minus))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Bb3"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Bb3"));
         }
 
         if (Input.GetKeyDown(KeyCode.Plus))
         {
-            audio.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/B4"));
+            source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/B4"));
         }
 
     }
