@@ -75,10 +75,8 @@ public class NPCMovement : MonoBehaviour
 
     void changeAnimation(Vector2 direction)
     {
-        UnityEngine.Debug.Log(direction);
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            UnityEngine.Debug.Log("x is greater");
             if (direction.x > 0)
             {
                 animator.SetFloat("moveX", 1);
@@ -91,7 +89,6 @@ public class NPCMovement : MonoBehaviour
         }
         else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
         {
-            UnityEngine.Debug.Log("y is greater");
             if (direction.y > 0)
             {
                 animator.SetFloat("moveY", 1);

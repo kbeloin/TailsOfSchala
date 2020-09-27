@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Collectable : MonoBehaviour
 {
@@ -13,13 +14,24 @@ public class Collectable : MonoBehaviour
 
     bool collected = false;
 
+    SpriteRenderer myRenderer;
+    Light2D myLight;
+
+    private void Start()
+    {
+        myRenderer = GetComponent<SpriteRenderer>();
+        myLight = GetComponent<Light2D>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInRange && !collected)
         {
-            GameManager.Instance.ShowTooltip("Collected " + itemName + "!");
+            GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName + "!");
             GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
             GameManager.Instance.DebugInventory();
+            myRenderer.enabled = false;
+            myLight.enabled = false;
             collected = true;
         }
     }
@@ -30,7 +42,7 @@ public class Collectable : MonoBehaviour
         {
             playerInRange = true;
 
-            GameManager.Instance.ShowTooltip("Press E to collect");
+            if (!collected) GameManager.Instance.ShowTooltip("Press E to collect");
         }
     }
 
@@ -39,6 +51,8 @@ public class Collectable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
+
+            if (!collected) GameManager.Instance.HideTooltip();
         }
     }
 }
