@@ -31,7 +31,7 @@ public class SchalaFollow : MonoBehaviour
 
             if (catchup == true)
             {
-                speed = 6;
+                speed = 8;
             }
 
             else
