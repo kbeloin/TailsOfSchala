@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -249,12 +249,12 @@ PrefabInstance:
     - target: {fileID: 7453475372495124324, guid: 715ee7444fb73414ea0c2403ab07eaf7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.84
+      value: -12.95
       objectReference: {fileID: 0}
     - target: {fileID: 7453475372495124324, guid: 715ee7444fb73414ea0c2403ab07eaf7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2449944
+      value: -2.0377154
       objectReference: {fileID: 0}
     - target: {fileID: 7453475372495124324, guid: 715ee7444fb73414ea0c2403ab07eaf7,
         type: 3}
@@ -1006,6 +1006,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223035601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 2022132911}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &244132459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   stoppingDistance: 1.5
+  catchup: 0
 --- !u!212 &336885574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8070,6 +8077,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 789343138, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
@@ -8197,6 +8208,7 @@ GameObject:
   - component: {fileID: 2039981629}
   - component: {fileID: 2039981628}
   - component: {fileID: 2039981627}
+  - component: {fileID: 2039981630}
   m_Layer: 0
   m_Name: Father Malbury
   m_TagString: Plantlife
@@ -8321,7 +8333,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039981622}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b0692b61d843b445901064466459a73, type: 3}
   m_Name: 
@@ -8365,7 +8377,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b37a11c3f8cf7f642b4694408709daab, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.434
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8449,6 +8461,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2039981630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039981622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 223035601}
+  npcPortrait: {fileID: 21300000, guid: ac5d09de7f3a47645afa30f4402de2af, type: 3}
+  npcName: Father Malbury
+  dialogue: I noticed that your family did not attend service this morning... again.
+  playerInRange: 0
 --- !u!1001 &2061689183
 PrefabInstance:
   m_ObjectHideFlags: 0
