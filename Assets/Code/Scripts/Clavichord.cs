@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Clavichord : MonoBehaviour
-{    
+{
+    public bool playerInRange;
     private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();
-        
+        source = GetComponent<AudioSource>();        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!playerInRange) return;
 
         if (Input.GetKeyDown(KeyCode.BackQuote))
         {
@@ -82,5 +83,23 @@ public class Clavichord : MonoBehaviour
             source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/C5"));
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = true;
+
+            GameManager.Instance.ShowTooltip("Play with the number row!");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
     }
 }
