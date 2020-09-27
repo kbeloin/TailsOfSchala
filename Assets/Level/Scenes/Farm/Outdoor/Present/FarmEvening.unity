@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -287,6 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   stoppingDistance: 1.5
+  catchup: 0
 --- !u!212 &6831260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9285,7 +9286,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.625, y: 4.6875}
+    oldSize: {x: 4.6875, y: 4.6875}
     newSize: {x: 4.75, y: 8.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9815,6 +9816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   stoppingDistance: 4.8
+  catchup: 0
 --- !u!95 &367710793
 Animator:
   serializedVersion: 3
@@ -12848,6 +12850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5.52
   stoppingDistance: 1
+  catchup: 0
 --- !u!95 &503526750
 Animator:
   serializedVersion: 3
@@ -15351,6 +15354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5.52
   stoppingDistance: 1
+  catchup: 0
 --- !u!95 &652572261
 Animator:
   serializedVersion: 3
@@ -16371,6 +16375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 789343138, guid: 59a222df298964682a8ab1f42945c798, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
@@ -16709,6 +16717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stoppingDistance: 4
+  catchup: 0
 --- !u!95 &715340775
 Animator:
   serializedVersion: 3
@@ -24526,7 +24535,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.625, y: 4.6875}
+    oldSize: {x: 4.6875, y: 4.6875}
     newSize: {x: 4.75, y: 8.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97220,7 +97229,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.625, y: 4.6875}
+    oldSize: {x: 4.6875, y: 4.6875}
     newSize: {x: 4.75, y: 8.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
