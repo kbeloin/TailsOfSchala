@@ -15,6 +15,7 @@ public class NPCOneLiner : MonoBehaviour
     GameObject nameplate;
     Text nameplateText;
     Text dialogueText;
+    private AudioSource source;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class NPCOneLiner : MonoBehaviour
         nameplateText = nameplate.transform.Find("NameLabel").gameObject.GetComponent<Text>();
 
         dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
+
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -69,6 +72,8 @@ public class NPCOneLiner : MonoBehaviour
         }
 
         dialogBox.SetActive(true);
+
+        if (source) source.Play();
     }
 
     private void HideDialog()

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -10,7 +11,7 @@ public class GameManager : Singleton<GameManager>
     public TextAsset inkAsset;
     public Story inkStory;
 
-    InventoryItem[] inventory = new InventoryItem[0];
+    List<InventoryItem> inventory = new List<InventoryItem>();
 
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
@@ -43,7 +44,7 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (InventoryItem i in inventory)
         {
-            Debug.Log(i.name);
+            Debug.Log(i.itemName);
         }
     }
 
@@ -82,5 +83,19 @@ public class GameManager : Singleton<GameManager>
         animator.SetFloat("moveY", nextDirection.y);
 
         Camera.main.transform.position = nextCameraPosition;
+    }
+
+    public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value)
+    {
+        InventoryItem item = new InventoryItem
+        {
+            itemName = itemName,
+            description = description,
+            icon = icon,
+            weight = weight,
+            value = value
+        };
+
+        inventory.Add(item);
     }
 }
