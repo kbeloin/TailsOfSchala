@@ -125,14 +125,13 @@ public class GameManager : Singleton<GameManager>
         GameObject player = GameObject.Find("Player").gameObject;
         Animator animator = player.transform.GetComponent<Animator>();
 
-        animator.Play("Base Layer.Arms Raised");
-
-        StartCoroutine(ArmsRaisedTimeout(animator));
+        StartCoroutine(RaiseArms(animator));
     }
 
-    IEnumerator ArmsRaisedTimeout(Animator animator)
+    IEnumerator RaiseArms(Animator animator)
     {
+        animator.SetBool("collecting", true);
         yield return new WaitForSeconds(1);
-        animator.Play("Base Layer.Idle");
+        animator.SetBool("collecting", false);
     }
 }
