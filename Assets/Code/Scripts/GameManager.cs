@@ -1,12 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
+using System.Collections;
 
 public class GameManager : Singleton<GameManager>
 {
     public bool wearingNightgown = true;
-    // public int health = 10;
-    // public int wheat = 0;
     public TextAsset inkAsset;
     public Story inkStory;
 
@@ -23,6 +23,11 @@ public class GameManager : Singleton<GameManager>
         SceneManager.sceneLoaded += OnSceneLoaded;
         inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
         inkStory = new Story(inkAsset.text);
+
+        inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
+            ShowTooltip(newValue.ToString());
+        });
+
     }
 
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
@@ -40,6 +45,32 @@ public class GameManager : Singleton<GameManager>
         {
             Debug.Log(i.name);
         }
+    }
+
+
+    public void ShowTooltip(string newText)
+    {
+        // Find the Tooltip object in the scene
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject tooltip = uiCanvas.transform.Find("Tooltip").gameObject;
+
+        // In that Tooltip object, find the Text object
+        Text tooltipText = tooltip.transform.Find("TooltipText").gameObject.GetComponent<Text>();
+
+        // Update the tooltip text
+        tooltipText.text = newText;
+
+        // Show the tooltip!
+        tooltip.SetActive(true);
+
+        // Start this special function to hide the tooltip after 5 secs
+        StartCoroutine(TimeoutTooltip(tooltip));
+    }
+
+    IEnumerator TimeoutTooltip(GameObject tooltip)
+    {
+        yield return new WaitForSeconds(5);
+        tooltip.SetActive(false);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
