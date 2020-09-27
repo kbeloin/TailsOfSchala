@@ -1,3 +1,4 @@
+VAR tooltip = ""
 VAR first_engagement = 1
 
 ->start
@@ -93,10 +94,12 @@ Did you not sleep well last night, Kay? # Mother #Mother_sad
     
 ==finish==
 Could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
+~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
 ->END
 
 ==finish_with_name==
 Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
+~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
 ->END
