@@ -48,7 +48,7 @@ public class GameManager : Singleton<GameManager>
     }
 
 
-    void ShowTooltip(string newText)
+    public void ShowTooltip(string newText)
     {
         // Find the Tooltip object in the scene
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
@@ -63,6 +63,7 @@ public class GameManager : Singleton<GameManager>
         // Show the tooltip!
         tooltip.SetActive(true);
 
+        // Start this special function to hide the tooltip after 5 secs
         StartCoroutine(TimeoutTooltip(tooltip));
     }
 
