@@ -26,7 +26,7 @@ public class GameManager : Singleton<GameManager>
         inkStory = new Story(inkAsset.text);
 
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
-            ShowTooltip(newValue.ToString());
+            ShowTooltipWithTimeout(newValue.ToString());
         });
 
     }
@@ -63,15 +63,39 @@ public class GameManager : Singleton<GameManager>
 
         // Show the tooltip!
         tooltip.SetActive(true);
-
-        // Start this special function to hide the tooltip after 5 secs
-        StartCoroutine(TimeoutTooltip(tooltip));
     }
 
-    IEnumerator TimeoutTooltip(GameObject tooltip)
+    public void ShowTooltipWithTimeout(string newText)
+    {
+        // Find the Tooltip object in the scene
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject tooltip = uiCanvas.transform.Find("Tooltip").gameObject;
+
+        // In that Tooltip object, find the Text object
+        Text tooltipText = tooltip.transform.Find("TooltipText").gameObject.GetComponent<Text>();
+
+        // Update the tooltip text
+        tooltipText.text = newText;
+
+        // Show the tooltip!
+        tooltip.SetActive(true);
+
+        // Start this special function to hide the tooltip after 5 secs
+        StartCoroutine(TimeoutTooltip());
+    }
+
+    public void HideTooltip()
+    {
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject tooltip = uiCanvas.transform.Find("Tooltip").gameObject;
+
+        tooltip.SetActive(false);
+    }
+
+    IEnumerator TimeoutTooltip()
     {
         yield return new WaitForSeconds(5);
-        tooltip.SetActive(false);
+        HideTooltip();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -97,5 +121,17 @@ public class GameManager : Singleton<GameManager>
         };
 
         inventory.Add(item);
+
+        GameObject player = GameObject.Find("Player").gameObject;
+        Animator animator = player.transform.GetComponent<Animator>();
+
+        StartCoroutine(RaiseArms(animator));
+    }
+
+    IEnumerator RaiseArms(Animator animator)
+    {
+        animator.SetBool("collecting", true);
+        yield return new WaitForSeconds(1);
+        animator.SetBool("collecting", false);
     }
 }
