@@ -23,6 +23,21 @@ TextureImporter:
   - first:
       213: 6555015005716493897
     second: altarboy_timid_idle_6
+  - first:
+      213: 2067544893431349887
+    second: altarboy_timid_idle_0
+  - first:
+      213: 5475767568629848472
+    second: altarboy_timid_idle_1
+  - first:
+      213: -8884817719737324353
+    second: altarboy_timid_idle_2
+  - first:
+      213: -1181221357731408698
+    second: altarboy_timid_idle_3
+  - first:
+      213: -3579935466049149917
+    second: altarboy_timid_idle_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,14 +131,14 @@ TextureImporter:
         width: 15
         height: 25
       alignment: 9
-      pivot: {x: 0.39705884, y: 0.13382359}
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 614510d99e52148f0800000000000000
-      internalID: -558123193525513194
+      spriteID: f720622502561bc10800000000000000
+      internalID: 2067544893431349887
       vertices: []
       indices: 
       edges: []
@@ -137,14 +152,14 @@ TextureImporter:
         width: 15
         height: 25
       alignment: 9
-      pivot: {x: 0.40277785, y: 0.13039221}
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3dd9172e7cc9d610800000000000000
-      internalID: 1646571980974579006
+      spriteID: 89959c08795ddfb40800000000000000
+      internalID: 5475767568629848472
       vertices: []
       indices: 
       edges: []
@@ -158,14 +173,14 @@ TextureImporter:
         width: 15
         height: 25
       alignment: 9
-      pivot: {x: 0.40277785, y: 0.13039221}
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d132dcf1a815acd40800000000000000
-      internalID: 5605382339896877853
+      spriteID: fbce5f09b59c2b480800000000000000
+      internalID: -8884817719737324353
       vertices: []
       indices: 
       edges: []
@@ -179,14 +194,14 @@ TextureImporter:
         width: 15
         height: 25
       alignment: 9
-      pivot: {x: 0.3970586, y: 0.13039221}
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081b4ba634455bb50800000000000000
-      internalID: 6608280676765839744
+      spriteID: 6c4905bfe657b9fe0800000000000000
+      internalID: -1181221357731408698
       vertices: []
       indices: 
       edges: []
@@ -200,56 +215,14 @@ TextureImporter:
         width: 15
         height: 25
       alignment: 9
-      pivot: {x: 0.4027776, y: 0.13382359}
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e23f8c90d2ed4c20800000000000000
-      internalID: 3192457096483255010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: altarboy_timid_idle_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 7
-        width: 141
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1444681e991c2320800000000000000
-      internalID: 2534428857107498011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: altarboy_timid_idle_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 147
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9463611fa6718fa50800000000000000
-      internalID: 6555015005716493897
+      spriteID: 324615339a3815ec0800000000000000
+      internalID: -3579935466049149917
       vertices: []
       indices: 
       edges: []
