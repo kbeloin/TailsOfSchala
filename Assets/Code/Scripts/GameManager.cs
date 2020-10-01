@@ -131,7 +131,8 @@ public class GameManager : Singleton<GameManager>
     IEnumerator RaiseArms(Animator animator)
     {
         animator.SetBool("collecting", true);
-        yield return new WaitForSeconds(1);
+        yield return null;
         animator.SetBool("collecting", false);
+        yield return new WaitForSeconds(1);
     }
 }
