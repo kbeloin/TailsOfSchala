@@ -154,7 +154,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.79
   m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
-  m_Intensity: 0.1
+  m_Intensity: 0.15
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca84b72b8b72d346f3c82f8e9c564f41c656
   m_LightCookieSprite: {fileID: 0}
@@ -490,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98406237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6601776, y: -0.04, z: 0}
+  m_LocalPosition: {x: -0.77, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 13165081}
@@ -510,11 +510,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.837
-  m_Color: {r: 0.6075777, g: 0.6320754, b: 0.5575382, a: 1}
-  m_Intensity: 0.2
-  m_LightVolumeOpacity: 0.754
-  m_ApplyToSortingLayers: b33dca844f41c656b72b8b72472983b8
+  m_FalloffIntensity: 1
+  m_Color: {r: 0.8962264, g: 0.66825765, b: 0.34242615, a: 1}
+  m_Intensity: 1.63
+  m_LightVolumeOpacity: 0.11
+  m_ApplyToSortingLayers: b33dca844f41c656b72b8b72472983b800000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
   m_LightOrder: 0
@@ -530,8 +530,8 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 1.86
-  m_ShapeLightFalloffOffset: {x: 1.1, y: 0}
+  m_ShapeLightFalloffSize: 3.2
+  m_ShapeLightFalloffOffset: {x: 2.97, y: 0}
   m_ShapePath:
   - {x: 5.3518953, y: -3.0592585, z: 0}
   - {x: 6.124806, y: -2.1893559, z: 0}
@@ -722,7 +722,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3881,7 +3881,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1745254813}
   initialPortrait: {fileID: 0}
   dialogue: "The pride of the household: close to two hundred beautifully bound volumes.
-    And it\u2019s no set piece: mother and father prizes reading above all."
+    And it\u2019s no set piece: mother and father prize reading above all."
   playerInRange: 0
 --- !u!61 &705617774
 BoxCollider2D:
@@ -6536,10 +6536,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.837
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
-  m_Intensity: 0.3
-  m_LightVolumeOpacity: 0.754
+  m_FalloffIntensity: 0.48
+  m_Color: {r: 0.9433962, g: 0.58868974, b: 0.013349922, a: 1}
+  m_Intensity: 0.12
+  m_LightVolumeOpacity: 0.53
   m_ApplyToSortingLayers: b33dca844f41c656b72b8b72d346f3c8472983b8
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
@@ -6556,7 +6556,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 1.86
+  m_ShapeLightFalloffSize: 1.8
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -1.456891, y: -5.137027, z: 0}
@@ -6759,8 +6759,8 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.79
-  m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-  m_Intensity: 0.1
+  m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+  m_Intensity: 0.21
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca84b72b8b72d346f3c8
   m_LightCookieSprite: {fileID: 0}
@@ -6781,9 +6781,9 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 3.93
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -12.806626, y: -9.338008, z: 0}
-  - {x: -3.0771708, y: -7.3421497, z: 0}
-  - {x: -0.19925857, y: -4.093463, z: 0}
+  - {x: -3.4613206, y: -6.056452, z: 0}
+  - {x: -0.58033323, y: -9.054268, z: 0}
+  - {x: 1.298845, y: -8.088402, z: 0}
   - {x: 0.5118737, y: -4.204941, z: 0}
   - {x: 0.49478316, y: -2.7299004, z: 0}
   - {x: 2.8932436, y: -2.7312603, z: 0}
