@@ -2664,7 +2664,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10292852, y: -0.1238153}
+  m_Offset: {x: -0.18705952, y: -0.1238153}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2675,7 +2675,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4248993, y: 3.302073}
+  m_Size: {x: 2.004876, y: 3.302073}
   m_EdgeRadius: 0
 --- !u!212 &1046307609
 SpriteRenderer:
@@ -4823,7 +4823,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14908808, y: -0.4472642}
+  m_Offset: {x: -0.20708573, y: -0.4472642}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4834,7 +4834,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9984587, y: 1.8320284}
+  m_Size: {x: 1.8824635, y: 1.8320284}
   m_EdgeRadius: 0
 --- !u!1 &1570789542
 GameObject:
@@ -5045,8 +5045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
   initialPortrait: {fileID: 0}
-  dialogue: '"Something you rigged up between farm chores. A spark jumps the gap
-    between two electrodes."'
+  dialogue: Something you rigged up between farm chores. A spark jumps the gap between
+    two electrodes.
   playerInRange: 0
 --- !u!114 &1611613873
 MonoBehaviour:

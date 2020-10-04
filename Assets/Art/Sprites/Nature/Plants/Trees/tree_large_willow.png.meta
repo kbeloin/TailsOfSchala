@@ -3,30 +3,6 @@ guid: eb8c61414a767514e83c3425ca2762bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -793868054866121479
-    second: Willow Tree Animation-Sheet_0
-  - first:
-      213: -182930903324050474
-    second: Willow Tree Animation-Sheet_1
-  - first:
-      213: 2854960248035354839
-    second: Willow Tree Animation-Sheet_2
-  - first:
-      213: 4440262244391548845
-    second: Willow Tree Animation-Sheet_3
-  - first:
-      213: -4677738869746475268
-    second: Willow Tree Animation-Sheet_4
-  - first:
-      213: 6073838736570195152
-    second: Willow Tree Animation-Sheet_5
-  - first:
-      213: 3872197456379653798
-    second: Willow Tree Animation-Sheet_6
-  - first:
-      213: 8150362905131543769
-    second: Willow Tree Animation-Sheet_7
-  - first:
       213: -7325886554663940029
     second: tree_large_willow_0
   - first:
@@ -139,11 +115,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,12 +135,12 @@ TextureImporter:
       name: tree_large_willow_1
       rect:
         serializedVersion: 2
-        x: 138
-        y: 0
+        x: 137
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,11 +157,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 266
-        y: 0
+        y: 34
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,11 +178,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 394
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,11 +199,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 522
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,11 +220,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 650
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,11 +241,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 778
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,11 +262,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 906
-        y: 0
+        y: 35
         width: 117
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

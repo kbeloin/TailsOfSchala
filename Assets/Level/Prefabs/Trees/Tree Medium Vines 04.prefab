@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8119097256108760863}
   - component: {fileID: 1403578506676750066}
   m_Layer: 0
-  m_Name: Medium Tree
+  m_Name: Tree Medium Vines 04
   m_TagString: Plantlife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.43274498, y: 0.5167713}
+  m_Offset: {x: 0.6070366, y: 0.5167713}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7644691, y: 0.6004524}
+  m_Size: {x: 2.1590347, y: 0.6004524}
   m_EdgeRadius: 0
 --- !u!331 &8119097256108760863
 SpriteMask:
