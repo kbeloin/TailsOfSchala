@@ -135,4 +135,12 @@ public class GameManager : Singleton<GameManager>
         animator.SetBool("collecting", false);
         yield return new WaitForSeconds(1);
     }
+
+    public void ToggleInventory()
+    {
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject inventory = uiCanvas.transform.Find("Inventory").gameObject;
+
+        inventory.SetActive(!inventory.activeInHierarchy);
+    }
 }

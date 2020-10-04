@@ -134,6 +134,11 @@ public class PlayerMovement : MonoBehaviour
             // attackAnimator.SetTrigger("Attack");
         }
 
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            GameManager.Instance.ToggleInventory();
+        }
+
         // Sprint Input
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
