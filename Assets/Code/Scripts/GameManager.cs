@@ -44,7 +44,7 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (InventoryItem i in inventory)
         {
-            Debug.Log(i.itemName);
+            Debug.Log(i.itemName + " " + i.count);
         }
     }
 
@@ -117,10 +117,20 @@ public class GameManager : Singleton<GameManager>
             description = description,
             icon = icon,
             weight = weight,
-            value = value
+            value = value,
+            count = 1
         };
 
-        inventory.Add(item);
+        if (inventory.Contains(item))
+        {
+            inventory.Find(i => i.itemName.Equals(itemName)).count++;
+        }
+        else
+        {
+            inventory.Add(item);
+        }
+
+        UpdateInventory();
 
         GameObject player = GameObject.Find("Player").gameObject;
         Animator animator = player.transform.GetComponent<Animator>();
@@ -133,5 +143,43 @@ public class GameManager : Singleton<GameManager>
         animator.SetBool("collecting", true);
         yield return new WaitForSeconds(1);
         animator.SetBool("collecting", false);
+        yield return null;
+    }
+
+    public void ToggleInventory()
+    {
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+
+        inventoryView.SetActive(!inventoryView.activeInHierarchy);
+    }
+
+    public void UpdateInventory()
+    {
+        Debug.Log("updating inventory");
+
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
+
+        for (int i = 0; i < 30; i++)
+        {
+            Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
+            Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
+
+            if (i < inventory.Count)
+            {
+                icon.sprite = inventory[i].icon;
+                count.text = inventory[i].count.ToString();
+
+                icon.enabled = true;
+                count.enabled = true;
+            }
+            else
+            {
+                icon.enabled = false;
+                count.enabled = false;
+            }
+        }
     }
 }
