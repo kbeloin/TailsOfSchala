@@ -20,5 +20,7 @@ public class PopulateInventory : MonoBehaviour
         {
             newSlot = (GameObject)Instantiate(inventorySlot, transform);
         }
+
+        GameManager.Instance.UpdateInventory();
     }
 }
