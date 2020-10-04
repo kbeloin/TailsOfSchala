@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: e227fb2ccf5322b4fa74fb1a20c1d033
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1087151483438414299
+    second: tree_medium_vines_02_0
+  - first:
+      213: 3494420582827253208
+    second: tree_medium_vines_02_1
+  - first:
+      213: -2669024490389181119
+    second: tree_medium_vines_02_2
+  - first:
+      213: -3113638470387090675
+    second: tree_medium_vines_02_3
+  - first:
+      213: 6957399492757025749
+    second: tree_medium_vines_02_4
+  - first:
+      213: -4527479176356339956
+    second: tree_medium_vines_02_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,10 +58,10 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -85,7 +103,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tree_medium_vines_02_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9b263a386561f00800000000000000
+      internalID: 1087151483438414299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_medium_vines_02_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd5b3f710dae7030800000000000000
+      internalID: 3494420582827253208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_medium_vines_02_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14de889fd58b5fad0800000000000000
+      internalID: -2669024490389181119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_medium_vines_02_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b3695de422ac4d0800000000000000
+      internalID: -3113638470387090675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_medium_vines_02_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3f34e0af5ad8060800000000000000
+      internalID: 6957399492757025749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_medium_vines_02_5
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 8
+        width: 77
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f5d4d3da92b21c0800000000000000
+      internalID: -4527479176356339956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
