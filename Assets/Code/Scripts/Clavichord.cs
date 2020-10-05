@@ -10,7 +10,7 @@ public class Clavichord : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class Clavichord : MonoBehaviour
         {
             source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/C4"));
         }
- 
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             source.PlayOneShot ((AudioClip)Resources.Load ("AncientClavichord/Db4"));
@@ -91,7 +91,7 @@ public class Clavichord : MonoBehaviour
         {
             playerInRange = true;
 
-            GameManager.Instance.ShowTooltip("Play with the number row!");
+            GameManager.Instance.ShowTooltipWithTimeout("Play with the number row!");
         }
     }
 
