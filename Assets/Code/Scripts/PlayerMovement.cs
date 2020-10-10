@@ -121,6 +121,12 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.ToggleInventory();
         }
 
+        // Show/hide quest log
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            GameManager.Instance.ToggleQuestLog();
+        }
+
         if (immobilized)
         {
             animator.SetBool("moving", false);
