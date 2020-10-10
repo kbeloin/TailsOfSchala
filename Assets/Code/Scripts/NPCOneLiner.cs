@@ -48,7 +48,7 @@ public class NPCOneLiner : MonoBehaviour
 
     private void ShowDialog()
     {
-        playerMovement.inDialogue = true;
+        playerMovement.immobilized = true;
 
         dialogueText.text = dialogue;
 
@@ -78,7 +78,7 @@ public class NPCOneLiner : MonoBehaviour
 
     private void HideDialog()
     {
-        playerMovement.inDialogue = false;
+        playerMovement.immobilized = false;
         dialogBox.SetActive(false);
     }
 

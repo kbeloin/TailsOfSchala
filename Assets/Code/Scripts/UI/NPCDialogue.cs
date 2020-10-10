@@ -115,7 +115,7 @@ public class NPCDialogue : MonoBehaviour
 
     private void ShowDialog()
     {
-        playerMovement.inDialogue = true;
+        playerMovement.immobilized = true;
 
         HideChoices();
 
@@ -160,7 +160,7 @@ public class NPCDialogue : MonoBehaviour
 
     private void HideDialog()
     {
-        playerMovement.inDialogue = false;
+        playerMovement.immobilized = false;
         dialogBox.SetActive(false);
     }
 

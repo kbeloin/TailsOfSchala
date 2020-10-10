@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1090,7 +1090,7 @@ PrefabInstance:
     - target: {fileID: 8705268416411252317, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
+      value: 0.0625
       objectReference: {fileID: 0}
     - target: {fileID: 8705268416411252319, guid: a67f5587a56c39c4c9ea8d059677ae36,
         type: 3}
@@ -2707,7 +2707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947085758
 GameObject:
@@ -3273,7 +3273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335620427
 GameObject:
@@ -7013,7 +7013,7 @@ PrefabInstance:
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}

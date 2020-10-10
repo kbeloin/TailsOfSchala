@@ -138,7 +138,7 @@ public class GameManager : Singleton<GameManager>
 
         // Hide the dialog box
         dialogBox.SetActive(false);
-    }    
+    }
 
     public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value)
     {
@@ -164,15 +164,24 @@ public class GameManager : Singleton<GameManager>
         UpdateInventory();
 
         GameObject player = GameObject.Find("Player").gameObject;
-        Animator animator = player.transform.GetComponent<Animator>();
 
-        StartCoroutine(RaiseArms(animator));
+        StartCoroutine(RaiseArms(player, icon));
     }
 
-    IEnumerator RaiseArms(Animator animator)
+    IEnumerator RaiseArms(GameObject player, Sprite icon)
     {
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+        Animator animator = player.transform.GetComponent<Animator>();
+        GameObject itemSprite = player.transform.Find("ItemSprite").gameObject;
+        SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
+
+        playerMovement.immobilized = true;
         animator.SetBool("collecting", true);
+        itemIcon.sprite = icon;
+        itemSprite.SetActive(true);
         yield return new WaitForSeconds(1);
+        playerMovement.immobilized = false;
+        itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
         yield return null;
     }
@@ -196,11 +205,14 @@ public class GameManager : Singleton<GameManager>
             // Hide other overlay views
             HideQuestLog();
 
-            // Toggle the visibility of the backdrop based on Inventory state
-            backdrop.SetActive(!inventoryView.activeInHierarchy);
-
             // Toggle the visibility of the inventory
             inventoryView.SetActive(!inventoryView.activeInHierarchy);
+
+            // Toggle the visibility of the backdrop based on Inventory state
+            backdrop.SetActive(inventoryView.activeInHierarchy);
+
+            PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+            playerMovement.immobilized = inventoryView.activeInHierarchy;
         }
     }
 
@@ -259,11 +271,14 @@ public class GameManager : Singleton<GameManager>
         // Hide other overlay views
         HideInventory();
 
-        // Toggle the visibility of the backdrop based on Quest Log state
-        backdrop.SetActive(!questLogView.activeInHierarchy);
-
         // Toggle the visibility of the Quest Log
         questLogView.SetActive(!questLogView.activeInHierarchy);
+
+        // Toggle the visibility of the backdrop based on Quest Log state
+        backdrop.SetActive(questLogView.activeInHierarchy);
+
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = questLogView.activeInHierarchy;
     }
 
     public void HideQuestLog()

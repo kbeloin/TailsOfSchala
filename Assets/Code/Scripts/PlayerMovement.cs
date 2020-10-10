@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public int stamina = 100;
 
     // Dialog variables
-    public bool inDialogue = false;
+    public bool immobilized = false;
 
     // Scene variables
     private string sceneName;
@@ -58,8 +58,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (inDialogue)
+        if (immobilized)
         {
+            animator.SetBool("moving", false);
             running = false;
             return;
         }
@@ -115,8 +116,20 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (inDialogue)
+        if (Input.GetKeyDown(KeyCode.I))
         {
+            GameManager.Instance.ToggleInventory();
+        }
+
+        // Show/hide quest log
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            GameManager.Instance.ToggleQuestLog();
+        }
+
+        if (immobilized)
+        {
+            animator.SetBool("moving", false);
             running = false;
             return;
         }
@@ -132,18 +145,6 @@ public class PlayerMovement : MonoBehaviour
             // attackAnimator.SetFloat("moveX", velocity.x);
             // attackAnimator.SetFloat("moveY", velocity.y);
             // attackAnimator.SetTrigger("Attack");
-        }
-
-        // Show/hide inventory
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            GameManager.Instance.ToggleInventory();
-        }
-
-        // Show/hide quest log
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            GameManager.Instance.ToggleQuestLog();
         }
 
         // Sprint Input
