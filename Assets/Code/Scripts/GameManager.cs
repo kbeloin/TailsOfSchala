@@ -199,11 +199,14 @@ public class GameManager : Singleton<GameManager>
             HideTooltip();
             HideDialog();
 
-            // Toggle the visibility of the backdrop based on Inventory state
-            backdrop.SetActive(!inventoryView.activeInHierarchy);
-
             // Toggle the visibility of the inventory
             inventoryView.SetActive(!inventoryView.activeInHierarchy);
+
+            // Toggle the visibility of the backdrop based on Inventory state
+            backdrop.SetActive(inventoryView.activeInHierarchy);
+
+            PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+            playerMovement.immobilized = inventoryView.activeInHierarchy;
         }
     }
 

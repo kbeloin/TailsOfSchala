@@ -116,6 +116,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            GameManager.Instance.ToggleInventory();
+        }
+
         if (immobilized)
         {
             animator.SetBool("moving", false);
@@ -134,11 +139,6 @@ public class PlayerMovement : MonoBehaviour
             // attackAnimator.SetFloat("moveX", velocity.x);
             // attackAnimator.SetFloat("moveY", velocity.y);
             // attackAnimator.SetTrigger("Attack");
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            GameManager.Instance.ToggleInventory();
         }
 
         // Sprint Input
