@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 public class GameManager : Singleton<GameManager>
 {
-    // State variables
+    // Defining the state at game start
     public bool wearingNightgown = true;
     public bool hasBackpack = false;
 
@@ -186,9 +186,15 @@ public class GameManager : Singleton<GameManager>
             GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
             GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
 
+            // Find the Backdrop object in the scene
+            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
             // Hide dialog and tooltip
             HideTooltip();
             HideDialog();
+
+            // Toggle the visibility of the backdrop based on Inventory state
+            backdrop.SetActive(!inventoryView.activeInHierarchy);
 
             // Toggle the visibility of the inventory
             inventoryView.SetActive(!inventoryView.activeInHierarchy);
@@ -201,7 +207,7 @@ public class GameManager : Singleton<GameManager>
 
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
-        GameObject inventoryContents = inventoryView.transform.Find("").gameObject;
+        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
 
         for (int i = 0; i < 24; i++)
         {
