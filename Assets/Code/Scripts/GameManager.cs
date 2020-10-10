@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class GameManager : Singleton<GameManager>
 {
     public bool wearingNightgown = true;
+    public bool hasBackpack = false;
     public TextAsset inkAsset;
     public Story inkStory;
 
@@ -148,10 +149,12 @@ public class GameManager : Singleton<GameManager>
 
     public void ToggleInventory()
     {
-        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+        if (hasBackpack) {
+            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+            GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
 
-        inventoryView.SetActive(!inventoryView.activeInHierarchy);
+            inventoryView.SetActive(!inventoryView.activeInHierarchy);
+        }
     }
 
     public void UpdateInventory()

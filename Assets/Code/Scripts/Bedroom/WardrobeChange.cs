@@ -6,16 +6,17 @@ using UnityEngine.UI;
 public class WardrobeChange : MonoBehaviour
 {
     public GameObject dialogBox;
+    public GameObject tooltip;
     public bool playerInRange;
 
     private Animator playerAnimator;
-    private Text dialogueText;
+    private Text tooltipText;
 
     // Start is called before the first frame update
     void Start()
     {
         playerAnimator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
-        dialogueText = dialogBox.transform.Find("Dialogue").gameObject.GetComponent<Text>();
+        tooltipText = tooltip.transform.Find("TooltipText").gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -27,12 +28,7 @@ public class WardrobeChange : MonoBehaviour
             {
                 GameManager.Instance.wearingNightgown = false;
                 playerAnimator.SetBool("wearingNightgown", false);
-                dialogueText.text = "You get dressed.";
-                dialogBox.SetActive(true);
-            }
-            else
-            {
-                dialogBox.SetActive(false);
+                GameManager.Instance.ShowTooltipWithTimeout("All dressed!");
             }
         }
     }
@@ -50,7 +46,6 @@ public class WardrobeChange : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            dialogBox.SetActive(false);
         }
     }
 }

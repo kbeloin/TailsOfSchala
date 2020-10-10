@@ -1625,6 +1625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 322951456}
+  tooltip: {fileID: 789343138}
   playerInRange: 0
 --- !u!1 &621346242
 GameObject:
