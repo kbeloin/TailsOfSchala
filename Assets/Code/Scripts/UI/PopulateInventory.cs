@@ -9,14 +9,14 @@ public class PopulateInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Populate();    
+        Populate();
     }
 
     void Populate()
     {
         GameObject newSlot;
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 24; i++)
         {
             newSlot = (GameObject)Instantiate(inventorySlot, transform);
         }

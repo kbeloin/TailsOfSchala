@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class GameManager : Singleton<GameManager>
 {
     public bool wearingNightgown = true;
+    public bool hasBackpack = false;
     public TextAsset inkAsset;
     public Story inkStory;
 
@@ -25,6 +26,8 @@ public class GameManager : Singleton<GameManager>
         inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
         inkStory = new Story(inkAsset.text);
 
+        // Listen for a change to the "tooltip" variable in an Ink script
+        // When it changes, display a tooltip with the new value
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
@@ -148,10 +151,12 @@ public class GameManager : Singleton<GameManager>
 
     public void ToggleInventory()
     {
-        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+        if (hasBackpack) {
+            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+            GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
 
-        inventoryView.SetActive(!inventoryView.activeInHierarchy);
+            inventoryView.SetActive(!inventoryView.activeInHierarchy);
+        }
     }
 
     public void UpdateInventory()
@@ -160,9 +165,9 @@ public class GameManager : Singleton<GameManager>
 
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
-        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
+        GameObject inventoryContents = inventoryView.transform.Find("").gameObject;
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 24; i++)
         {
             Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
             Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
