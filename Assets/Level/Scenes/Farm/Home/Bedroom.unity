@@ -6970,21 +6970,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1257105820679812701, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1285302386088358791, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 192
-      objectReference: {fileID: 0}
-    - target: {fileID: 1285302386088358791, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 185
-      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
@@ -7098,48 +7083,12 @@ PrefabInstance:
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -185
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4282716303333458216, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e6087f95e5f7e294eba51e1f41e6ebb2,
-        type: 3}
-    - target: {fileID: 4282716303333458216, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Type
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8127651687852772294, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Spacing.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8127651687852772294, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Spacing.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8127651687852772294, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Constraint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8127651687852772294, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_ConstraintCount
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a222df298964682a8ab1f42945c798, type: 3}

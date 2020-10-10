@@ -7,13 +7,18 @@ using System.Collections.Generic;
 
 public class GameManager : Singleton<GameManager>
 {
+    // Defining the state at game start
     public bool wearingNightgown = true;
     public bool hasBackpack = false;
+
+    // Ink stories
     public TextAsset inkAsset;
     public Story inkStory;
 
+    // Our persistent inventory
     List<InventoryItem> inventory = new List<InventoryItem>();
 
+    // Used for the ChangeScene script
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
@@ -89,26 +94,49 @@ public class GameManager : Singleton<GameManager>
 
     public void HideTooltip()
     {
+        // Find the Tooltip object in the scene
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject tooltip = uiCanvas.transform.Find("Tooltip").gameObject;
 
+        // Hide the tooltip
         tooltip.SetActive(false);
     }
 
     IEnumerator TimeoutTooltip()
     {
+        // Because this function has a timer in it, it's considered a
+        // "coroutine" and needs to be an IEnumerator function to run.
+        // We can't put coroutines in normal "void" functions.
         yield return new WaitForSeconds(5);
         HideTooltip();
     }
 
+    public void HideDialog()
+    {
+        // Find the Dialog object in the scene
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject dialogBox = uiCanvas.transform.Find("DialogBox").gameObject;
+
+        // Hide the dialog box
+        dialogBox.SetActive(false);
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // Find the player in the scene
         GameObject player = GameObject.Find("Player").gameObject;
+
+        // Move her to the position defined in ChangeScene
         player.transform.position = nextPosition;
+
+        // Get the player's Animator
         Animator animator = player.transform.GetComponent<Animator>();
+
+        // Update her orientation to match ChangeScene
         animator.SetFloat("moveX", nextDirection.x);
         animator.SetFloat("moveY", nextDirection.y);
 
+        // Set the camera to the position defined in ChangeScene
         Camera.main.transform.position = nextCameraPosition;
     }
 
@@ -151,10 +179,24 @@ public class GameManager : Singleton<GameManager>
 
     public void ToggleInventory()
     {
+        // Check to make sure we have the backpack first...
         if (hasBackpack) {
+
+            // Find the Inventory layer
             GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
             GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
 
+            // Find the Backdrop object in the scene
+            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+            // Hide dialog and tooltip
+            HideTooltip();
+            HideDialog();
+
+            // Toggle the visibility of the backdrop based on Inventory state
+            backdrop.SetActive(!inventoryView.activeInHierarchy);
+
+            // Toggle the visibility of the inventory
             inventoryView.SetActive(!inventoryView.activeInHierarchy);
         }
     }
@@ -165,9 +207,9 @@ public class GameManager : Singleton<GameManager>
 
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
-        GameObject inventoryContents = inventoryView.transform.Find("").gameObject;
+        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
 
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < 32; i++)
         {
             Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
             Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
