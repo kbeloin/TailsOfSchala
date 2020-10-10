@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public int stamina = 100;
 
     // Dialog variables
-    public bool inDialogue = false;
+    public bool immobilized = false;
 
     // Scene variables
     private string sceneName;
@@ -58,8 +58,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (inDialogue)
+        if (immobilized)
         {
+            animator.SetBool("moving", false);
             running = false;
             return;
         }
@@ -115,8 +116,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (inDialogue)
+        if (immobilized)
         {
+            animator.SetBool("moving", false);
             running = false;
             return;
         }

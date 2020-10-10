@@ -164,15 +164,21 @@ public class GameManager : Singleton<GameManager>
         UpdateInventory();
 
         GameObject player = GameObject.Find("Player").gameObject;
-        Animator animator = player.transform.GetComponent<Animator>();
 
-        StartCoroutine(RaiseArms(animator));
+        StartCoroutine(RaiseArms(player, icon));
     }
 
-    IEnumerator RaiseArms(Animator animator)
+    IEnumerator RaiseArms(GameObject player, Sprite icon)
     {
+        Animator animator = player.transform.GetComponent<Animator>();
+        GameObject itemSprite = player.transform.Find("ItemSprite").gameObject;
+        SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
+
         animator.SetBool("collecting", true);
+        itemIcon.sprite = icon;
+        itemSprite.SetActive(true);
         yield return new WaitForSeconds(1);
+        itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
         yield return null;
     }
