@@ -209,7 +209,7 @@ public class GameManager : Singleton<GameManager>
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
         GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
 
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < 32; i++)
         {
             Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
             Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();

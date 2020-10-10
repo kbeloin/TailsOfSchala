@@ -16,7 +16,7 @@ public class PopulateInventory : MonoBehaviour
     {
         GameObject newSlot;
 
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < 32; i++)
         {
             newSlot = (GameObject)Instantiate(inventorySlot, transform);
         }
