@@ -134,9 +134,16 @@ public class PlayerMovement : MonoBehaviour
             // attackAnimator.SetTrigger("Attack");
         }
 
+        // Show/hide inventory
         if (Input.GetKeyDown(KeyCode.I))
         {
             GameManager.Instance.ToggleInventory();
+        }
+
+        // Show/hide quest log
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            GameManager.Instance.ToggleQuestLog();
         }
 
         // Sprint Input
