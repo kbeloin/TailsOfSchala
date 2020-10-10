@@ -170,14 +170,17 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator RaiseArms(GameObject player, Sprite icon)
     {
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
         Animator animator = player.transform.GetComponent<Animator>();
         GameObject itemSprite = player.transform.Find("ItemSprite").gameObject;
         SpriteRenderer itemIcon = itemSprite.GetComponent<SpriteRenderer>();
 
+        playerMovement.immobilized = true;
         animator.SetBool("collecting", true);
         itemIcon.sprite = icon;
         itemSprite.SetActive(true);
         yield return new WaitForSeconds(1);
+        playerMovement.immobilized = false;
         itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
         yield return null;
@@ -268,11 +271,14 @@ public class GameManager : Singleton<GameManager>
         // Hide other overlay views
         HideInventory();
 
-        // Toggle the visibility of the backdrop based on Quest Log state
-        backdrop.SetActive(!questLogView.activeInHierarchy);
-
         // Toggle the visibility of the Quest Log
         questLogView.SetActive(!questLogView.activeInHierarchy);
+
+        // Toggle the visibility of the backdrop based on Quest Log state
+        backdrop.SetActive(questLogView.activeInHierarchy);
+
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = questLogView.activeInHierarchy;
     }
 
     public void HideQuestLog()
