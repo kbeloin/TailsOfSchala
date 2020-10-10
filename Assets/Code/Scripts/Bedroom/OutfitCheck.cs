@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NightgownCheck : MonoBehaviour
+public class OutfitCheck : MonoBehaviour
 {
     public GameObject dialogBox;
     public GameObject nightgownBarrier;
@@ -28,6 +28,11 @@ public class NightgownCheck : MonoBehaviour
             if (GameManager.Instance.wearingNightgown)
             {
                 dialogueText.text = "Wouldn't want to leave without getting dressed first!";
+                dialogBox.SetActive(true);
+            }
+            else if (!GameManager.Instance.hasBackpack)
+            {
+                dialogueText.text = "Better take a knapsack with! Now, where was that?";
                 dialogBox.SetActive(true);
             }
             else

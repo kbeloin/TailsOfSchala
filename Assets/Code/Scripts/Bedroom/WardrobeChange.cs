@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class WardrobeChange : MonoBehaviour
 {
-    public GameObject dialogBox;
     public GameObject tooltip;
     public bool playerInRange;
 
