@@ -48,6 +48,25 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene(scene);
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Find the player in the scene
+        GameObject player = GameObject.Find("Player").gameObject;
+
+        // Move her to the position defined in ChangeScene
+        player.transform.position = nextPosition;
+
+        // Get the player's Animator
+        Animator animator = player.transform.GetComponent<Animator>();
+
+        // Update her orientation to match ChangeScene
+        animator.SetFloat("moveX", nextDirection.x);
+        animator.SetFloat("moveY", nextDirection.y);
+
+        // Set the camera to the position defined in ChangeScene
+        Camera.main.transform.position = nextCameraPosition;
+    }
+
     public void DebugInventory()
     {
         foreach (InventoryItem i in inventory)
@@ -119,26 +138,7 @@ public class GameManager : Singleton<GameManager>
 
         // Hide the dialog box
         dialogBox.SetActive(false);
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Find the player in the scene
-        GameObject player = GameObject.Find("Player").gameObject;
-
-        // Move her to the position defined in ChangeScene
-        player.transform.position = nextPosition;
-
-        // Get the player's Animator
-        Animator animator = player.transform.GetComponent<Animator>();
-
-        // Update her orientation to match ChangeScene
-        animator.SetFloat("moveX", nextDirection.x);
-        animator.SetFloat("moveY", nextDirection.y);
-
-        // Set the camera to the position defined in ChangeScene
-        Camera.main.transform.position = nextCameraPosition;
-    }
+    }    
 
     public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value)
     {
@@ -193,12 +193,25 @@ public class GameManager : Singleton<GameManager>
             HideTooltip();
             HideDialog();
 
+            // Hide other overlay views
+            HideQuestLog();
+
             // Toggle the visibility of the backdrop based on Inventory state
             backdrop.SetActive(!inventoryView.activeInHierarchy);
 
             // Toggle the visibility of the inventory
             inventoryView.SetActive(!inventoryView.activeInHierarchy);
         }
+    }
+
+    public void HideInventory()
+    {
+        // Find the Inventory layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+
+        // Toggle the visibility of the inventory
+        inventoryView.SetActive(false);
     }
 
     public void UpdateInventory()
@@ -228,5 +241,38 @@ public class GameManager : Singleton<GameManager>
                 count.enabled = false;
             }
         }
+    }
+
+    public void ToggleQuestLog()
+    {
+        // Find the Quest Log layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Hide dialog and tooltip
+        HideTooltip();
+        HideDialog();
+
+        // Hide other overlay views
+        HideInventory();
+
+        // Toggle the visibility of the backdrop based on Quest Log state
+        backdrop.SetActive(!questLogView.activeInHierarchy);
+
+        // Toggle the visibility of the Quest Log
+        questLogView.SetActive(!questLogView.activeInHierarchy);
+    }
+
+    public void HideQuestLog()
+    {
+        // Find the Quest Log
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
+
+        // Hide the Quest Log
+        questLogView.SetActive(false);
     }
 }
