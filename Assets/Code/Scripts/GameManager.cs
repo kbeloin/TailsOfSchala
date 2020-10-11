@@ -17,16 +17,25 @@ public class GameManager : Singleton<GameManager>
 
     // Our persistent inventory
     List<InventoryItem> inventory = new List<InventoryItem>();
+    public int inventoryCursor = 0;
+    Sprite inventorySlot;
+    Sprite inventorySlotHighlight;
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
 
+    public bool viewingInventory = false;
+    public bool viewingQuestLog = false;
+
     protected GameManager() { }
 
     void Start()
     {
+        inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
+        inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
         inkStory = new Story(inkAsset.text);
@@ -179,7 +188,7 @@ public class GameManager : Singleton<GameManager>
         animator.SetBool("collecting", true);
         itemIcon.sprite = icon;
         itemSprite.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.6f);
         playerMovement.immobilized = false;
         itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
@@ -191,13 +200,6 @@ public class GameManager : Singleton<GameManager>
         // Check to make sure we have the backpack first...
         if (hasBackpack) {
 
-            // Find the Inventory layer
-            GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-            GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
-
-            // Find the Backdrop object in the scene
-            GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
-
             // Hide dialog and tooltip
             HideTooltip();
             HideDialog();
@@ -206,38 +208,107 @@ public class GameManager : Singleton<GameManager>
             HideQuestLog();
 
             // Toggle the visibility of the inventory
-            inventoryView.SetActive(!inventoryView.activeInHierarchy);
+            if (viewingInventory)
+            {
+                HideInventory();
+            }
+            else
+            {
+                ShowInventory();
+            }
 
-            // Toggle the visibility of the backdrop based on Inventory state
-            backdrop.SetActive(inventoryView.activeInHierarchy);
-
-            PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-            playerMovement.immobilized = inventoryView.activeInHierarchy;
         }
+    }
+
+    public void ShowInventory()
+    {
+        viewingInventory = true;
+        inventoryCursor = 0;
+
+        // Find the Inventory layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+        Image inventoryImage = inventoryView.GetComponent<Image>();
+        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
+        Canvas inventoryCanvas = inventoryContents.GetComponent<Canvas>();
+
+        // Show bag image and inventory contents
+        inventoryImage.enabled = true;
+        inventoryCanvas.enabled = true;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Toggle the visibility of the backdrop based on Inventory state
+        backdrop.SetActive(true);
+
+        // Prevent player from moving
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = true;
     }
 
     public void HideInventory()
     {
+        viewingInventory = false;
+
         // Find the Inventory layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
+        Image inventoryImage = inventoryView.GetComponent<Image>();
+        GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
+        Canvas inventoryCanvas = inventoryContents.GetComponent<Canvas>();
 
-        // Toggle the visibility of the inventory
-        inventoryView.SetActive(false);
+        // Hide bag image and inventory contents
+        inventoryImage.enabled = false;
+        inventoryCanvas.enabled = false;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Toggle the visibility of the backdrop based on Inventory state
+        backdrop.SetActive(false);
+
+        // Allow player to move
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = false;
+
+        GameObject itemDescription = uiCanvas.transform.Find("ItemDescription").gameObject;
+        itemDescription.SetActive(false);
     }
 
     public void UpdateInventory()
     {
-        Debug.Log("updating inventory");
-
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
         GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
 
         for (int i = 0; i < 32; i++)
         {
+            Image slot = inventoryContents.transform.GetChild(i).GetComponent<Image>();
             Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
             Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
+
+            if (i == inventoryCursor && viewingInventory)
+            {
+                slot.sprite = inventorySlotHighlight;
+
+                GameObject itemDescription = uiCanvas.transform.Find("ItemDescription").gameObject;
+                Text itemDescriptionText = itemDescription.transform.GetChild(0).GetComponent<Text>();
+
+                if (i < inventory.Count)
+                {
+                    itemDescriptionText.text = inventory[i].description;
+                    itemDescription.SetActive(true);
+                }
+                else
+                {
+                    itemDescription.SetActive(false);
+                }
+            }
+            else
+            {
+                slot.sprite = inventorySlot;
+            }
 
             if (i < inventory.Count)
             {
@@ -257,13 +328,6 @@ public class GameManager : Singleton<GameManager>
 
     public void ToggleQuestLog()
     {
-        // Find the Quest Log layer
-        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
-        GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
-
-        // Find the Backdrop object in the scene
-        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
-
         // Hide dialog and tooltip
         HideTooltip();
         HideDialog();
@@ -271,23 +335,55 @@ public class GameManager : Singleton<GameManager>
         // Hide other overlay views
         HideInventory();
 
+        if (viewingQuestLog)
+        {
+            HideQuestLog();
+        }
+        else
+        {
+            ShowQuestLog();
+        }
+    }
+
+    public void ShowQuestLog()
+    {
+        viewingQuestLog = true;
+
+        // Find the Quest Log layer
+        GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
+        GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
+
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
         // Toggle the visibility of the Quest Log
-        questLogView.SetActive(!questLogView.activeInHierarchy);
+        questLogView.SetActive(true);
 
         // Toggle the visibility of the backdrop based on Quest Log state
-        backdrop.SetActive(questLogView.activeInHierarchy);
+        backdrop.SetActive(true);
 
         PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
-        playerMovement.immobilized = questLogView.activeInHierarchy;
+        playerMovement.immobilized = true;
     }
 
     public void HideQuestLog()
     {
-        // Find the Quest Log
+        viewingQuestLog = false;
+
+        // Find the Quest Log layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
 
-        // Hide the Quest Log
+        // Find the Backdrop object in the scene
+        GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
+
+        // Toggle the visibility of the Quest Log
         questLogView.SetActive(false);
+
+        // Toggle the visibility of the backdrop based on Quest Log state
+        backdrop.SetActive(false);
+
+        PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
+        playerMovement.immobilized = false;
     }
 }
