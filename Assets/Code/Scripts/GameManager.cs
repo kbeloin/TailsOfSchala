@@ -17,19 +17,25 @@ public class GameManager : Singleton<GameManager>
 
     // Our persistent inventory
     List<InventoryItem> inventory = new List<InventoryItem>();
+    public int inventoryCursor = 0;
+    Sprite inventorySlot;
+    Sprite inventorySlotHighlight;
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
     Vector2 nextDirection;
 
-    bool viewingInventory = false;
-    bool viewingQuestLog = false;
+    public bool viewingInventory = false;
+    public bool viewingQuestLog = false;
 
     protected GameManager() { }
 
     void Start()
     {
+        inventorySlot = Resources.Load<Sprite>("UI/ui_inventory_slot");
+        inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
         inkStory = new Story(inkAsset.text);
@@ -182,7 +188,7 @@ public class GameManager : Singleton<GameManager>
         animator.SetBool("collecting", true);
         itemIcon.sprite = icon;
         itemSprite.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.6f);
         playerMovement.immobilized = false;
         itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
@@ -217,6 +223,7 @@ public class GameManager : Singleton<GameManager>
     public void ShowInventory()
     {
         viewingInventory = true;
+        inventoryCursor = 0;
 
         // Find the Inventory layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
@@ -264,21 +271,44 @@ public class GameManager : Singleton<GameManager>
         // Allow player to move
         PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
         playerMovement.immobilized = false;
+
+        GameObject itemDescription = uiCanvas.transform.Find("ItemDescription").gameObject;
+        itemDescription.SetActive(false);
     }
 
     public void UpdateInventory()
     {
-        Debug.Log("updating inventory");
-
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject inventoryView = uiCanvas.transform.Find("Inventory").gameObject;
         GameObject inventoryContents = inventoryView.transform.Find("InventoryContents").gameObject;
-        inventoryContents.SetActive(true);
 
         for (int i = 0; i < 32; i++)
         {
+            Image slot = inventoryContents.transform.GetChild(i).GetComponent<Image>();
             Image icon = inventoryContents.transform.GetChild(i).GetChild(0).GetComponent<Image>();
             Text count = inventoryContents.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<Text>();
+
+            if (i == inventoryCursor && viewingInventory)
+            {
+                slot.sprite = inventorySlotHighlight;
+
+                GameObject itemDescription = uiCanvas.transform.Find("ItemDescription").gameObject;
+                Text itemDescriptionText = itemDescription.transform.GetChild(0).GetComponent<Text>();
+
+                if (i < inventory.Count)
+                {
+                    itemDescriptionText.text = inventory[i].description;
+                    itemDescription.SetActive(true);
+                }
+                else
+                {
+                    itemDescription.SetActive(false);
+                }
+            }
+            else
+            {
+                slot.sprite = inventorySlot;
+            }
 
             if (i < inventory.Count)
             {

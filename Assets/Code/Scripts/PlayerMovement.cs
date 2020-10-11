@@ -127,6 +127,35 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.ToggleQuestLog();
         }
 
+        if (GameManager.Instance.viewingInventory)
+        {
+            //if (Input.GetAxisRaw("Horizontal") < 0)
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                if (GameManager.Instance.inventoryCursor > 0) GameManager.Instance.inventoryCursor -= 1;
+            }
+
+            //if (Input.GetAxisRaw("Horizontal") > 0)
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                if (GameManager.Instance.inventoryCursor < 31) GameManager.Instance.inventoryCursor += 1;
+            }
+
+            //if (Input.GetAxisRaw("Vertical") > 0)
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                if (GameManager.Instance.inventoryCursor - 8 >= 0) GameManager.Instance.inventoryCursor -= 8;
+            }
+
+            //if (Input.GetAxisRaw("Vertical") < 0)
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                if (GameManager.Instance.inventoryCursor + 8 <= 31) GameManager.Instance.inventoryCursor += 8;
+            }
+
+            GameManager.Instance.UpdateInventory();
+        }
+
         if (immobilized)
         {
             animator.SetBool("moving", false);

@@ -29,6 +29,7 @@ public class PickupBackpack : MonoBehaviour
                 GameManager.Instance.hasBackpack = true;
                 GameManager.Instance.ShowTooltipWithTimeout("Press I to open inventory");
                 backpack.SetActive(false);
+                GameManager.Instance.UpdateInventory();
             }
         }
     }
