@@ -14,6 +14,6 @@ public class InventoryItem : IEquatable<InventoryItem>
     public bool Equals(InventoryItem other)
     {
         if (other == null) return false;
-        return (this.itemName.Equals(other.itemName));
+        return this.itemName.Equals(other.itemName);
     }
 }

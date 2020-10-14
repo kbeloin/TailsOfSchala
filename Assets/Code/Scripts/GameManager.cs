@@ -21,6 +21,9 @@ public class GameManager : Singleton<GameManager>
     Sprite inventorySlot;
     Sprite inventorySlotHighlight;
 
+    // Quests
+    List<Quest> quests = new List<Quest>();
+
     // Used for the ChangeScene script
     Vector2 nextPosition;
     Vector3 nextCameraPosition;
