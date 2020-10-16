@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: fd3bebd8e3921a943a2a18a8af439210
+guid: 04532b1446c75cc42b1b2c3f901994a0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8152055477152090247
-    second: thing in a jar_0
+      213: 5128809253953238874
+    second: Priest_down-right_0
   - first:
-      213: 7255187459281245103
-    second: thing in a jar_1
+      213: -5102574554396757572
+    second: Priest_down-right_1
+  - first:
+      213: 1757841952664390964
+    second: Priest_down-right_2
+  - first:
+      213: -3964501250535529096
+    second: Priest_down-right_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,8 +55,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -93,43 +99,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thing in a jar_0
+      name: Priest_down-right_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 20
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 8
+        width: 14
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97772172cb41ede80800000000000000
-      internalID: -8152055477152090247
+      spriteID: a577e96c7d03d2740800000000000000
+      internalID: 5128809253953238874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thing in a jar_1
+      name: Priest_down-right_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 20
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 8
+        width: 14
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa3d359fd8a9fa460800000000000000
-      internalID: 7255187459281245103
+      spriteID: cb1fb353a730039b0800000000000000
+      internalID: -5102574554396757572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_down-right_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 14
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d07d741fb156810800000000000000
+      internalID: 1757841952664390964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_down-right_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 8
+        width: 14
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875ec321e134bf8c0800000000000000
+      internalID: -3964501250535529096
       vertices: []
       indices: 
       edges: []
