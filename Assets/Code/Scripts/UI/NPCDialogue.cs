@@ -25,6 +25,7 @@ public class NPCDialogue : MonoBehaviour
     Image choiceThreeImage;
     bool showingChoices;
     int currentChoice;
+    string currentName;
 
     void Start()
     {
@@ -132,31 +133,56 @@ public class NPCDialogue : MonoBehaviour
     {
         dialogueText.text = GameManager.Instance.inkStory.Continue();
 
-        if (GameManager.Instance.inkStory.currentTags.Count > 0)
-        {
-            portraitObject.SetActive(true);
-            dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+        portraitObject.SetActive(false);
+        dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+        nameplate.SetActive(false);
 
-            if (GameManager.Instance.inkStory.currentTags.Count > 1) {
-              Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
-              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
-            }
-            else
+        foreach (string tag in GameManager.Instance.inkStory.currentTags)
+        {
+            if (tag.StartsWith("name"))
             {
-              Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
-              portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
+                currentName = tag.Substring(5);
+
+                nameplate.SetActive(true);
+                nameplateText.text = currentName;
+
+                portraitObject.SetActive(true);
+                dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+
+                portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + currentName + "/" + currentName + "_neutral");
             }
 
-            nameplate.SetActive(true);
-            nameplateText.text = GameManager.Instance.inkStory.currentTags[0];
+            if (tag.StartsWith("mood"))
+            {
+                portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + currentName + "/" + currentName + "_" + tag.Substring(5));
+            }
         }
-        else
-        {
-            portraitObject.SetActive(false);
-            dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
 
-            nameplate.SetActive(false);
-        }
+        //if (GameManager.Instance.inkStory.currentTags.Count > 0)
+        //{
+        //    portraitObject.SetActive(true);
+        //    dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+
+        //    if (GameManager.Instance.inkStory.currentTags.Count > 1) {
+        //      Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
+        //      portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[1]);
+        //    }
+        //    else
+        //    {
+        //      Debug.Log("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
+        //      portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + GameManager.Instance.inkStory.currentTags[0] + "/" + GameManager.Instance.inkStory.currentTags[0] + "_neutral");
+        //    }
+
+        //    nameplate.SetActive(true);
+        //    nameplateText.text = GameManager.Instance.inkStory.currentTags[0];
+        //}
+        //else
+        //{
+        //    portraitObject.SetActive(false);
+        //    dialogueText.rectTransform.offsetMin = new Vector2(16, 16);
+
+        //    nameplate.SetActive(false);
+        //}
     }
 
     private void HideDialog()
