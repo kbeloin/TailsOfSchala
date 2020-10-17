@@ -2,11 +2,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Quest : IEquatable<Quest>
+public abstract class Quest : IEquatable<Quest>
 {
     public string questName;
     public string description;
-    public bool isComplete = false;
+
+    public abstract void Setup();
+    public abstract bool IsReadyToComplete();
+    public abstract void Complete();
 
     public bool Equals(Quest other)
     {
