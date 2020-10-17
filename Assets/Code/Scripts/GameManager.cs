@@ -11,7 +11,7 @@ public class GameManager : Singleton<GameManager>
     public bool wearingNightgown = true;
     public bool hasBackpack = false;
 
-    // Ink stories
+    // Ink story
     public TextAsset inkAsset;
     public Story inkStory;
 
@@ -40,7 +40,7 @@ public class GameManager : Singleton<GameManager>
         inventorySlotHighlight = Resources.Load<Sprite>("UI/ui_inventory_slot_highlight");
 
         SceneManager.sceneLoaded += OnSceneLoaded;
-        inkAsset = Resources.Load<TextAsset>("Dialogue/A1S1_Farm_Tutorial_Get_Ingredients1");
+        inkAsset = Resources.Load<TextAsset>("Dialogue/MainStory");
         inkStory = new Story(inkAsset.text);
 
         // Listen for a change to the "tooltip" variable in an Ink script

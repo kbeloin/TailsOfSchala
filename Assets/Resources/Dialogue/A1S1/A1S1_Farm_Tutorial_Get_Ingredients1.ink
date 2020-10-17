@@ -1,23 +1,18 @@
-VAR tooltip = ""
-VAR first_engagement = 1
-
-->start
-
-==start==
-{ first_engagement == 0:
-    -> reminder
+==start_birthday_breakfast==
+{ first_birthday_breakfast_engagement == false:
+    -> reminder_birthday_breakfast
 - else:
-    -> task
+    -> task_birthday_breakfast
 }
 
-==reminder==
+==reminder_birthday_breakfast==
 Did you get the ingredients? # Mother
 +Not yet. #Kay # Kay_sad
 Well, back outside with you! # Mother # Mother_sad
 ->END
 
-==task==
-~ first_engagement = 0
+==task_birthday_breakfast==
+~ first_birthday_breakfast_engagement = false
 Good morning sleepyhead. #Father #Father_happy
 *[Good morning!]
 Good morning everyone! #Kay #Kay_happy
@@ -26,7 +21,7 @@ Annnnddd...? # Thomas # Thomas_mad
     And happy birthday, Thomas. #Kay #Kay_happy
     Thank you.# Thomas #Thomas_happy
     Birthday breakfast is just getting started, but I need a few more ingredients. # Mother # Mother_neutral
-    ->finish_with_name
+    ->finish_birthday_breakfast_with_name
     **[Umm...]
     Umm... and? # Kay # Kay_neutral
     It's my birthday!# Thomas #Thomas_happy
@@ -34,14 +29,14 @@ Annnnddd...? # Thomas # Thomas_mad
         ***[Of course not!]
         Of course not! I'm only teasing.# Kay #Kay_happy
         Birthday breakfast is just getting started, but I need a few more ingredients. # Mother # Mother_neutral
-        ->finish_with_name
+        ->finish_birthday_breakfast_with_name
         ***[Hmm...]
         But children brought by the stork don't have birthdays. That's the law. # Kay #Kay_neutral
         Never heard of that law before.#Thomas #Thomas_sad
         The law's the law, Thomas. No birthday for you. #Father #Father_sad
         They're only being silly, Thomas. #Mother #Mother_happy
         Kay, your brother's birthday breakfast is just getting started, but I need a few more ingredients. #Mother #Mother_neutral
-        ->finish
+        ->finish_birthday_breakfast
 *[...yawnnnn...]
 ....  # Kay # Kay_sad
 Did you not sleep well last night, Kay? # Mother #Mother_sad
@@ -51,14 +46,14 @@ Did you not sleep well last night, Kay? # Mother #Mother_sad
         ***[Okay.]
         Oh okay...# Kay #Kay_sad
         Birthday breakfast is just getting started, but I need a few more ingredients. # Mother # Mother_neutral
-        ->finish_with_name
+        ->finish_birthday_breakfast_with_name
         ***[But...]
         But I'm on the track of an interesting point on electrodynamics.# Kay #Kay_sad
         Nerd!# Thomas #Thomas_happy
         That sounds interesting, Kay, but please respect the curfew tonight.# Mother #Mother_sad
         I will. # Kay #Kay_neutral
         Your brother's birthday breakfast is just getting started, but I need a few more ingredients. #Mother #Mother_neutral
-            ->finish_with_name
+            ->finish_birthday_breakfast_with_name
     **[I slept okay.]
     ...no, I slept okay. Just need a bit of sunlight. #Kay #Kay_happy
     Hmm... alright. #Mother #Mother_sad
@@ -69,12 +64,12 @@ Did you not sleep well last night, Kay? # Mother #Mother_sad
             ****[Yes!]
             You bet I did!# Kay #Kay_happy
             Kay, your brother's birthday breakfast is just getting started, but I need a few more ingredients. #Mother #Mother_neutral
-            ->finish
+            ->finish_birthday_breakfast
             ->END
             ****[Yep.]
             Just barely, too! # Kay #Kay_happy
             Kay, your brother's birthday breakfast is just getting started, but I need a few more ingredients. #Mother #Mother_neutral
-            ->finish
+            ->finish_birthday_breakfast
             ->END
         ***[Sunday.]
         Sunday. # Kay #Kay_neutral
@@ -83,22 +78,22 @@ Did you not sleep well last night, Kay? # Mother #Mother_sad
             ****[I know!]
             I know! I'm only teasing.# Kay #Kay_happy
             Thomas's birthday breakfast is just getting started, but I need a few more ingredients. #Mother #Mother_neutral
-            ->finish_with_name
+            ->finish_birthday_breakfast_with_name
             ->END
             ****[Hmm...]
             Are you sure? # Kay #Kay_sad
             Don't be silly. Here, I have something for you to do. #Mother #Mother_sad
             Your brother's birthday breakfast is getting underway, but I need a few more ingredients. #Mother #Mother_neutral
-            ->finish
+            ->finish_birthday_breakfast
             ->END
     
-==finish==
+==finish_birthday_breakfast==
 Could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
 ~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
 ->END
 
-==finish_with_name==
+==finish_birthday_breakfast_with_name==
 Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?# Mother # Mother_happy 
 ~ tooltip = "Tap Q to view your quest log"
 They should be lying about somewhere on the farm. # Mother # Mother_happy
