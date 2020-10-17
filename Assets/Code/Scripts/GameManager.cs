@@ -21,8 +21,11 @@ public class GameManager : Singleton<GameManager>
     Sprite inventorySlot;
     Sprite inventorySlotHighlight;
 
+    public delegate void ItemAddDelegate(string name);
+    public ItemAddDelegate itemAddDelegate;
+
     // Quests
-    List<Quest> quests = new List<Quest>();
+    public List<Quest> quests = new List<Quest>();
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
@@ -49,6 +52,9 @@ public class GameManager : Singleton<GameManager>
             ShowTooltipWithTimeout(newValue.ToString());
         });
 
+        Quest quest = new ThomasBirthdayBreakfast();
+        quest.Setup();
+        quests.Add(quest);
     }
 
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
@@ -175,9 +181,16 @@ public class GameManager : Singleton<GameManager>
 
         UpdateInventory();
 
+        itemAddDelegate?.Invoke(itemName);
+
         GameObject player = GameObject.Find("Player").gameObject;
 
         StartCoroutine(RaiseArms(player, icon));
+    }
+
+    public void RemoveInventoryItem(string itemName, int count = 1)
+    {
+
     }
 
     IEnumerator RaiseArms(GameObject player, Sprite icon)
@@ -192,9 +205,9 @@ public class GameManager : Singleton<GameManager>
         itemIcon.sprite = icon;
         itemSprite.SetActive(true);
         yield return new WaitForSeconds(0.6f);
-        playerMovement.immobilized = false;
         itemSprite.SetActive(false);
         animator.SetBool("collecting", false);
+        playerMovement.immobilized = false;
         yield return null;
     }
 
