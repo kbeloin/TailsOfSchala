@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: b97de8054c0e9fb42a36cce97c5610b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2661453119710616368
+    second: tree_willow_fall_0
+  - first:
+      213: 7892955119569739559
+    second: tree_willow_fall_1
+  - first:
+      213: -2210420248778202382
+    second: tree_willow_fall_2
+  - first:
+      213: 8968601287904520042
+    second: tree_willow_fall_3
+  - first:
+      213: 6162589949231606708
+    second: tree_willow_fall_4
+  - first:
+      213: 7916140791951909262
+    second: tree_willow_fall_5
+  - first:
+      213: -3660626965231313457
+    second: tree_willow_fall_6
+  - first:
+      213: -198991264247879046
+    second: tree_willow_fall_7
+  - first:
+      213: -1357876027912179742
+    second: tree_willow_fall_0
+  - first:
+      213: 2189900336743839970
+    second: tree_willow_fall_1
+  - first:
+      213: 1928085509903799050
+    second: tree_willow_fall_2
+  - first:
+      213: 8667187819217667710
+    second: tree_willow_fall_3
+  - first:
+      213: -1187114476733104242
+    second: tree_willow_fall_4
+  - first:
+      213: 7063620581630128118
+    second: tree_willow_fall_5
+  - first:
+      213: 5883069409754968555
+    second: tree_willow_fall_6
+  - first:
+      213: -4947492919591627295
+    second: tree_willow_fall_7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tree_willow_fall_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efa64b62fad72de0800000000000000
+      internalID: -1357876027912179742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8ff11f0c6146e10800000000000000
+      internalID: 2189900336743839970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03d46a4e8fe1ca10800000000000000
+      internalID: 1928085509903799050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76cf0e9669084870800000000000000
+      internalID: 8667187819217667710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_4
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f799a4ca5868fe0800000000000000
+      internalID: -1187114476733104242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffa33c8e75070260800000000000000
+      internalID: 7063620581630128118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_6
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be17965557cd4a150800000000000000
+      internalID: 5883069409754968555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_willow_fall_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 35
+        width: 117
+        height: 165
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e51bfe0769f65bb0800000000000000
+      internalID: -4947492919591627295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
