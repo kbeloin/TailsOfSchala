@@ -6,6 +6,7 @@ using Ink.Runtime;
 public class NPCDialogue : MonoBehaviour
 {
     public GameObject dialogBox;
+    public string knotName;
     public bool playerInRange;
 
     PlayerMovement playerMovement;
@@ -120,7 +121,7 @@ public class NPCDialogue : MonoBehaviour
         HideChoices();
 
         //GameManager.Instance.inkStory.ResetState();
-        GameManager.Instance.inkStory.ChoosePathString("start");
+        GameManager.Instance.inkStory.ChoosePathString(knotName);
 
         dialogBox.SetActive(true);
 
