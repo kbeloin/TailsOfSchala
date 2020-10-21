@@ -1709,6 +1709,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1255772084}
     m_Modifications:
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.77
+      objectReference: {fileID: 0}
     - target: {fileID: 5290396600084850776, guid: dfd0e85f28e394e44b824741cf24953b,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2567,7 +2572,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454914348
 GameObject:
@@ -2797,7 +2802,7 @@ Transform:
   - {fileID: 1318653323}
   - {fileID: 131369465}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &482291376 stripped
 Transform:
@@ -4144,7 +4149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &600903243
 PrefabInstance:
@@ -4348,7 +4353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &705504855
 PrefabInstance:
@@ -4441,6 +4446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LightVolumeOpacity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581348388801334327, guid: b8b8e25936d4edf4086538a5489729fd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8b8e25936d4edf4086538a5489729fd, type: 3}
@@ -4782,7 +4792,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &910466641
 MonoBehaviour:
@@ -5429,7 +5439,7 @@ Transform:
   m_Children:
   - {fileID: 1403459720}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1186823029
 MonoBehaviour:
@@ -5568,7 +5578,12 @@ PrefabInstance:
     - target: {fileID: 5581348388801334327, guid: b8b8e25936d4edf4086538a5489729fd,
         type: 3}
       propertyPath: m_Intensity
-      value: 0.2
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581348388801334327, guid: b8b8e25936d4edf4086538a5489729fd,
+        type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8b8e25936d4edf4086538a5489729fd, type: 3}
@@ -7592,7 +7607,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1680657385
 GameObject:
@@ -7813,7 +7828,7 @@ Transform:
   - {fileID: 261091902}
   - {fileID: 363996592}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830209763
 GameObject:
@@ -7853,9 +7868,9 @@ BoxCollider2D:
   m_Offset: {x: -0.030057907, y: 0.049739838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49339947, y: 0.046754617}
-    oldSize: {x: 1, y: 3}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.875, y: 2.4375}
+    newSize: {x: 0.875, y: 2.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7902,15 +7917,16 @@ SpriteRenderer:
   m_SortingLayerID: -923580717
   m_SortingLayer: 5
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 14a901c614d7be14298ae235877d6f0f, type: 3}
+  m_Sprite: {fileID: 7266904653045965080, guid: 851cb3d7081a1a94483b5a82773ded6b,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.875, y: 2.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &1830209766
@@ -7925,7 +7941,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1830209767
 Animator:
@@ -8075,9 +8091,9 @@ BoxCollider2D:
   m_Offset: {x: 0.047119617, y: 0.022578537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49339947, y: 0.046754617}
-    oldSize: {x: 1, y: 3}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.875, y: 2.4375}
+    newSize: {x: 0.875, y: 2.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8204,7 +8220,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 0, g: 0.94509804, b: 0.09605795, a: 1}
-  m_Intensity: 0.85
+  m_Intensity: 0.51
   m_LightVolumeOpacity: 0.43
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
   m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
@@ -8216,8 +8232,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1.76
+  m_PointLightInnerRadius: 0.62
+  m_PointLightOuterRadius: 1.77
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -8357,7 +8373,7 @@ Transform:
   - {fileID: 1529428356}
   - {fileID: 423041156}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2027295195
 GameObject:
@@ -8754,8 +8770,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.25
+  m_PointLightInnerRadius: 0.74
+  m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -9464,7 +9480,7 @@ PrefabInstance:
     - target: {fileID: 3459661943038784912, guid: b8b8e25936d4edf4086538a5489729fd,
         type: 3}
       propertyPath: m_Name
-      value: Mana Potion
+      value: Large Mana Potion
       objectReference: {fileID: 0}
     - target: {fileID: 3459661943038784912, guid: b8b8e25936d4edf4086538a5489729fd,
         type: 3}
@@ -9604,6 +9620,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1492151217}
     m_Modifications:
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_LightOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706919767242652050, guid: dfd0e85f28e394e44b824741cf24953b,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5290396600084850776, guid: dfd0e85f28e394e44b824741cf24953b,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -9632,12 +9673,12 @@ PrefabInstance:
     - target: {fileID: 5290396600084850783, guid: dfd0e85f28e394e44b824741cf24953b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.66
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5290396600084850783, guid: dfd0e85f28e394e44b824741cf24953b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.08
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5290396600084850783, guid: dfd0e85f28e394e44b824741cf24953b,
         type: 3}
