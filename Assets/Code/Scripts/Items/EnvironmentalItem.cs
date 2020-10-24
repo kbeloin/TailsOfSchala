@@ -53,7 +53,7 @@ public class EnvironmentalItem : MonoBehaviour
         }
     }
 
-    void PlayerInteract()
+    public virtual void PlayerInteract()
     {
         interactionSwitch = !interactionSwitch;
         animator.SetBool("interactionSwitch", interactionSwitch);
