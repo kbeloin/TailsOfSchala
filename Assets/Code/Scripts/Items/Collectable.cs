@@ -32,7 +32,9 @@ public class Collectable : MonoBehaviour
             GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
             GameManager.Instance.DebugInventory();
             myRenderer.enabled = false;
-            myLight.enabled = false;
+            if (myLight) {
+                myLight.enabled = false;
+            }
             collected = true;
         }
     }
