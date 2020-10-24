@@ -8,6 +8,7 @@ public class NPCDialogue : MonoBehaviour
     public GameObject dialogBox;
     public string knotName;
     public bool playerInRange;
+    public AudioSource audio;
 
     PlayerMovement playerMovement;
     GameObject portraitObject;
@@ -155,6 +156,11 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("mood"))
             {
                 portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/" + currentName + "/" + currentName + "_" + tag.Substring(5));
+            }
+
+            if (tag.StartsWith("sound"))
+            {
+                audio.clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
             }
         }
 
