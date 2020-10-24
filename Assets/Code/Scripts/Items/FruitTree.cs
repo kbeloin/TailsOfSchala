@@ -6,15 +6,15 @@ using UnityEngine;
 public class FruitTree : EnvironmentalItem
 {
 
-    private GameObject fruit;
+    private Transform fruit;
     private Transform singleFruit;
-    private GameObject ground;
+    private Transform ground;
 
     void Start()
     {
         base.Start();
-        fruit = GameObject.Find("Fruit");
-        ground = GameObject.Find("Ground");
+        fruit = transform.Find("Fruit");
+        ground = transform.Find("Ground");
 
     }
 
@@ -26,6 +26,9 @@ public class FruitTree : EnvironmentalItem
         {
             singleFruit = fruit.transform.GetChild(i);
             singleFruit.transform.position = new Vector3(singleFruit.transform.position.x, ground.transform.position.y, singleFruit.transform.position.z);
+            singleFruit.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            singleFruit.GetComponent<Collectable>().disabled = false;
         }
+
     }
 }

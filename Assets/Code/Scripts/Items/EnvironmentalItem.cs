@@ -13,7 +13,7 @@ public class EnvironmentalItem : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    void Start()
+    public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();

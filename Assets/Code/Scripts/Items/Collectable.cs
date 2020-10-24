@@ -11,6 +11,7 @@ public class Collectable : MonoBehaviour
     public int weight;
     public int value;
     public bool playerInRange;
+    public bool disabled = false;
 
     bool collected = false;
 
@@ -25,7 +26,7 @@ public class Collectable : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange && !collected)
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange && !collected && !disabled)
         {
             GameManager.Instance.ShowTooltipWithTimeout("Collected " + itemName + "!");
             GameManager.Instance.AddInventoryItem(itemName, description, icon, weight, value);
@@ -42,7 +43,7 @@ public class Collectable : MonoBehaviour
         {
             playerInRange = true;
 
-            if (!collected) GameManager.Instance.ShowTooltip("Press E to collect");
+            if (!collected && !disabled) GameManager.Instance.ShowTooltip("Press E to collect");
         }
     }
 
