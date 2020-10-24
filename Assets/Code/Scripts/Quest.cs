@@ -6,6 +6,7 @@ public abstract class Quest : IEquatable<Quest>
 {
     public string questName;
     public string description;
+    public string requirements;
 
     public abstract void Setup();
     public abstract bool IsReadyToComplete();

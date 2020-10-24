@@ -9,9 +9,14 @@ public class ThomasBirthdayBreakfast : Quest
     int saffronFlowers = 0;
     public bool isComplete;
 
+
+
     public override void Setup()
     {
         GameManager.Instance.itemAddDelegate += ItemAdded;
+        questName = "Thomas' Birthday Breakfast!";
+        description = "It's your brother's birthday and Mom wants you to collect some ingredients from around the farm to make this dish extra special! She mentioned that Saffron flowers can be found near the Northern Forest, the Rosemary has been seen growing near the rocky river banks, and the Mushrooms sprout up around the Southern Pond.";
+        requirements = "5 Saffron flowers, 5 Rosemary Sprigs and 5 Mushrooms";
     }
 
     public override bool IsReadyToComplete()
