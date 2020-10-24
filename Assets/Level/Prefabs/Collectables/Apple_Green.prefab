@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 266516127346147312}
   - component: {fileID: 8736326407038802644}
   - component: {fileID: 1159170767401255142}
+  - component: {fileID: 1750034973861814364}
   m_Layer: 0
   m_Name: Apple_Green
   m_TagString: Untagged
@@ -93,10 +94,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013076782, y: 0.6509628}
+  m_Offset: {x: -0.004017353, y: 0.34033918}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -107,5 +108,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0072174, y: 1.329216}
+  m_Size: {x: 0.59696484, y: 0.7079687}
   m_EdgeRadius: 0
+--- !u!114 &1750034973861814364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020045356747655008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc7e63008ae4dbebe8e579d35aee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Apple
+  description: A Green Apple
+  icon: {fileID: -176794230923208836, guid: a76bc3fe9f68e684c9189509e957c9bb, type: 3}
+  weight: 0
+  value: 0
+  playerInRange: 0
+  disabled: 1

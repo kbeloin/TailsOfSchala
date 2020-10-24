@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2142215746489324605}
   - component: {fileID: 2142215746489324602}
   - component: {fileID: 2142215746489324603}
+  - component: {fileID: 7009842532254695734}
   m_Layer: 0
   m_Name: Tree_Apple_Gold
   m_TagString: Plantlife
@@ -30,9 +31,8 @@ Transform:
   m_LocalPosition: {x: 18, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8506474472491633462}
-  - {fileID: 2142215746124519842}
-  - {fileID: 8506474472609833758}
+  - {fileID: 9127084932240410801}
+  - {fileID: 3058893562050814984}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -116,29 +116,112 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.37991428, y: 0.37386227}
+  m_Offset: {x: -0.059846878, y: 0.2324717}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.625, y: 4.6875}
+    pivot: {x: 0.4, y: 0.16}
+    oldSize: {x: 4.625, y: 5.5}
     newSize: {x: 4.625, y: 4.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8241749, y: 0.38126183}
+  m_Size: {x: 1.5466385, y: 0.6012025}
   m_EdgeRadius: 0
+--- !u!114 &7009842532254695734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142215746489324601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeca2d7c0474e0946891815b45bc5eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  interactionSwitch: 0
+  playerInRange: 0
+--- !u!1 &3596178021229392068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3058893562050814984}
+  m_Layer: 0
+  m_Name: Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3058893562050814984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3596178021229392068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2142215746489324600}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7342400176806107346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9127084932240410801}
+  m_Layer: 0
+  m_Name: Fruit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9127084932240410801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342400176806107346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8506474472491633462}
+  - {fileID: 2142215746124519842}
+  - {fileID: 8506474472609833758}
+  m_Father: {fileID: 2142215746489324600}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2142215746402206448
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2142215746489324600}
+    m_TransformParent: {fileID: 9127084932240410801}
     m_Modifications:
+    - target: {fileID: 2427424921872102038, guid: e487dcd322b1aac47a4f9ba065356c2e,
+        type: 3}
+      propertyPath: disabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7761879919839644102, guid: e487dcd322b1aac47a4f9ba065356c2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -212,8 +295,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2142215746489324600}
+    m_TransformParent: {fileID: 9127084932240410801}
     m_Modifications:
+    - target: {fileID: 2427424921872102038, guid: e487dcd322b1aac47a4f9ba065356c2e,
+        type: 3}
+      propertyPath: disabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7761879919839644102, guid: e487dcd322b1aac47a4f9ba065356c2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,8 +375,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2142215746489324600}
+    m_TransformParent: {fileID: 9127084932240410801}
     m_Modifications:
+    - target: {fileID: 2427424921872102038, guid: e487dcd322b1aac47a4f9ba065356c2e,
+        type: 3}
+      propertyPath: disabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7761879919839644102, guid: e487dcd322b1aac47a4f9ba065356c2e,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -13,7 +13,7 @@ public class EnvironmentalItem : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    void Start()
+    public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -53,7 +53,7 @@ public class EnvironmentalItem : MonoBehaviour
         }
     }
 
-    void PlayerInteract()
+    public virtual void PlayerInteract()
     {
         interactionSwitch = !interactionSwitch;
         animator.SetBool("interactionSwitch", interactionSwitch);
