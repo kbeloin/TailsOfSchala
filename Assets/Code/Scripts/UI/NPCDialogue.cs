@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
+using System.Reflection;
 using Ink.Runtime;
 
 public class NPCDialogue : MonoBehaviour
@@ -161,6 +163,18 @@ public class NPCDialogue : MonoBehaviour
             if (tag.StartsWith("sound"))
             {
                 audio.clip = Resources.Load<AudioClip>("Audio/" + tag.Substring(6));
+            }
+
+            if (tag.StartsWith("quest"))
+            {
+                Type type = Type.GetType(tag.Substring(6));
+
+                dynamic quest = Activator.CreateInstance(type);
+
+                quest.Setup();
+
+                GameManager.Instance.quests.Add(quest);
+                GameManager.Instance.UpdateQuestLog();
             }
         }
 
