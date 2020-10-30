@@ -9620,7 +9620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  exitBarrier: {fileID: 0}
+  exitBarrier: {fileID: 968360735}
 --- !u!61 &1936602956
 BoxCollider2D:
   m_ObjectHideFlags: 0
