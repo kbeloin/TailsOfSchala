@@ -1461,6 +1461,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1745254813}
   knotName: start_birthday_breakfast
   playerInRange: 0
+  audio: {fileID: 0}
 --- !u!61 &452259450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3839,6 +3840,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1745254813}
   knotName: start_birthday_breakfast
   playerInRange: 0
+  audio: {fileID: 0}
 --- !u!95 &628461831
 Animator:
   serializedVersion: 3
@@ -4542,6 +4544,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1745254813}
   knotName: start_birthday_breakfast
   playerInRange: 0
+  audio: {fileID: 0}
 --- !u!61 &862051891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9842,7 +9845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956227445}
   m_LocalRotation: {x: 0, y: 0, z: 0.0067002364, w: 0.9999776}
-  m_LocalPosition: {x: -6.5, y: -16, z: 0}
+  m_LocalPosition: {x: -6.25, y: -16.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
