@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Forest/Portal.unity
     guid: c56fbcd7df095f748a0f2cd0c204bc57
+  - enabled: 1
+    path: Assets/Level/Scenes/Portal/PortalPastInterior.unity
+    guid: 184e803c8dead0b4b921e3e60ef5d865
+  - enabled: 1
+    path: Assets/Level/Scenes/Farm/Outdoor/Past/FarmPastEvening.unity
+    guid: 9181b0fae1f42f64db29616091c78bf5
+  - enabled: 1
+    path: Assets/Level/Scenes/RoadToTown/Past/RoadNight.unity
+    guid: 0cab21bca002b26418309b10ae39e3a2
   m_configObjects: {}
