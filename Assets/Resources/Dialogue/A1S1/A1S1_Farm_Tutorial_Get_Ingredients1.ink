@@ -91,13 +91,13 @@ Did you not sleep well last night, Kay? #name:Mother #mood:sad
             ->END
     
 ==finish_birthday_breakfast==
-Could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?#name:Mother #mood:happy 
+Could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?#name:Mother #mood:happy #quest:ThomasBirthdayBreakfast
 ~ tooltip = "Tap L to view your quest log"
 They should be lying about somewhere on the farm. #name:Mother #mood:happy
 ->END
 
 ==finish_birthday_breakfast_with_name==
-Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?#name:Mother #mood:happy 
+Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?#name:Mother #mood:happy #quest:ThomasBirthdayBreakfast 
 ~ tooltip = "Tap L to view your quest log"
 They should be lying about somewhere on the farm. #name:Mother #mood:happy
 ->END

@@ -52,10 +52,10 @@ public class GameManager : Singleton<GameManager>
             ShowTooltipWithTimeout(newValue.ToString());
         });
 
-        Quest quest = new ThomasBirthdayBreakfast();
-        quest.Setup();
-        quests.Add(quest);
-        UpdateQuestLog();
+        //Quest quest = new ThomasBirthdayBreakfast();
+        //quest.Setup();
+        //quests.Add(quest);
+        //UpdateQuestLog();
     }
 
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
@@ -85,15 +85,6 @@ public class GameManager : Singleton<GameManager>
         // Set the camera to the position defined in ChangeScene
         Camera.main.transform.position = nextCameraPosition;
     }
-
-    public void DebugInventory()
-    {
-        foreach (InventoryItem i in inventory)
-        {
-            Debug.Log(i.itemName + " " + i.count);
-        }
-    }
-
 
     public void ShowTooltip(string newText)
     {
@@ -157,6 +148,18 @@ public class GameManager : Singleton<GameManager>
 
         // Hide the dialog box
         dialogBox.SetActive(false);
+    }
+
+    /**
+     * Inventory stuff
+     **/
+
+    public void DebugInventory()
+    {
+        foreach (InventoryItem i in inventory)
+        {
+            Debug.Log(i.itemName + " " + i.count);
+        }
     }
 
     public void AddInventoryItem(string itemName, string description, Sprite icon, int weight, int value)
@@ -342,7 +345,9 @@ public class GameManager : Singleton<GameManager>
             }
         }
     }
-
+    /**
+     * Quest stuff
+     **/
     public void ToggleQuestLog()
     {
         // Hide dialog and tooltip

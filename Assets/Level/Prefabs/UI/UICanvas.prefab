@@ -1462,7 +1462,7 @@ GameObject:
   - component: {fileID: 2257383734577309877}
   - component: {fileID: 2257383734577309876}
   - component: {fileID: 2257383734577309879}
-  - component: {fileID: 238273424}
+  - component: {fileID: 1592403914}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!95 &238273424
+--- !u!95 &1592403914
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc449961c7ef74dc8acb0c4c4662188b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questLogItem: {fileID: 4239517371585392377, guid: 91bb6cc649f56417ea72bd2c8f5e64d1,
+  questLogItem: {fileID: 4239517371585392377, guid: d34b44f518c3d44a8986cd28e3748c4d,
     type: 3}
 --- !u!1 &4533016321914949521
 GameObject:
