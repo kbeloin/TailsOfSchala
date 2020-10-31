@@ -133,27 +133,29 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 if (GameManager.Instance.inventoryCursor > 0) GameManager.Instance.inventoryCursor -= 1;
+                GameManager.Instance.UpdateInventory();
             }
 
             //if (Input.GetAxisRaw("Horizontal") > 0)
             if (Input.GetKeyDown(KeyCode.D))
             {
                 if (GameManager.Instance.inventoryCursor < 31) GameManager.Instance.inventoryCursor += 1;
+                GameManager.Instance.UpdateInventory();
             }
 
             //if (Input.GetAxisRaw("Vertical") > 0)
             if (Input.GetKeyDown(KeyCode.W))
             {
                 if (GameManager.Instance.inventoryCursor - 8 >= 0) GameManager.Instance.inventoryCursor -= 8;
+                GameManager.Instance.UpdateInventory();
             }
 
             //if (Input.GetAxisRaw("Vertical") < 0)
             if (Input.GetKeyDown(KeyCode.S))
             {
                 if (GameManager.Instance.inventoryCursor + 8 <= 31) GameManager.Instance.inventoryCursor += 8;
+                GameManager.Instance.UpdateInventory();
             }
-
-            GameManager.Instance.UpdateInventory();
         }
 
         if (GameManager.Instance.viewingQuestLog)
@@ -161,14 +163,14 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 if (GameManager.Instance.questCursor > 0) GameManager.Instance.questCursor -= 1;
+                GameManager.Instance.UpdateQuestLog();
             }
 
             if (Input.GetKeyDown(KeyCode.S))
             {
                 if (GameManager.Instance.questCursor < GameManager.Instance.quests.Count - 1) GameManager.Instance.questCursor += 1;
+                GameManager.Instance.UpdateQuestLog();
             }
-
-            GameManager.Instance.UpdateQuestLog();
         }
 
         if (immobilized)

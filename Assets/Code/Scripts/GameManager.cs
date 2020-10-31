@@ -438,6 +438,7 @@ public class GameManager : Singleton<GameManager>
         GameObject questLogContents = questLogView.transform.Find("QuestLogContents").gameObject;
         GameObject questDetail = questLogView.transform.Find("QuestDetail").gameObject;
         Text questDetailTitle = questDetail.transform.GetChild(0).GetComponent<Text>();
+        Text questDetailDescription = questDetail.transform.GetChild(1).GetComponent<Text>();
 
         for (int i = 0; i < 32; i++)
         { 
@@ -461,10 +462,12 @@ public class GameManager : Singleton<GameManager>
         if (questCursor < quests.Count)
         {
             questDetailTitle.text = quests[questCursor].questName;
+            questDetailDescription.text = quests[questCursor].description;
         }
         else
         {
             questDetailTitle.text = "";
+            questDetailDescription.text = "";
         }
     }
 }
