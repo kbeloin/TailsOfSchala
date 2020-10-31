@@ -7643,7 +7643,7 @@ MonoBehaviour:
   followDuration: 0.1
   maximumFollowSpeed: 12
   maxPosition: {x: 82.05, y: 29.6}
-  minPosition: {x: 7, y: 0.2}
+  minPosition: {x: 8, y: 0.69}
   player: {fileID: 1740815373}
 --- !u!114 &2132029024
 MonoBehaviour:
@@ -7727,7 +7727,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132029022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 0.2, z: -1}
+  m_LocalPosition: {x: 8.3, y: 0.69, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
