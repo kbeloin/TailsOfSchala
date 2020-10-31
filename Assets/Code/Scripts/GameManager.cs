@@ -26,6 +26,9 @@ public class GameManager : Singleton<GameManager>
 
     // Quests
     public List<Quest> quests = new List<Quest>();
+    public int questCursor = 0;
+    Sprite questLogSlot;
+    Sprite questLogSlotHighlight;
 
     // Used for the ChangeScene script
     Vector2 nextPosition;
@@ -51,13 +54,11 @@ public class GameManager : Singleton<GameManager>
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
-
-        //Quest quest = new ThomasBirthdayBreakfast();
-        //quest.Setup();
-        //quests.Add(quest);
-        //UpdateQuestLog();
     }
 
+    /**
+     * Handling Scenes
+     **/
     public void LoadScene(string scene, Vector2 toPosition, Vector3 toCameraPosition, Vector2 toDirection)
     {
         nextPosition = toPosition;
@@ -86,6 +87,9 @@ public class GameManager : Singleton<GameManager>
         Camera.main.transform.position = nextCameraPosition;
     }
 
+    /**
+     * Tooltips and dialogs
+     **/
     public void ShowTooltip(string newText)
     {
         // Find the Tooltip object in the scene
@@ -370,17 +374,16 @@ public class GameManager : Singleton<GameManager>
     public void ShowQuestLog()
     {
         viewingQuestLog = true;
+        questCursor = 0;
 
         // Find the Quest Log layer
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject questLog = uiCanvas.transform.Find("QuestLog").gameObject;
         Image questLogImage = questLog.GetComponent<Image>();
-        Text questLogTitle = questLog.transform.Find("Title").gameObject.GetComponent<Text>();
         Canvas questLogCanvas = questLog.transform.Find("QuestLogContents").gameObject.GetComponent<Canvas>();
 
         // Toggle the visibility of the Quest Log
         questLogImage.enabled = true;
-        questLogTitle.enabled = true;
         questLogCanvas.enabled = true;
 
         // Find the Backdrop object in the scene
@@ -389,6 +392,7 @@ public class GameManager : Singleton<GameManager>
         // Toggle the visibility of the backdrop based on Quest Log state
         backdrop.SetActive(true);
 
+        // Make sure the player can't move while Quest Log is open
         PlayerMovement playerMovement = GameObject.Find("Player").gameObject.GetComponent<PlayerMovement>();
         playerMovement.immobilized = true;
     }
@@ -401,12 +405,10 @@ public class GameManager : Singleton<GameManager>
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject questLog = uiCanvas.transform.Find("QuestLog").gameObject;
         Image questLogImage = questLog.GetComponent<Image>();
-        Text questLogTitle = questLog.transform.Find("Title").gameObject.GetComponent<Text>();
         Canvas questLogCanvas = questLog.transform.Find("QuestLogContents").gameObject.GetComponent<Canvas>();
 
         // Toggle the visibility of the Quest Log
         questLogImage.enabled = false;
-        questLogTitle.enabled = false;
         questLogCanvas.enabled = false;
 
         // Find the Backdrop object in the scene
@@ -427,19 +429,33 @@ public class GameManager : Singleton<GameManager>
         GameObject questLogContents = questLogView.transform.Find("QuestLogContents").gameObject;
 
         for (int i = 0; i < 32; i++)
-        {
-            Image slot = questLogContents.transform.GetChild(i).GetComponent<Image>();
+        { 
             Text questTitle = questLogContents.transform.GetChild(i).GetChild(0).GetComponent<Text>();
 
+            if (i == questCursor && viewingQuestLog)
+            {
+
+                GameObject questDetail = uiCanvas.transform.Find("QuestDetail").gameObject;
+                Text questDetailTitle = questDetail.transform.GetChild(0).GetComponent<Text>();
+
+                if (i < inventory.Count)
+                {
+                    questDetailTitle.text = quests[i].questName;
+                    questDetail.SetActive(true);
+                }
+                else
+                {
+                    questDetail.SetActive(false);
+                }
+            }
+
             if (i >= quests.Count) {
-                slot.enabled = false;
-                questTitle.enabled = false;
-                continue;
+            questTitle.enabled = false;
+            continue;
             }
 
             Debug.Log("adding quest " + quests[i].questName);
 
-            slot.enabled = true;
             questTitle.text = quests[i].questName;
             questTitle.enabled = true;
         }
