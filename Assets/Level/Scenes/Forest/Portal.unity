@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &219093485
 Animator:
   serializedVersion: 3
@@ -175,20 +175,20 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 0.046279836, g: 0.754717, b: 0.104639575, a: 1}
-  m_Intensity: 3.08
+  m_Intensity: 1.9
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
-  m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+  m_LightCookieSprite: {fileID: 21300000, guid: 7775ef46e5e2e604fb08557b153f002d,
     type: 3}
   m_UseNormalMap: 0
-  m_LightOrder: 10
+  m_LightOrder: 50
   m_AlphaBlendOnOverlap: 1
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 4
-  m_PointLightOuterRadius: 10
+  m_PointLightInnerRadius: 3.22
+  m_PointLightOuterRadius: 29.7
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219093484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26999998, y: 0, z: 0}
+  m_LocalPosition: {x: 0.26999998, y: 4.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764984743}
@@ -9946,7 +9946,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24457645, y: 1.2226639}
+  m_Offset: {x: -0.24457645, y: -0.39048004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.56434345, y: 0.03454805}
@@ -9957,7 +9957,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.630665, y: 6.9921722}
+  m_Size: {x: 9.630665, y: 10.21846}
   m_EdgeRadius: 0
 --- !u!114 &764984740
 MonoBehaviour:
@@ -9971,9 +9971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9236321a736ef4bc5a46a3ff1c08c516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
+  dialogBox: {fileID: 1029837969}
   npcPortrait: {fileID: 21300000, guid: 66094e39fb37d474784fe6b12860c192, type: 3}
-  npcName: Frog Monster
+  npcName: Frog King
   dialogue: I don't actually belong in this scene!
   playerInRange: 0
 --- !u!82 &764984741
@@ -10130,7 +10130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764984738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.76, y: -59.22, z: 0}
+  m_LocalPosition: {x: -8.62, y: -69.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 219093488}
@@ -10338,7 +10338,7 @@ GameObject:
   - component: {fileID: 818241084}
   - component: {fileID: 818241087}
   m_Layer: 0
-  m_Name: ToNextScene
+  m_Name: ToPortal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10383,9 +10383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: Level/Scenes/Portal/PortalPastInterior
-  toPosition: {x: -9, y: 13}
-  toCameraPosition: {x: -9, y: 13, z: 0}
-  toDirection: {x: 0, y: 0}
+  toPosition: {x: -8.5, y: 21}
+  toCameraPosition: {x: -8.5, y: 21, z: 0}
+  toDirection: {x: 0, y: 1}
 --- !u!4 &818241086
 Transform:
   m_ObjectHideFlags: 0
@@ -10398,7 +10398,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &818241087
 MonoBehaviour:
@@ -15563,20 +15563,20 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0
   m_Color: {r: 0, g: 0.20837334, b: 0.9433962, a: 1}
-  m_Intensity: 0
+  m_Intensity: 5.27
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
-  m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+  m_LightCookieSprite: {fileID: 21300000, guid: 7775ef46e5e2e604fb08557b153f002d,
     type: 3}
   m_UseNormalMap: 0
-  m_LightOrder: 8
+  m_LightOrder: 29
   m_AlphaBlendOnOverlap: 1
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 9.72
-  m_PointLightOuterRadius: 90
+  m_PointLightOuterRadius: 120
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -15652,7 +15652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973960342
 GameObject:
@@ -20502,6 +20502,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1029837969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
+    type: 3}
+  m_PrefabInstance: {fileID: 1036652209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1036652209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20561,7 +20567,7 @@ PrefabInstance:
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309882, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
@@ -21638,12 +21644,12 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 11.34
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
-  m_LightOrder: 0
+  m_LightOrder: 20
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
@@ -45644,7 +45650,7 @@ Transform:
   m_GameObject: {fileID: 1986271857}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: -1.7, y: -68.975, z: -2.2449944}
+  m_LocalPosition: {x: -1.7, y: -62.93, z: -2.2449944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 295586393}
@@ -45667,7 +45673,7 @@ MonoBehaviour:
   followDuration: 0.5
   maximumFollowSpeed: 64
   maxPosition: {x: 8, y: -44.95}
-  minPosition: {x: -15.61, y: -62}
+  minPosition: {x: -1.7, y: -62.93}
   player: {fileID: 2010474619}
 --- !u!114 &1986271860
 MonoBehaviour:
