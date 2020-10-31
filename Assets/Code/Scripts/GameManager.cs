@@ -54,6 +54,11 @@ public class GameManager : Singleton<GameManager>
         inkStory.ObserveVariable ("tooltip", (string varName, object newValue) => {
             ShowTooltipWithTimeout(newValue.ToString());
         });
+
+        TestQuest quest = new TestQuest();
+        quest.Setup();
+        quests.Add(quest);
+        UpdateQuestLog();
     }
 
     /**
@@ -381,10 +386,12 @@ public class GameManager : Singleton<GameManager>
         GameObject questLog = uiCanvas.transform.Find("QuestLog").gameObject;
         Image questLogImage = questLog.GetComponent<Image>();
         Canvas questLogCanvas = questLog.transform.Find("QuestLogContents").gameObject.GetComponent<Canvas>();
+        Canvas questDetailCanvas = questLog.transform.Find("QuestDetail").gameObject.GetComponent<Canvas>();
 
         // Toggle the visibility of the Quest Log
         questLogImage.enabled = true;
         questLogCanvas.enabled = true;
+        questDetailCanvas.enabled = true;
 
         // Find the Backdrop object in the scene
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
@@ -406,10 +413,12 @@ public class GameManager : Singleton<GameManager>
         GameObject questLog = uiCanvas.transform.Find("QuestLog").gameObject;
         Image questLogImage = questLog.GetComponent<Image>();
         Canvas questLogCanvas = questLog.transform.Find("QuestLogContents").gameObject.GetComponent<Canvas>();
+        Canvas questDetailCanvas = questLog.transform.Find("QuestDetail").gameObject.GetComponent<Canvas>();
 
         // Toggle the visibility of the Quest Log
         questLogImage.enabled = false;
         questLogCanvas.enabled = false;
+        questDetailCanvas.enabled = false;
 
         // Find the Backdrop object in the scene
         GameObject backdrop = uiCanvas.transform.Find("Backdrop").gameObject;
@@ -427,37 +436,35 @@ public class GameManager : Singleton<GameManager>
         GameObject uiCanvas = GameObject.Find("UICanvas").gameObject;
         GameObject questLogView = uiCanvas.transform.Find("QuestLog").gameObject;
         GameObject questLogContents = questLogView.transform.Find("QuestLogContents").gameObject;
+        GameObject questDetail = questLogView.transform.Find("QuestDetail").gameObject;
+        Text questDetailTitle = questDetail.transform.GetChild(0).GetComponent<Text>();
 
         for (int i = 0; i < 32; i++)
         { 
             Text questTitle = questLogContents.transform.GetChild(i).GetChild(0).GetComponent<Text>();
+            Image questSelected = questLogContents.transform.GetChild(i).GetChild(1).GetComponent<Image>();
 
-            if (i == questCursor && viewingQuestLog)
+            if (i < quests.Count)
             {
+                questTitle.text = quests[i].questName;
+                questTitle.enabled = true;
 
-                GameObject questDetail = uiCanvas.transform.Find("QuestDetail").gameObject;
-                Text questDetailTitle = questDetail.transform.GetChild(0).GetComponent<Text>();
-
-                if (i < inventory.Count)
-                {
-                    questDetailTitle.text = quests[i].questName;
-                    questDetail.SetActive(true);
-                }
-                else
-                {
-                    questDetail.SetActive(false);
-                }
+                questSelected.enabled = (i == questCursor);
             }
-
-            if (i >= quests.Count) {
-            questTitle.enabled = false;
-            continue;
+            else
+            {
+                questTitle.enabled = false;
+                questSelected.enabled = false;
             }
+        }
 
-            Debug.Log("adding quest " + quests[i].questName);
-
-            questTitle.text = quests[i].questName;
-            questTitle.enabled = true;
+        if (questCursor < quests.Count)
+        {
+            questDetailTitle.text = quests[questCursor].questName;
+        }
+        else
+        {
+            questDetailTitle.text = "";
         }
     }
 }

@@ -156,6 +156,21 @@ public class PlayerMovement : MonoBehaviour
             GameManager.Instance.UpdateInventory();
         }
 
+        if (GameManager.Instance.viewingQuestLog)
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                if (GameManager.Instance.questCursor > 0) GameManager.Instance.questCursor -= 1;
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                if (GameManager.Instance.questCursor < GameManager.Instance.quests.Count - 1) GameManager.Instance.questCursor += 1;
+            }
+
+            GameManager.Instance.UpdateQuestLog();
+        }
+
         if (immobilized)
         {
             animator.SetBool("moving", false);
