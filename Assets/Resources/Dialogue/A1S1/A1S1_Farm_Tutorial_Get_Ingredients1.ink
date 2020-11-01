@@ -11,8 +11,12 @@ VAR first_birthday_breakfast_engagement = true
 ==reminder_birthday_breakfast==
 Did you get the ingredients? #name:Mother
 +Not yet. #name:Kay #mood:sad
-Well, back outside with you! #name:Mother #mood:sad
-->END
+    Well, back outside with you! #name:Mother #mood:sad
+    ->END
+*[Yep!]
+    Well, let's have them! #name:Mother #mood:happy 
+    ~ tooltip = "You give Mother the ingredients."
+    -> completed_birthday_breakfast
 
 ==task_birthday_breakfast==
 ~ first_birthday_breakfast_engagement = false
@@ -100,4 +104,11 @@ They should be lying about somewhere on the farm. #name:Mother #mood:happy
 Kay, could you fetch me: one <b>fresh mushroom</b>, one <b>rosemary sprig</b>, and one <b>saffron flower</b>?#name:Mother #mood:happy #quest:ThomasBirthdayBreakfast 
 ~ tooltip = "Tap L to view your quest log"
 They should be lying about somewhere on the farm. #name:Mother #mood:happy
+->END
+
+==completed_birthday_breakfast==
+Well done, Kay! This will make a fine meal.#name:Mother #mood:happy
+A young lady ought to know a few recipes. Why don't you try making these <b>Herb-Roasted Mushrooms</b>? #name:Mother
+~ tooltip = "Recieved an item!"
+Give it a try on our <b>stove</b>. #name:Mother
 ->END

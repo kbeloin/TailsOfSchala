@@ -9927,20 +9927,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 789343138, guid: 59a222df298964682a8ab1f42945c798, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1202311285330392983, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2257383734438140719, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2257383734577309878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
       propertyPath: m_Name
@@ -10050,11 +10036,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3395234840381285997, guid: 59a222df298964682a8ab1f42945c798,
-        type: 3}
-      propertyPath: m_Name
-      value: QuestLogItem
       objectReference: {fileID: 0}
     - target: {fileID: 4143179381922047878, guid: 59a222df298964682a8ab1f42945c798,
         type: 3}
