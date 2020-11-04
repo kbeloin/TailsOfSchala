@@ -606,14 +606,14 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
     type: 3}
   m_UseNormalMap: 0
-  m_LightOrder: 10
+  m_LightOrder: 100
   m_AlphaBlendOnOverlap: 1
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1
-  m_PointLightOuterRadius: 6.07
+  m_PointLightInnerRadius: 0.93
+  m_PointLightOuterRadius: 8.71
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -21139,21 +21139,21 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
-  m_Color: {r: 0.016820924, g: 0.10025866, b: 0.3962264, a: 1}
+  m_Color: {r: 0.084905684, g: 0.004405484, b: 0.004405484, a: 1}
   m_Intensity: 5.26
   m_LightVolumeOpacity: 0.12
   m_ApplyToSortingLayers: 00000000b33dca842f8e9c56b72b8b724f41c656d346f3c8472983b8
-  m_LightCookieSprite: {fileID: 21300000, guid: b6c14a0a2b471154f9325e83f9093dda,
+  m_LightCookieSprite: {fileID: 21300000, guid: 7775ef46e5e2e604fb08557b153f002d,
     type: 3}
   m_UseNormalMap: 0
-  m_LightOrder: 10
+  m_LightOrder: 90
   m_AlphaBlendOnOverlap: 1
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 2.78
-  m_PointLightOuterRadius: 10.14
+  m_PointLightInnerRadius: 0.78
+  m_PointLightOuterRadius: 2.79
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -45650,7 +45650,7 @@ Transform:
   m_GameObject: {fileID: 1986271857}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: -1.7, y: -62.93, z: -2.2449944}
+  m_LocalPosition: {x: -1.7, y: -61.56, z: -2.2449944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 295586393}
@@ -45673,7 +45673,7 @@ MonoBehaviour:
   followDuration: 0.5
   maximumFollowSpeed: 64
   maxPosition: {x: 8, y: -44.95}
-  minPosition: {x: -1.7, y: -62.93}
+  minPosition: {x: -1.7, y: -61.56}
   player: {fileID: 2010474619}
 --- !u!114 &1986271860
 MonoBehaviour:

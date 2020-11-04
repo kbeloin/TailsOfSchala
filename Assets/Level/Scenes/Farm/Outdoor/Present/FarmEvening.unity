@@ -5803,8 +5803,8 @@ MonoBehaviour:
   viewPortFactor: 0.5
   followDuration: 0.5
   maximumFollowSpeed: 64
-  maxPosition: {x: 30.8, y: 26.9}
-  minPosition: {x: -21, y: -39.9}
+  maxPosition: {x: 30.8, y: 25.82}
+  minPosition: {x: -20.63, y: -39.9}
   player: {fileID: 1565148179}
 --- !u!114 &195501643
 MonoBehaviour:
@@ -5897,7 +5897,7 @@ Transform:
   m_GameObject: {fileID: 195501641}
   m_LocalRotation: {x: 0.0000028219074, y: -0.000001469627, z: 0.000000031184754,
     w: 1}
-  m_LocalPosition: {x: 38.08, y: -43.665, z: -2.2449944}
+  m_LocalPosition: {x: 39.79, y: -43.725, z: -2.2449944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8106,7 +8106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toScene: Portal
   toPosition: {x: 0, y: -70}
-  toCameraPosition: {x: 0, y: -70, z: -10}
+  toCameraPosition: {x: 0, y: -61.56, z: -10}
   toDirection: {x: 0, y: 1}
 --- !u!61 &302420897
 BoxCollider2D:
@@ -100119,12 +100119,12 @@ PrefabInstance:
     - target: {fileID: 5988499790979632161, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.79
+      value: 38.075
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632161, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -44.6
+      value: -43.66
       objectReference: {fileID: 0}
     - target: {fileID: 5988499790979632161, guid: 9644dee8f51f28f499d656af7d8f6525,
         type: 3}
