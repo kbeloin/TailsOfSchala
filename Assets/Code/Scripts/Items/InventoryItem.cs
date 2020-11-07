@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class InventoryItem : IEquatable<InventoryItem>
 {
     public string itemName;
