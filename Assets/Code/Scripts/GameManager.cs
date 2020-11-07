@@ -479,6 +479,11 @@ public class GameManager : Singleton<GameManager>
                 questTitle.enabled = true;
 
                 questSelected.enabled = (i == questCursor);
+
+                if (quests[i].isComplete)
+                {
+                    questTitle.color = Color.gray;
+                }
             }
             else
             {
