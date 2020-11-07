@@ -4,36 +4,42 @@ using UnityEngine;
 
 public class ThomasBirthdayBreakfast : Quest
 {
-    int freshMushrooms = 0;
-    int rosemarySprigs = 0;
-    int saffronFlowers = 0;
     public bool isComplete;
-
-
 
     public override void Setup()
     {
-        GameManager.Instance.itemAddDelegate += ItemAdded;
         questName = "Thomas' Birthday Breakfast!";
         description = "It's your brother's birthday and Mom wants you to collect some ingredients from around the farm to make this dish extra special! She mentioned that Saffron flowers can be found near the Northern Forest, the Rosemary has been seen growing near the rocky river banks, and the Mushrooms sprout up around the Southern Pond.";
         requirements = "5 Saffron flowers, 5 Rosemary Sprigs and 5 Mushrooms";
+
+        GameManager.Instance.itemAddDelegate += ItemAdded;
+        GameManager.Instance.itemRemoveDelegate += ItemRemoved;
+
+        GameManager.Instance.inkStory.ObserveVariable("thomas_birthday_breakfast_complete", (string varName, object newValue) => {
+            Debug.Log(newValue);
+            if (newValue.ToString().Equals("1")) Complete();
+        });
     }
 
     public override bool IsReadyToComplete()
     {
-        if (freshMushrooms >= 5 && rosemarySprigs >= 5 && saffronFlowers >= 5)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        bool ready = 
+            GameManager.Instance.GetInventoryCount("Mushroom") >= 5 &&
+            GameManager.Instance.GetInventoryCount("Rosemary") >= 5 &&
+            GameManager.Instance.GetInventoryCount("Saffron") >= 5;
+
+        GameManager.Instance.inkStory.variablesState["thomas_birthday_breakfast_ready"] = ready;
+
+        return ready;
     }
 
     public override void Complete()
     {
+        Debug.Log("ThomasBirthdayBreakfast Complete called");
         if (!IsReadyToComplete()) return;
+
+        GameManager.Instance.itemAddDelegate -= ItemAdded;
+        GameManager.Instance.itemRemoveDelegate -= ItemRemoved;
 
         GameManager.Instance.RemoveInventoryItem("Mushroom", 5);
         GameManager.Instance.RemoveInventoryItem("Rosemary", 5);
@@ -46,9 +52,12 @@ public class ThomasBirthdayBreakfast : Quest
     {
         Debug.Log("ThomasBirthdayQuest saw item added: " + name);
 
-        if (name.Equals("Mushroom")) freshMushrooms += 1;
-        if (name.Equals("Rosemary")) rosemarySprigs += 1;
-        if (name.Equals("Saffron")) saffronFlowers += 1;
+        if (IsReadyToComplete()) Debug.Log("ThomasBirthdayQuest is ready to complete!");
+    }
+
+    void ItemRemoved(string name)
+    {
+        Debug.Log("ThomasBirthdayQuest saw item removed: " + name);
 
         if (IsReadyToComplete()) Debug.Log("ThomasBirthdayQuest is ready to complete!");
     }

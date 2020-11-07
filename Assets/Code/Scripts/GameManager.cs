@@ -24,6 +24,9 @@ public class GameManager : Singleton<GameManager>
     public delegate void ItemAddDelegate(string name);
     public ItemAddDelegate itemAddDelegate;
 
+    public delegate void ItemRemoveDelegate(string name);
+    public ItemRemoveDelegate itemRemoveDelegate;
+
     // Quests
     public List<Quest> quests = new List<Quest>();
     public int questCursor = 0;
@@ -203,7 +206,31 @@ public class GameManager : Singleton<GameManager>
 
     public void RemoveInventoryItem(string itemName, int count = 1)
     {
+        InventoryItem item = inventory.Find(i => i.itemName.Equals(itemName));
 
+        if (item == null) return;
+
+        if (item.count == count)
+        {
+            inventory.Remove(item);
+        }
+        else if (item.count > count)
+        {
+            inventory.Find(i => i.itemName.Equals(itemName)).count -= count;
+        }
+        else
+        {
+            Debug.Log("RemoveInventoryItem called on " + itemName + ", count=" + count + ", but only have " + item.count);
+        }
+
+        UpdateInventory();
+
+        itemRemoveDelegate?.Invoke(itemName);
+    }
+
+    public int GetInventoryCount(string itemName)
+    {
+        return inventory.Exists(i => i.itemName == itemName) ? inventory.Find(i => i.itemName == itemName).count : 0;
     }
 
     IEnumerator RaiseArms(GameObject player, Sprite icon)
