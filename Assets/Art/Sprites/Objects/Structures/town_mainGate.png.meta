@@ -11,6 +11,24 @@ TextureImporter:
   - first:
       213: 3975416487011580118
     second: town gate-Sheet_2
+  - first:
+      213: 640977480126629043
+    second: town_mainGate_0
+  - first:
+      213: 693640347124027611
+    second: town_mainGate_1
+  - first:
+      213: -3555070988405728911
+    second: town_mainGate_2
+  - first:
+      213: 6640165975438578801
+    second: town_mainGate_3
+  - first:
+      213: -318442048118987664
+    second: town_mainGate_4
+  - first:
+      213: 973477071772121935
+    second: town_mainGate_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,10 +114,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: town gate-Sheet_0
+      name: town_mainGate_0
       rect:
         serializedVersion: 2
-        x: 46
+        x: 48
         y: 16
         width: 180
         height: 142
@@ -110,17 +128,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d21b9eb1896538460800000000000000
-      internalID: 7242727837045207341
+      spriteID: 3b409f34f9535e800800000000000000
+      internalID: 640977480126629043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: town gate-Sheet_1
+      name: town_mainGate_1
       rect:
         serializedVersion: 2
-        x: 270
+        x: 272
         y: 16
         width: 180
         height: 142
@@ -131,29 +149,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3522a1fc5392bf7d0800000000000000
-      internalID: -2883665825316068781
+      spriteID: bd0d43c783e40a900800000000000000
+      internalID: 693640347124027611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: town gate-Sheet_2
+      name: town_mainGate_2
       rect:
         serializedVersion: 2
-        x: 494
+        x: 480
         y: 16
         width: 180
         height: 142
-      alignment: 9
-      pivot: {x: 0.5057773, y: 0.17942221}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d87e867b348b2730800000000000000
-      internalID: 3975416487011580118
+      spriteID: 17997c885c9d9aec0800000000000000
+      internalID: -3555070988405728911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: town_mainGate_3
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 16
+        width: 180
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174d6a706cb962c50800000000000000
+      internalID: 6640165975438578801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: town_mainGate_4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 16
+        width: 180
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074e158f4aaa49bf0800000000000000
+      internalID: -318442048118987664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: town_mainGate_5
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 16
+        width: 180
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf6f33d3c728d00800000000000000
+      internalID: 973477071772121935
       vertices: []
       indices: 
       edges: []
