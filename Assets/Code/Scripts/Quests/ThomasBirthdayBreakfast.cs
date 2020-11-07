@@ -9,8 +9,6 @@ public class ThomasBirthdayBreakfast : Quest
     int saffronFlowers = 0;
     public bool isComplete;
 
-
-
     public override void Setup()
     {
         GameManager.Instance.itemAddDelegate += ItemAdded;
