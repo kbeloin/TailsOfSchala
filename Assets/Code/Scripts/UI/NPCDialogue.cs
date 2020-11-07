@@ -176,6 +176,18 @@ public class NPCDialogue : MonoBehaviour
                 GameManager.Instance.quests.Add(quest);
                 GameManager.Instance.UpdateQuestLog();
             }
+
+            if (tag.StartsWith("item"))
+            {
+                //string[] itemAttributes = tag.Substring(5).Split(',');
+
+                //string itemName = itemAttributes[0];
+                //string description = itemAttributes[1];
+                //string iconName = itemAttributes[2];
+                //string 
+
+                //GameManager.Instance.AddInventoryItem()
+            }
         }
 
         //if (GameManager.Instance.inkStory.currentTags.Count > 0)
