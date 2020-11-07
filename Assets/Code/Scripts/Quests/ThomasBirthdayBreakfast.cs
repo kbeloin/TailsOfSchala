@@ -16,8 +16,10 @@ public class ThomasBirthdayBreakfast : Quest
         GameManager.Instance.itemRemoveDelegate += ItemRemoved;
 
         GameManager.Instance.inkStory.ObserveVariable("thomas_birthday_breakfast_complete", (string varName, object newValue) => {
-            Debug.Log(newValue);
-            if (newValue.ToString().Equals("1")) Complete();
+            if (newValue.ToString().Equals("1"))
+            {
+                Complete();
+            }
         });
     }
 
@@ -35,8 +37,9 @@ public class ThomasBirthdayBreakfast : Quest
 
     public override void Complete()
     {
-        Debug.Log("ThomasBirthdayBreakfast Complete called");
         if (!IsReadyToComplete()) return;
+
+        GameManager.Instance.inkStory.RemoveVariableObserver(null, "thomas_birthday_breakfast_complete");
 
         GameManager.Instance.itemAddDelegate -= ItemAdded;
         GameManager.Instance.itemRemoveDelegate -= ItemRemoved;
