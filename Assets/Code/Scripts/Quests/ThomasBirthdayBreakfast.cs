@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ThomasBirthdayBreakfast : Quest
 {
-    public bool isComplete;
-
     public override void Setup()
     {
         questName = "Thomas' Birthday Breakfast!";
@@ -25,19 +23,15 @@ public class ThomasBirthdayBreakfast : Quest
 
     public override bool IsReadyToComplete()
     {
-        bool ready = 
+        return
             GameManager.Instance.GetInventoryCount("Mushroom") >= 5 &&
             GameManager.Instance.GetInventoryCount("Rosemary") >= 5 &&
             GameManager.Instance.GetInventoryCount("Saffron") >= 5;
-
-        GameManager.Instance.inkStory.variablesState["thomas_birthday_breakfast_ready"] = ready;
-
-        return ready;
     }
 
     public override void Complete()
     {
-        if (!IsReadyToComplete()) return;
+        if (!IsReadyToComplete() || isComplete) return;
 
         GameManager.Instance.inkStory.RemoveVariableObserver(null, "thomas_birthday_breakfast_complete");
 
@@ -56,6 +50,8 @@ public class ThomasBirthdayBreakfast : Quest
         Debug.Log("ThomasBirthdayQuest saw item added: " + name);
 
         if (IsReadyToComplete()) Debug.Log("ThomasBirthdayQuest is ready to complete!");
+
+        GameManager.Instance.inkStory.variablesState["thomas_birthday_breakfast_ready"] = IsReadyToComplete();
     }
 
     void ItemRemoved(string name)
@@ -63,5 +59,7 @@ public class ThomasBirthdayBreakfast : Quest
         Debug.Log("ThomasBirthdayQuest saw item removed: " + name);
 
         if (IsReadyToComplete()) Debug.Log("ThomasBirthdayQuest is ready to complete!");
+
+        GameManager.Instance.inkStory.variablesState["thomas_birthday_breakfast_ready"] = IsReadyToComplete();
     }
 }
