@@ -6,7 +6,31 @@ VAR first_birthday_breakfast_engagement = true
     - first_birthday_breakfast_engagement:
         -> task_birthday_breakfast
     - thomas_birthday_breakfast_complete:
-        -> already_completed
+        -> start_goat_chores
+    - else:
+        -> reminder_birthday_breakfast
+}
+
+==start_birthday_breakfast_brother==
+{ 
+    - first_birthday_breakfast_engagement:
+        Father wants to talk to you. Are you in trouble? #name:Thomas #mood:happy
+        -> END
+    - thomas_birthday_breakfast_complete:
+        I can't wait to eat! #name:Thomas #mood:happy
+        -> END
+    - else:
+         Is my breakfast ready? #name:Thomas #mood:sad
+        -> END
+}
+
+==start_birthday_breakfast_mother==
+{ 
+    - first_birthday_breakfast_engagement:
+        Good morning, sweetheart!  #name:Mother #mood:happy
+        -> END
+    - thomas_birthday_breakfast_complete:
+        -> start_goat_chores
     - else:
         -> reminder_birthday_breakfast
 }
@@ -16,14 +40,15 @@ Did you get the ingredients? #name:Mother
 +Not yet. #name:Kay #mood:sad
     Well, back outside with you! #name:Mother #mood:sad
     ->END
-* { thomas_birthday_breakfast_ready } [Yep!]
-    Well, let's have them! #name:Mother #mood:happy 
+* { thomas_birthday_breakfast_ready } [Here you go, Mother.]
+    Five mushrooms, five herbs, and five flowers. #name:Kay #mood:happy
+    Thank you, Kay. Mmm, it smells so delicious! #name:Mother #mood:happy 
     ~ tooltip = "You give Mother the ingredients."
     -> complete_birthday_breakfast
 
 ==task_birthday_breakfast==
 ~ first_birthday_breakfast_engagement = false
-Good morning sleepyhead. #name:Father #mood:happy
+Good morning, sleepyhead. #name:Father #mood:happy
 *[Good morning!]
 Good morning everyone! #name:Kay #mood:happy
 Annnnddd...? #name:Thomas #mood:mad
@@ -115,8 +140,7 @@ Well done, Kay! This will make a fine meal.#name:Mother #mood:happy
 A young lady ought to know a few recipes. Why don't you try making these <b>Herb-Roasted Mushrooms</b>? #name:Mother
 ~ tooltip = "Received an item!"
 Give it a try on our <b>stove</b>. #name:Mother
-->END
-
-==already_completed==
-You did it!#name:Mother #mood:happy
+I'm hungry! #name:Thomas #mood:sad
+We know! #name:Father #mood:sad
+TODO: Fade to black while they eat 
 ->END
