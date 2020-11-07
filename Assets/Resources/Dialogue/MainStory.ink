@@ -6,3 +6,5 @@ INCLUDE A1S1/A1S1_altarboysquest_mean1.ink
  **/
 VAR tooltip = ""
 
+VAR thomas_birthday_breakfast_ready = false
+VAR thomas_birthday_breakfast_complete = false
