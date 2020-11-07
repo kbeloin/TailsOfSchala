@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  knotName: start_birthday_breakfast
+  knotName: start_birthday_breakfast_brother
   playerInRange: 0
   audio: {fileID: 0}
 --- !u!61 &452259450
@@ -4542,7 +4542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1745254813}
-  knotName: start_goat_chores
+  knotName: start_birthday_breakfast_mother
   playerInRange: 0
   audio: {fileID: 0}
 --- !u!61 &862051891
