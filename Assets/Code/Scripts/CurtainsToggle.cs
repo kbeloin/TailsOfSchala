@@ -1,11 +1,4 @@
-﻿/*
- * Modified ItemDialouge script.
- * 07/02/20
- * Adam
- */
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,10 +18,10 @@ public class CurtainsToggle : MonoBehaviour
     public Animator animator;
 
     void Start()
-    {
+    {   
         closedLight = GameObject.Find("ClosedCurtainsLight");
         openLight = GameObject.Find("OpenCurtainsLight");
-        openLight.SetActive(false);
+        closedLight.SetActive(false);
         spriteRenderer = GetComponent<SpriteRenderer>(); 
         if (spriteRenderer.sprite == null) 
             spriteRenderer.sprite = sprite1;
