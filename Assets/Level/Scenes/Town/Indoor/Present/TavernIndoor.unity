@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13370,7 +13370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 228777787}
-  npcPortrait: {fileID: 21300000, guid: 26faa55974441b44d81719458ce56911, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 2d3f7d3ce43163c4394b10e746b87807, type: 3}
   npcName: Pia
   dialogue: Have you ever thought about leaving town? There must be more to life
     than this.
