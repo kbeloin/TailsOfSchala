@@ -1,14 +1,15 @@
 // Birthday Breakfast
 VAR first_birthday_breakfast_engagement = true
 
-==start_birthday_breakfast==
+==start_birthday_breakfast_father==
 { 
     - first_birthday_breakfast_engagement:
         -> task_birthday_breakfast
     - thomas_birthday_breakfast_complete:
         -> start_goat_chores
     - else:
-        -> reminder_birthday_breakfast
+        I think I saw some mushrooms growing in the glade, southwest of the house. #name:Father
+        -> END
 }
 
 ==start_birthday_breakfast_brother==
@@ -20,7 +21,7 @@ VAR first_birthday_breakfast_engagement = true
         I can't wait to eat! #name:Thomas #mood:happy
         -> END
     - else:
-         Is my breakfast ready? #name:Thomas #mood:sad
+        Check for herbs by the river. #name:Thomas #mood:happy
         -> END
 }
 
