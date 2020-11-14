@@ -95,9 +95,6 @@ public class NPCDialogue : MonoBehaviour
 
         if (showingChoices)
         {
-            portraitObject.SetActive(false);
-            nameplate.SetActive(false);
-
             if (Input.GetKeyDown(KeyCode.S) && playerInRange)
             {
                 if (currentChoice < GameManager.Instance.inkStory.currentChoices.Count - 1) currentChoice++;
@@ -225,8 +222,14 @@ public class NPCDialogue : MonoBehaviour
 
     private void ShowChoices()
     {
-        // Update portrait
+        // Update portrait and nameplate
+        nameplate.SetActive(true);
+        nameplateText.text = "Kay";
+
         portraitObject.SetActive(true);
+        dialogueText.rectTransform.offsetMin = new Vector2(80, 16);
+
+        portraitObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Portraits_Characters/Kay/Kay_thinking");
 
         // Display the choices
         showingChoices = true;
