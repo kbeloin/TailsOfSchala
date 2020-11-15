@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: e54f12a43f34bb640862143316b42bcf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2685983115652597524
+    second: donkey_eating_0
+  - first:
+      213: -7155484910699993806
+    second: donkey_eating_1
+  - first:
+      213: 7553167157072944530
+    second: donkey_eating_2
+  - first:
+      213: -1597336918931599779
+    second: donkey_eating_3
+  - first:
+      213: 5403387024474125210
+    second: donkey_eating_4
+  - first:
+      213: -5062816701744783161
+    second: donkey_eating_5
+  - first:
+      213: -2117303452139399036
+    second: donkey_eating_6
+  - first:
+      213: 5876649106491303388
+    second: donkey_eating_7
+  - first:
+      213: -4532018482436752625
+    second: donkey_eating_8
+  - first:
+      213: 8186797691296998292
+    second: donkey_eating_9
+  - first:
+      213: 7328870277798606777
+    second: donkey_eating_10
+  - first:
+      213: -8297460106630198166
+    second: donkey_eating_11
+  - first:
+      213: 6084155517092195657
+    second: donkey_eating_12
+  - first:
+      213: 985368962877896579
+    second: donkey_eating_13
+  - first:
+      213: -2891295293041444163
+    second: donkey_eating_14
+  - first:
+      213: -7824522522750647746
+    second: donkey_eating_0
+  - first:
+      213: 2206929562757179546
+    second: donkey_eating_1
+  - first:
+      213: -416597808441115547
+    second: donkey_eating_2
+  - first:
+      213: -8116800117126270565
+    second: donkey_eating_3
+  - first:
+      213: 8440852399542375686
+    second: donkey_eating_4
+  - first:
+      213: 4972587992801145677
+    second: donkey_eating_5
+  - first:
+      213: -6497905722195651603
+    second: donkey_eating_6
+  - first:
+      213: 1781505641981881788
+    second: donkey_eating_7
+  - first:
+      213: -2964256322970923729
+    second: donkey_eating_8
+  - first:
+      213: -8696842362024686421
+    second: donkey_eating_9
+  - first:
+      213: -715741073356837329
+    second: donkey_eating_10
+  - first:
+      213: -4191041612369655180
+    second: donkey_eating_11
+  - first:
+      213: -1771587228611232795
+    second: donkey_eating_12
+  - first:
+      213: -7605703704534636296
+    second: donkey_eating_13
+  - first:
+      213: 6569309432869249519
+    second: donkey_eating_14
+  - first:
+      213: 4029151977842963768
+    second: donkey_eating_15
+  - first:
+      213: 4703374651061438235
+    second: donkey_eating_16
+  - first:
+      213: -3267765276482868729
+    second: donkey_eating_17
+  - first:
+      213: 1251586863979764928
+    second: donkey_eating_18
+  - first:
+      213: 4791551822112222539
+    second: donkey_eating_19
+  - first:
+      213: -4629963386938374225
+    second: donkey_eating_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: donkey_eating_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce874d6569879bad0800000000000000
+      internalID: -2685983115652597524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2352f06926c92bc90800000000000000
+      internalID: -7155484910699993806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dda7ec28d32d860800000000000000
+      internalID: 7553167157072944530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e0778098e15d9e0800000000000000
+      internalID: -1597336918931599779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a933cb1dedfacfa40800000000000000
+      internalID: 5403387024474125210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c06691a8034db9b0800000000000000
+      internalID: -5062816701744783161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488d58d6ab3dd92e0800000000000000
+      internalID: -2117303452139399036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5e70ef93d0e8150800000000000000
+      internalID: 5876649106491303388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b3adea3390b11c0800000000000000
+      internalID: -4532018482436752625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493eebdef195d9170800000000000000
+      internalID: 8186797691296998292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_10
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ba1900b065b560800000000000000
+      internalID: 7328870277798606777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c055eaeff79dc80800000000000000
+      internalID: -8297460106630198166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_12
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d638225334f6450800000000000000
+      internalID: 6084155517092195657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_13
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387380dd9dbbcad00800000000000000
+      internalID: 985368962877896579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: donkey_eating_14
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 12
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba718def3e00e7d0800000000000000
+      internalID: -2891295293041444163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
